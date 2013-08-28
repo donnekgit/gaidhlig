@@ -2,9 +2,9 @@
 
 /* 
 *********************************************************************
-Copyright Kevin Donnelly 2010, 2011.
+Copyright Kevin Donnelly 2013.
 kevindonnelly.org.uk
-This file is part of the Bangor Autoglosser.
+This file is part of the Bangor Autoglosser for Gàidhlig.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License or the GNU
