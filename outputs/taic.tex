@@ -1,0 +1,4234 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{tipa}
+\usepackage{expex}
+\usepackage[british]{babel}
+\usepackage[nodayofweek]{datetime}
+\usepackage[usenames,dvipsnames]{color}
+
+\usepackage[usenames]{xcolor} 
+\definecolor{mygreen}{rgb}{0.0, 0.5, 0.0}
+
+% \renewcommand{\rmdefault}{phv}  % Uncomment to get sans-serif text.
+
+\defineglwlevels{c}
+
+\lingset
+{
+    everyglpreamble={\tt \spaceskip=.5em plus .1em},
+    everygla={\bf},
+    everyglb={\it},
+    everyglc={\sf\it},
+    everyglft={\it},
+    glhangstyle=none,
+    aboveglftskip=4mm
+}
+
+% Thanks to Manas Tungare (http://manas.tungare.name/software/latex) for these settings.
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{247mm}
+
+\setlength{\evensidemargin}{1in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{-0.5in}
+
+% \title{\Large\headword{\color{mygreen}{A POS-tagged Gàidhlig Corpus}}}
+\title{\Large\headword{\color{mygreen}{Sentences from D. M'Clelland's \textit{Taic}}}}
+\author{Bangor Autoglosser proof-of-concept}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\ex
+\begingl
+\glpre Sin am fear a bha air an loch. 
+
+\vspace{4mm}
+\gla Sin am fear a bha air an loch  //
+\glb that.DEM.FAR the.DEF.M.SG.NOM male.N.M.SG which.PRT.REL be.V.PAST on.PREP the.DEF.M.SG.NGD lake.N.M.SG  //
+\glft That's the man who was on the loch. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seo an cat a bha fon chathair. 
+
+\vspace{4mm}
+\gla Seo an cat a bha fon chathair  //
+\glb this.DEM.NEAR the.DEF.M.SG.NGD cat.N.M.SG which.PRT.REL be.V.PAST under.the.PREP+DEF chair.N.F.SG+ASP[or]chair.N.F.SG.DAT+ASP  //
+\glft This is the cat which was under the chair. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An ise a' chaileag nach robh anns\_an sgoil? 
+
+\vspace{4mm}
+\gla An ise a' chaileag nach robh {anns an} sgoil  //
+\glb be.V.COP.PRES.INTERR she.PRON+EMPH.F.3S the.DEF.F.SG.ND girl.N.F.SG+ASP ?not.PRT.INT.NEG be.V.PAST.DEP in.the.PREP+DEF school.N.F.SG  //
+\glft Is she the girl who was not in school? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise nach eil ag iarraidh seinn. 
+
+\vspace{4mm}
+\gla Is mise nach eil ag iarraidh seinn  //
+\glb and.CONJ I.PRON+EMPH.1S ?not.PRT.INT.NEG be.V.PRES.DEP.NEG -ing.PRT.CONT want.PRESPART sing.V.IMPER[or]sing.VN  //
+\glft It's I who does not want to sing. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seo na tha agam de dh'airgead. 
+
+\vspace{4mm}
+\gla Seo na tha agam de dh'airgead  //
+\glb this.DEM.NEAR all.that.PRT.REL be.V.PRES at.me.PREP+PRON.1S of.PREP money.N.M.SG+DH  //
+\glft This is all the money that I have. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S mise a bhitheas an\_sin a-nochd. 
+
+\vspace{4mm}
+\gla 'S mise a bhitheas {an sin} a-nochd  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL be.V.COND.REL.EMPH+ASP there.ADV tonight.ADV  //
+\glft It's I who will be there tonight. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ise a sheinneas aig a' chèilidh. 
+
+\vspace{4mm}
+\gla 'S ise a sheinneas aig a' chèilidh  //
+\glb be.V.COP.PRES she.PRON+EMPH.F.3S which.PRT.REL sing.V.FUT.REL+ASP at.PREP the.DEF.F.SG.ND ceilidh.N.F.SG+ASP  //
+\glft It's she who will sing at the ceilidh. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S i do mhàthair nach bi toilichte. 
+
+\vspace{4mm}
+\gla 'S i do mhàthair nach bi toilichte  //
+\glb be.V.COP.PRES she.PRON.F.3S to.PREP[or]your.ADJ.POSS mother.N.F.SG+ASP ?not.PRT.INT.NEG be.V.FUT.INT pleased.PASTPART  //
+\glft It's your mother who will not be happy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An esan am fear ris an robh thu a' bruidhinn? 
+
+\vspace{4mm}
+\gla An esan am fear ris an robh thu a' bruidhinn  //
+\glb be.V.COP.PRES.INTERR he.PRON+EMPH.M.3S the.DEF.M.SG.NOM male.N.M.SG to.him.PREP+PRON.M.3S ?.PRT.INTERR be.V.PAST.DEP you.PRON.2S+ASP -ing.PRT.CONT speak.PRESPART  //
+\glft Is he the man to whom you were talking? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e seo am baile anns\_am bi mi a' fuireach. 
+
+\vspace{4mm}
+\gla 'S e seo am baile {anns am} bi mi a' fuireach  //
+\glb be.V.COP.PRES he.PRON.M.3S this.DEM.NEAR the.DEF.M.SG.NOM town.N.M.SG in.the.PREP+DEF be.V.IMPER[or]be.V.FUT.INT I.PRON.1S -ing.PRT.CONT stay.PRESPART  //
+\glft This is the town in which I stay. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ise a' chaileag leis\_a bheil am peann. 
+
+\vspace{4mm}
+\gla 'S ise a' chaileag {leis a} bheil am peann  //
+\glb be.V.COP.PRES she.PRON+EMPH.F.3S the.DEF.F.SG.ND girl.N.F.SG+ASP with.which.PREP+PRT.REL be.V.PRES.DEP.INT the.DEF.M.SG.NOM pen.N.M.SG  //
+\glft She's the girl who owns the pen. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha iomadh eilean ann air nach eil daoine a' fuireach. 
+
+\vspace{4mm}
+\gla Tha iomadh eilean ann air nach eil daoine a' fuireach  //
+\glb be.V.PRES many.N.M.SG island.N.M.SG in.it.PREP+PRON.M.3S on.PREP ?not.PRT.INT.NEG be.V.PRES.DEP.NEG persons.N.M.PL[or]person.N.M.PL -ing.PRT.CONT stay.PRESPART  //
+\glft There's many an island on which no-one lives. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An esan am fear a bha thu a' bruidhinn ris? 
+
+\vspace{4mm}
+\gla An esan am fear a bha thu a' bruidhinn ris  //
+\glb be.V.COP.PRES.INTERR he.PRON+EMPH.M.3S the.DEF.M.SG.NOM male.N.M.SG which.PRT.REL be.V.PAST you.PRON.2S+ASP -ing.PRT.CONT speak.PRESPART to.him.PREP+PRON.M.3S  //
+\glft Is he the man whom you were talking to? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S iadsan na fir a bha mi a' bruidhinn riutha? 
+
+\vspace{4mm}
+\gla 'S iadsan na fir a bha mi a' bruidhinn riutha  //
+\glb be.V.COP.PRES they.PRON+EMPH.3P the.DEF.PL.ND male.N.M.PL which.PRT.REL be.V.PAST I.PRON.1S -ing.PRT.CONT speak.PRESPART to.them.PREP+PRON.3P  //
+\glft They are the men whom I was talking to? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ise a' chaileag a bha thu a' bruidhinn rithe? 
+
+\vspace{4mm}
+\gla 'S ise a' chaileag a bha thu a' bruidhinn rithe  //
+\glb be.V.COP.PRES she.PRON+EMPH.F.3S the.DEF.F.SG.ND girl.N.F.SG+ASP which.PRT.REL be.V.PAST you.PRON.2S+ASP -ing.PRT.CONT speak.PRESPART to.her.PREP+PRON.F.3S  //
+\glft She's the girl whom I was talking to? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An e sin an tè a tha ag obair anns a' bhanca? 'S e. 
+
+\vspace{4mm}
+\gla An e sin an tè a tha ag obair anns a' bhanca 'S e  //
+\glb be.V.COP.PRES.INTERR he.PRON.M.3S that.DEM.FAR the.DEF.F.SG.ND one.N.F.SG which.PRT.REL be.V.PRES -ing.PRT.CONT work.PRESPART in.PREP the.DEF.M.SG.GD bank.(financial).N.M.SG+ASP be.V.COP.PRES he.PRON.M.3S  //
+\glft Is that the female who works in the bank? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seo am bogsa anns\_am biodh sinn ga chumail. 
+
+\vspace{4mm}
+\gla Seo am bogsa {anns am} biodh sinn ga chumail  //
+\glb this.DEM.NEAR the.DEF.M.SG.NOM box.N.M.SG in.the.PREP+DEF be.V.COND we.PRON.1P at.her.PREP+POSS.F.3S keep.VN+ASP  //
+\glft Here's the box in which we keep it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise a shnàmhas thairis\_air an abhainn. 
+
+\vspace{4mm}
+\gla Is mise a shnàmhas {thairis air} an abhainn  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL swim.V.FUT.REL+ASP across.PREP the.DEF.F.SG.ND river.N.F.SG  //
+\glft It's I who can swim across the river. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is iadsan na daoine ris an robh sinn a' bruidhinn. 
+
+\vspace{4mm}
+\gla Is iadsan na daoine ris an robh sinn a' bruidhinn  //
+\glb and.CONJ they.PRON+EMPH.3P the.DEF.PL.ND persons.N.M.PL[or]person.N.M.PL to.him.PREP+PRON.M.3S ?.PRT.INTERR be.V.PAST.DEP we.PRON.1P -ing.PRT.CONT speak.PRESPART  //
+\glft They are the men to whom we were speaking. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S esan am bàrd a choisinneas cliù mòr aig a' Mhòd. 
+
+\vspace{4mm}
+\gla 'S esan am bàrd a choisinneas cliù mòr aig a' Mhòd  //
+\glb be.V.COP.PRES he.PRON+EMPH.M.3S the.DEF.M.SG.NOM poet.N.M.SG which.PRT.REL employ.V.FUT.REL+ASP fame.N.M.SG big.ADJ at.PREP the.DEF.M.SG.GD Mod.N.M.SG+ASP  //
+\glft He's the poet who will win great praise at the Mod. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e sin an loch air an robh sinn an-dè 
+
+\vspace{4mm}
+\gla 'S e sin an loch air an robh sinn an-dè  //
+\glb be.V.COP.PRES he.PRON.M.3S that.DEM.FAR the.DEF.M.SG.NGD lake.N.M.SG on.PREP ?.PRT.INTERR be.V.PAST.DEP we.PRON.1P yesterday.ADV  //
+\glft That's the loch that we were on yesterday. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e an speur an rìoghachd anns\_am bi an iolaire ag itealaich. 
+
+\vspace{4mm}
+\gla 'S e an speur an rìoghachd {anns am} bi an iolaire ag itealaich  //
+\glb be.V.COP.PRES he.PRON.M.3S the.DEF.M.SG.NGD sky.N.M.SG the.DEF.F.SG.ND kingdom.N.F.SG in.the.PREP+DEF be.V.IMPER[or]be.V.FUT.INT the.DEF.F.SG.ND eagle.N.F.SG -ing.PRT.CONT fly.PRESPART  //
+\glft The sky is the kingdom in which the eagle flies. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan eil fios agam na tha aca anns a' bhaga. 
+
+\vspace{4mm}
+\gla Chan eil fios agam na tha aca anns a' bhaga  //
+\glb not.PRT.NEG be.V.PRES.DEP.NEG knowledge.N.M.SG at.me.PREP+PRON.1S all.that.PRT.REL be.V.PRES at.them.PREP+PRON.3P in.PREP the.DEF.M.SG.GD bag.N.M.SG+ASP  //
+\glft I don't know what they have in the bag. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is e purpaidh an dath a tha air an fhraoch an-dràsta. 
+
+\vspace{4mm}
+\gla Is e purpaidh an dath a tha air an fhraoch an-dràsta  //
+\glb and.CONJ he.PRON.M.3S purple.ADJ the.DEF.M.SG.NGD colour.N.M.SG which.PRT.REL be.V.PRES on.PREP the.DEF.M.SG.NGD heather.N.M.SG+ASP just.now.ADV  //
+\glft Purple is the colour of the heather just now. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S iad a bha toilichte leis na bha aca de dh'airgead. 
+
+\vspace{4mm}
+\gla 'S iad a bha toilichte leis na bha aca de dh'airgead  //
+\glb be.V.COP.PRES they.PRON.3P which.PRT.REL be.V.PAST pleased.PASTPART with.PREP all.that.PRT.REL be.V.PAST at.them.PREP+PRON.3P of.PREP money.N.M.SG+DH  //
+\glft It's they who were pleased with what money they had. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ann anns a' choille sin a tha am fear ag obair. 
+
+\vspace{4mm}
+\gla 'S ann anns a' choille sin a tha am fear ag obair  //
+\glb be.V.COP.PRES in.it.PREP+PRON.M.3S in.PREP the.DEF.F.SG.ND wood.N.F.SG+ASP that.DEM.FAR which.PRT.REL be.V.PRES the.DEF.M.SG.NOM male.N.M.SG -ing.PRT.CONT work.PRESPART  //
+\glft It's in the forest that the man works. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Siud an drochaid air am bi sinn a' coiseachd. 
+
+\vspace{4mm}
+\gla Siud an drochaid air am bi sinn a' coiseachd  //
+\glb Siud.NAME the.DEF.F.SG.ND bridge.N.F.SG on.PREP the.DEF.M.SG.NOM[or]occasion.N.M.SG be.V.IMPER[or]be.V.FUT.INT we.PRON.1P -ing.PRT.CONT walk.PRESPART  //
+\glft Yonder is the bridge on which we will be walking. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S esan an duine a dhìricheas a' bheinn sin. 
+
+\vspace{4mm}
+\gla 'S esan an duine a dhìricheas a' bheinn sin  //
+\glb be.V.COP.PRES he.PRON+EMPH.M.3S the.DEF.M.SG.NGD person.N.M.SG which.PRT.REL climb.V.FUT.REL+ASP the.DEF.F.SG.ND mountain.N.F.SG+ASP that.DEM.FAR  //
+\glft He's the man who can climb that mountain. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A' chaileag air an robh am falt liath. 
+
+\vspace{4mm}
+\gla A' chaileag air an robh am falt liath  //
+\glb the.DEF.F.SG.ND girl.N.F.SG+ASP on.PREP ?.PRT.INTERR be.V.PAST.DEP the.DEF.M.SG.NOM hair.N.M.SG grey.ADJ  //
+\glft The girl who had the grey hair. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e sin an nighean leis\_a bheil e a' falbh. 
+
+\vspace{4mm}
+\gla 'S e sin an nighean {leis a} bheil e a' falbh  //
+\glb be.V.COP.PRES he.PRON.M.3S that.DEM.FAR the.DEF.F.SG.ND girl.N.F.SG with.which.PREP+PRT.REL be.V.PRES.DEP.INT he.PRON.M.3S -ing.PRT.CONT leave.PRESPART  //
+\glft That's the girl with whom he is going out. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre B' e sgian mhòr a bha aige na phòcaid. 
+
+\vspace{4mm}
+\gla B' e sgian mhòr a bha aige na phòcaid  //
+\glb be.V.COP.PAST he.PRON.M.3S knife.N.F.SG big.ADJ+ASP which.PRT.REL be.V.PAST at.him.PREP+PRON.M.3S of.the.DEF.F.SG.GEN pocket.N.F.SG+ASP  //
+\glft It was a big knife that he had in his pocket. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre B' ann air an luch a bha an iolaire a' coimhead. 
+
+\vspace{4mm}
+\gla B' ann air an luch a bha an iolaire a' coimhead  //
+\glb be.V.COP.PAST in.it.PREP+PRON.M.3S on.PREP the.DEF.F.SG.ND mouse.N.F.SG which.PRT.REL be.V.PAST the.DEF.F.SG.ND eagle.N.F.SG -ing.PRT.CONT look.PRESPART  //
+\glft It was the mouse that the eagle was watching. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Siud an gleann trom bi sinn a' coiseachd a-màireach. 
+
+\vspace{4mm}
+\gla Siud an gleann trom bi sinn a' coiseachd a-màireach  //
+\glb Siud.NAME the.DEF.M.SG.NGD glen.N.M.SG heavy.ADJ be.V.IMPER[or]be.V.FUT.INT we.PRON.1P -ing.PRT.CONT walk.PRESPART tomorrow.ADV  //
+\glft Yonder's the glen through which we shall be walking tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an drochaid air an robh sinn a' coiseachd a-nis briste. 
+
+\vspace{4mm}
+\gla Tha an drochaid air an robh sinn a' coiseachd a-nis briste  //
+\glb be.V.PRES the.DEF.F.SG.ND bridge.N.F.SG on.PREP ?.PRT.INTERR be.V.PAST.DEP we.PRON.1P -ing.PRT.CONT walk.PRESPART now.ADV broken.PASTPART  //
+\glft The bridge on which we were walking is now broken. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e gainmheach òir a tha air an tràigh sin. 
+
+\vspace{4mm}
+\gla 'S e gainmheach òir a tha air an tràigh sin  //
+\glb be.V.COP.PRES he.PRON.M.3S sand.N.F.SG gold.N.M.SG.GEN which.PRT.REL be.V.PRES on.PREP the.DEF.F.SG.ND beach.N.F.SG that.DEM.FAR  //
+\glft It's golden sand that is on that beach. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò bha ag òl? 
+
+\vspace{4mm}
+\gla Cò bha ag òl  //
+\glb who.INTERR be.V.PAST -ing.PRT.CONT drink.PRESPART  //
+\glft Who was drinking? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò nach eil ag iarraidh deoch? 
+
+\vspace{4mm}
+\gla Cò nach eil ag iarraidh deoch  //
+\glb who.INTERR ?not.PRT.INT.NEG be.V.PRES.DEP.NEG -ing.PRT.CONT want.PRESPART drink.N.F.SG  //
+\glft Who doesn't want a drink? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè bha i a' dèanamh? 
+
+\vspace{4mm}
+\gla Dè bha i a' dèanamh  //
+\glb what.INT be.V.PAST she.PRON.F.3S -ing.PRT.CONT do.PRESPART  //
+\glft What was she doing? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè nach eil air an liosta? 
+
+\vspace{4mm}
+\gla Dè nach eil air an liosta  //
+\glb what.INT ?not.PRT.INT.NEG be.V.PRES.DEP.NEG on.PREP the.DEF.F.SG.ND list.N.F.SG  //
+\glft What's not on the list? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a tha thu? 
+
+\vspace{4mm}
+\gla Ciamar a tha thu  //
+\glb how.INT which.PRT.REL be.V.PRES you.PRON.2S+ASP  //
+\glft How are you? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a bhios i ag reic an taighe? 
+
+\vspace{4mm}
+\gla Carson a bhios i ag reic an taighe  //
+\glb Carson.NAME which.PRT.REL be.V.FUT.REL+ASP she.PRON.F.3S -ing.PRT.CONT sell.PRESPART the.DEF.M.SG.GEN house.N.M.SG.GEN  //
+\glft Why will she be selling the house? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson nach eil sibh a' fuireach? 
+
+\vspace{4mm}
+\gla Carson nach eil sibh a' fuireach  //
+\glb Carson.NAME ?not.PRT.INT.NEG be.V.PRES.DEP.NEG you.PRON.2P -ing.PRT.CONT stay.PRESPART  //
+\glft Why are you not staying? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a bhithinn sàbhailte? 
+
+\vspace{4mm}
+\gla Cuin a bhithinn sàbhailte  //
+\glb when.INTERR which.PRT.REL be.V.1S.COND+ASP safe.PASTPART  //
+\glft When would I be safe? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a bhiodh iad sàbhailte? 
+
+\vspace{4mm}
+\gla Cuin a bhiodh iad sàbhailte  //
+\glb when.INTERR which.PRT.REL be.V.COND+ASP they.PRON.3P safe.PASTPART  //
+\glft When would they be safe? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin nach bi e sàbhailte? 
+
+\vspace{4mm}
+\gla Cuin nach bi e sàbhailte  //
+\glb when.INTERR ?not.PRT.INT.NEG be.V.FUT.INT he.PRON.M.3S safe.PASTPART  //
+\glft When will it not be safe? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an robh thu a-raoir? 
+
+\vspace{4mm}
+\gla Càit an robh thu a-raoir  //
+\glb Càit.NAME ?.PRT.INTERR be.V.PAST.DEP you.PRON.2S+ASP last.night.ADV  //
+\glft Where were you last night? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cà 'n robh thu a-raoir? 
+
+\vspace{4mm}
+\gla Cà 'n robh thu a-raoir  //
+\glb Cà.NAME ?.PRT.INTERR be.V.PAST.DEP you.PRON.2S+ASP last.night.ADV  //
+\glft Where were you last night? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit a bheil iad a' dol? 
+
+\vspace{4mm}
+\gla Càit a bheil iad a' dol  //
+\glb Càit.NAME which.PRT.REL be.V.PRES.DEP.INT they.PRON.3P -ing.PRT.CONT go.PRESPART  //
+\glft Where are they going? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cà bheil iad a' dol? 
+
+\vspace{4mm}
+\gla Cà bheil iad a' dol  //
+\glb Cà.NAME be.V.PRES.DEP.INT they.PRON.3P -ing.PRT.CONT go.PRESPART  //
+\glft Where are they going? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit am bi e a-màireach? 
+
+\vspace{4mm}
+\gla Càit am bi e a-màireach  //
+\glb Càit.NAME the.DEF.M.SG.NOM[or]occasion.N.M.SG be.V.IMPER[or]be.V.FUT.INT he.PRON.M.3S tomorrow.ADV  //
+\glft Where will he be tomorrow? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cà 'm bi e a-màireach? 
+
+\vspace{4mm}
+\gla Cà 'm bi e a-màireach  //
+\glb Cà.NAME ?.PRT.INTERR be.V.FUT.INT he.PRON.M.3S tomorrow.ADV  //
+\glft Where will he be tomorrow? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò tha a' falbh leis an nighean sin? 'S mise. 
+
+\vspace{4mm}
+\gla Cò tha a' falbh leis an nighean sin 'S mise  //
+\glb who.INTERR be.V.PRES -ing.PRT.CONT leave.PRESPART with.PREP the.DEF.F.SG.ND girl.N.F.SG that.DEM.FAR be.V.COP.PRES I.PRON+EMPH.1S  //
+\glft Who's going out with that girl? Me. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè seòrsa de bhiadh a tha sibh ag iarraidh? 
+
+\vspace{4mm}
+\gla Dè seòrsa de bhiadh a tha sibh ag iarraidh  //
+\glb what.INT sort.N.M.SG of.PREP food.N.M.SG+ASP[or]feed.V.IMPER+ASP which.PRT.REL be.V.PRES you.PRON.2P -ing.PRT.CONT want.PRESPART  //
+\glft What sort of food do you want? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit am bi iad a' fuireach a-nochd? 
+
+\vspace{4mm}
+\gla Càit am bi iad a' fuireach a-nochd  //
+\glb Càit.NAME the.DEF.M.SG.NOM[or]occasion.N.M.SG be.V.IMPER[or]be.V.FUT.INT they.PRON.3P -ing.PRT.CONT stay.PRESPART tonight.ADV  //
+\glft Where will they be staying tonight? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò tha a' dol a chosnadh duais aig a' Mhòd am\_bliadhna? 
+
+\vspace{4mm}
+\gla Cò tha a' dol a chosnadh duais aig a' Mhòd {am bliadhna}  //
+\glb who.INTERR be.V.PRES -ing.PRT.CONT go.PRESPART to.PRT.INFIN earn..V.INFIN.:EARN+ASP prize.N.F.SG at.PREP the.DEF.M.SG.GD Mod.N.M.SG+ASP this.year.ADV  //
+\glft Who's going to win the prize at the Mod this year? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a bha do mhàthair a' faireachdainn a-raoir? 
+
+\vspace{4mm}
+\gla Ciamar a bha do mhàthair a' faireachdainn a-raoir  //
+\glb how.INT which.PRT.REL be.V.PAST to.PREP[or]your.ADJ.POSS mother.N.F.SG+ASP -ing.PRT.CONT feel.PRESPART last.night.ADV  //
+\glft How was your mother feeling last night? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò 's urrainn cluiche air a' phiàna? 
+
+\vspace{4mm}
+\gla Cò 's urrainn cluiche air a' phiàna  //
+\glb who.INTERR be.V.COP.PRES ability.N.F.SG play.VN on.PREP the.DEF.M.SG.GD piano.N.M.SG+ASP  //
+\glft Who can play the piano? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè an t-ainm a tha air ur piuthar? 
+
+\vspace{4mm}
+\gla Dè an t-ainm a tha air ur piuthar  //
+\glb what.INT the.DEF.M.SG.NOM name.N.M.SG+T which.PRT.REL be.V.PRES on.PREP your.ADJ.POSS.2P sister.N.F.SG  //
+\glft What's the name of your sister? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò am fear ris an robh iad a' bruidhinn a-raoir? 
+
+\vspace{4mm}
+\gla Cò am fear ris an robh iad a' bruidhinn a-raoir  //
+\glb who.INTERR the.DEF.M.SG.NOM male.N.M.SG to.him.PREP+PRON.M.3S ?.PRT.INTERR be.V.PAST.DEP they.PRON.3P -ing.PRT.CONT speak.PRESPART last.night.ADV  //
+\glft Who's the man to which they were speaking last night? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè bha ga cumail air\_ais? 
+
+\vspace{4mm}
+\gla Dè bha ga cumail {air ais}  //
+\glb what.INT be.V.PAST at.her.PREP+POSS.F.3S keep.VN back.ADV  //
+\glft What was keeping her back/behind? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a bhitheas iad a' fàgail Ghlaschu? 
+
+\vspace{4mm}
+\gla Cuin a bhitheas iad a' fàgail Ghlaschu  //
+\glb when.INTERR which.PRT.REL be.V.COND.REL.EMPH+ASP they.PRON.3P -ing.PRT.CONT leave.PRESPART Glasgow.NPLACE+ASP  //
+\glft When will they be leaving Glasgow? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson as toil leibh an sealladh den chaisteal? 
+
+\vspace{4mm}
+\gla Carson as toil leibh an sealladh den chaisteal  //
+\glb Carson.NAME be.V.COP.PRES.REL wish.N.F.SG with.you.PREP+PRON.2P the.DEF.M.SG.NGD view.N.M.SG of.the.PREP+DEF castle.N.M.SG+ASP  //
+\glft Why do you like the view of the castle? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a bhitheas tu a' tilleadh dhachaigh? 
+
+\vspace{4mm}
+\gla Cuin a bhitheas tu a' tilleadh dhachaigh  //
+\glb when.INTERR which.PRT.REL be.V.COND.REL.EMPH+ASP you.PRON.2S -ing.PRT.CONT return.PRESPART homewards.ADV[or]home.N.F.SG+ASP  //
+\glft When will you be returning home? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè tha dhìth ort a-nis? 
+
+\vspace{4mm}
+\gla Dè tha dhìth ort a-nis  //
+\glb what.INT be.V.PRES need.N.F.SG+ASP on.you.PREP+PRON.2S now.ADV  //
+\glft What do you need now? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha airgead a dhìth orm. 
+
+\vspace{4mm}
+\gla Tha airgead a dhìth orm  //
+\glb be.V.PRES money.N.M.SG his.ADJ.POSS.M.3S need.N.F.SG+ASP on.me.PREP+PRON.1S  //
+\glft I need some money. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè tha dhìth ort a-nis? 
+
+\vspace{4mm}
+\gla Dè tha dhìth ort a-nis  //
+\glb what.INT be.V.PRES need.N.F.SG+ASP on.you.PREP+PRON.2S now.ADV  //
+\glft What do you need now? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e airgead a tha dhìth orm. 
+
+\vspace{4mm}
+\gla 'S e airgead a tha dhìth orm  //
+\glb be.V.COP.PRES he.PRON.M.3S money.N.M.SG which.PRT.REL be.V.PRES need.N.F.SG+ASP on.me.PREP+PRON.1S  //
+\glft I need some money. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a tha iad a' siubhal gu Dùn Èideann? 
+
+\vspace{4mm}
+\gla Ciamar a tha iad a' siubhal gu Dùn Èideann  //
+\glb how.INT which.PRT.REL be.V.PRES they.PRON.3P -ing.PRT.CONT travel.PRESPART that.CONJ fortress.N.M.SG Edinburgh.NPLACE  //
+\glft How are they travelling to Edinburgh? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò 's e an ceannard den chomann sin? 
+
+\vspace{4mm}
+\gla Cò 's e an ceannard den chomann sin  //
+\glb who.INTERR be.V.COP.PRES he.PRON.M.3S the.DEF.M.SG.NGD chief.N.M.SG of.the.PREP+DEF society.N.M.SG+ASP that.DEM.FAR  //
+\glft Who is the chief of that society? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a bhitheas a' bhanais ann? 
+
+\vspace{4mm}
+\gla Cuin a bhitheas a' bhanais ann  //
+\glb when.INTERR which.PRT.REL be.V.COND.REL.EMPH+ASP the.DEF.F.SG.ND wedding.N.F.SG+ASP in.it.PREP+PRON.M.3S  //
+\glft When will the wedding be? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò tha a' dol a thoirt nota dhomh? 
+
+\vspace{4mm}
+\gla Cò tha a' dol a thoirt nota dhomh  //
+\glb who.INTERR be.V.PRES -ing.PRT.CONT go.PRESPART to.PRT.INFIN give.V.INFIN+ASP[or]give.V.INFIN+ASP pound to.me.PREP+PRON.1S  //
+\glft Who is going to give me a pound? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè seòrsa de dh'àite anns a bheil i a' fuireach? 
+
+\vspace{4mm}
+\gla Dè seòrsa de dh'àite anns a bheil i a' fuireach  //
+\glb what.INT sort.N.M.SG of.PREP place.N.M.SG+DH in.PREP which.PRT.REL be.V.PRES.DEP.INT she.PRON.F.3S -ing.PRT.CONT stay.PRESPART  //
+\glft What type of place does she live in? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò tha ag obair anns\_an leabharlann ùr? 
+
+\vspace{4mm}
+\gla Cò tha ag obair {anns an} leabharlann ùr  //
+\glb who.INTERR be.V.PRES -ing.PRT.CONT work.PRESPART in.the.PREP+DEF library.N.MF.SG new.ADJ  //
+\glft Who works in the new library? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè bha iad a' giùlan anns a' bhaga? 
+
+\vspace{4mm}
+\gla Dè bha iad a' giùlan anns a' bhaga  //
+\glb what.INT be.V.PAST they.PRON.3P -ing.PRT.CONT carry.PRESPART in.PREP the.DEF.M.SG.GD bag.N.M.SG+ASP  //
+\glft What were they carrying in the bag? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè seòrsa de dh'ùpraid a bha iad a' dèanamh? 
+
+\vspace{4mm}
+\gla Dè seòrsa de dh'ùpraid a bha iad a' dèanamh  //
+\glb what.INT sort.N.M.SG of.PREP din.N.F.SG+DH which.PRT.REL be.V.PAST they.PRON.3P -ing.PRT.CONT do.PRESPART  //
+\glft What sort of carry-on were they making? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson nach robh Màiri anns\_an sgoil an-diugh? 
+
+\vspace{4mm}
+\gla Carson nach robh Màiri {anns an} sgoil an-diugh  //
+\glb Carson.NAME ?not.PRT.INT.NEG be.V.PAST.DEP Màiri.NAME in.the.PREP+DEF school.N.F.SG today.ADV  //
+\glft Why was Màiri not at school today? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò nach urrainn streap suas an cnoc sin? 
+
+\vspace{4mm}
+\gla Cò nach urrainn streap suas an cnoc sin  //
+\glb who.INTERR ?not.PRT.INT.NEG ability.N.F.SG climb.VN[or]climb.V.IMPER up(wards).ADV[or]up.ADV the.DEF.M.SG.NGD hill.N.M.SG that.DEM.FAR  //
+\glft Who can't climb up that hill? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit a bheil iad a' dol a chluiche? 
+
+\vspace{4mm}
+\gla Càit a bheil iad a' dol a chluiche  //
+\glb Càit.NAME which.PRT.REL be.V.PRES.DEP.INT they.PRON.3P -ing.PRT.CONT go.PRESPART to.PRT.INFIN play.V.INFIN+ASP  //
+\glft Where are they going to play? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha bhi mi a' dol a-muigh oir tha an t-uisge ann. 
+
+\vspace{4mm}
+\gla Cha bhi mi a' dol a-muigh oir tha an t-uisge ann  //
+\glb not.PRT.NEG be.V.IMPER+ASP[or]be.V.FUT.INT+ASP I.PRON.1S -ing.PRT.CONT go.PRESPART outside.ADV because.CONJ be.V.PRES the.DEF.M.SG.NOM water.N.M.SG+T in.it.PREP+PRON.M.3S  //
+\glft I will not be going out because it is raining. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Fhads\_a tha dòchas ann. 
+
+\vspace{4mm}
+\gla {Fhads a} tha dòchas ann  //
+\glb while.CONJ be.V.PRES hope.N.M.SG in.it.PREP+PRON.M.3S  //
+\glft While there is hope. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ged a tha e beag tha e làidir. 
+
+\vspace{4mm}
+\gla Ged a tha e beag tha e làidir  //
+\glb although.CONJ which.PRT.REL be.V.PRES he.PRON.M.3S small.ADJ be.V.PRES he.PRON.M.3S strong.ADJ  //
+\glft Although he is small he is strong. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seo mar a bha e. 
+
+\vspace{4mm}
+\gla Seo mar a bha e  //
+\glb this.DEM.NEAR as.CONJ which.PRT.REL be.V.PAST he.PRON.M.3S  //
+\glft This is how it was. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma bhios e blàth a-màireach, bidh mi ann. 
+
+\vspace{4mm}
+\gla Ma bhios e blàth a-màireach bidh mi ann  //
+\glb if.CONJ be.V.FUT.REL+ASP he.PRON.M.3S warm.ADJ tomorrow.ADV be.V.FUT I.PRON.1S in.it.PREP+PRON.M.3S  //
+\glft If it is dry tomorrow, I'll be there. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e mì-chàilear nuair a tha e fuar is fliuch. 
+
+\vspace{4mm}
+\gla Tha e mì-chàilear nuair a tha e fuar is fliuch  //
+\glb be.V.PRES he.PRON.M.3S unpleasant.ADJ when.CONJ which.PRT.REL be.V.PRES he.PRON.M.3S cold.ADJ and.CONJ wet.ADJ  //
+\glft It is unpleasant when it is cold and wet. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha i mar\_sin on a bha i na caileig òig. 
+
+\vspace{4mm}
+\gla Bha i {mar sin} on a bha i na caileig òig  //
+\glb be.V.PAST she.PRON.F.3S like.that..ADV.:LIKE.THAT from.the.PREP+DEF which.PRT.REL be.V.PAST she.PRON.F.3S of.the.DEF.F.SG.GEN girl.N.F.SG.DAT young.ADJ.F  //
+\glft She has been like that since she was a young girl. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Suidh far a bheil thu! 
+
+\vspace{4mm}
+\gla Suidh far a bheil thu  //
+\glb sit.V.IMPER off.ADV[or]where.REL which.PRT.REL be.V.PRES.DEP.INT you.PRON.2S+ASP  //
+\glft Sit where you are! //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha e na bhanaltram mus robh e na dhotair. 
+
+\vspace{4mm}
+\gla Bha e na bhanaltram mus robh e na dhotair  //
+\glb be.V.PAST he.PRON.M.3S in.his.PREP+POSS.M.3S nurse.N.M.SG+ASP before.PREP be.V.PAST.DEP he.PRON.M.3S in.his.PREP+POSS.M.3S doctor.N.M.SG+ASP  //
+\glft He was a nurse before he was a doctor. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha e na bhanaltram mun robh e na dhotair. 
+
+\vspace{4mm}
+\gla Bha e na bhanaltram mun robh e na dhotair  //
+\glb be.V.PAST he.PRON.M.3S in.his.PREP+POSS.M.3S nurse.N.M.SG+ASP before.PREP be.V.PAST.DEP he.PRON.M.3S in.his.PREP+POSS.M.3S doctor.N.M.SG+ASP  //
+\glft He was a nurse before he was a doctor. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Fuirich gus\_am bi mì-fhìn ann. 
+
+\vspace{4mm}
+\gla Fuirich {gus am} bi mì-fhìn ann  //
+\glb stay.V.IMPER until.when.PREP+PRT.REL be.V.FUT.INT myself.PRON.REFL.1S in.it.PREP+PRON.M.3S  //
+\glft Wait until I'm there. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha bhi mi ann mura bi thu-fhèin ann. 
+
+\vspace{4mm}
+\gla Cha bhi mi ann mura bi thu-fhèin ann  //
+\glb not.PRT.NEG be.V.IMPER+ASP[or]be.V.FUT.INT+ASP I.PRON.1S in.it.PREP+PRON.M.3S unless.CONJ be.V.IMPER[or]be.V.FUT.INT yourself.PRON+REFL.2S+ASP in.it.PREP+PRON.M.3S  //
+\glft I will not be there unless you are. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan eil mi toilichte mur eil thusa. 
+
+\vspace{4mm}
+\gla Chan eil mi toilichte mur eil thusa  //
+\glb not.PRT.NEG be.V.PRES.DEP.NEG I.PRON.1S pleased.PASTPART unless.CONJ be.V.PRES.DEP.NEG you.PRON+EMPH.2S+ASP  //
+\glft I am not happy if you aren't. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a tha fios agad mur\_an\_do leugh thu an litir? 
+
+\vspace{4mm}
+\gla Ciamar a tha fios agad {mur an do} leugh thu an litir  //
+\glb how.INT which.PRT.REL be.V.PRES knowledge.N.M.SG at.you.PREP+PRON.2S unless.CONJ+PAST read.V.PAST you.PRON.2S+ASP the.DEF.F.SG.ND letter.N.F.SG.ND  //
+\glft How do you know unless you read the letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha m' ad air a' bhòrd mur\_an\_do ghluais duine i. 
+
+\vspace{4mm}
+\gla Bha m' ad air a' bhòrd {mur an do} ghluais duine i  //
+\glb be.V.PAST my.ADJ.POSS.1S hat.N.F.SG on.PREP the.DEF.M.SG.GD table.N.M.SG+ASP unless.CONJ+PAST move.V.PAST+ASP person.N.M.SG she.PRON.F.3S  //
+\glft My hat was on the table unless someone moved it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an t-uisge ann. 
+
+\vspace{4mm}
+\gla Tha an t-uisge ann  //
+\glb be.V.PRES the.DEF.M.SG.NOM water.N.M.SG+T in.it.PREP+PRON.M.3S  //
+\glft It is raining. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha an t-uisge ann. 
+
+\vspace{4mm}
+\gla Bha an t-uisge ann  //
+\glb be.V.PAST the.DEF.M.SG.NOM water.N.M.SG+T in.it.PREP+PRON.M.3S  //
+\glft It was raining. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan eil fios agam far a bheil do mhàthair. 
+
+\vspace{4mm}
+\gla Chan eil fios agam far a bheil do mhàthair  //
+\glb not.PRT.NEG be.V.PRES.DEP.NEG knowledge.N.M.SG at.me.PREP+PRON.1S off.ADV[or]where.REL which.PRT.REL be.V.PRES.DEP.INT to.PREP[or]your.ADJ.POSS mother.N.F.SG+ASP  //
+\glft I don't know where your mother is. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Suidh sìos gus\_am bi do dhìnnear deiseil. 
+
+\vspace{4mm}
+\gla Suidh sìos {gus am} bi do dhìnnear deiseil  //
+\glb sit.V.IMPER down.ADV until.when.PREP+PRT.REL be.V.FUT.INT to.PREP[or]your.ADJ.POSS dinner.N.F.SG+ASP ready.ADJ  //
+\glft Sit down until your dinner is ready. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha uisge trom ann nuair bha iad ag iasgach air an loch. 
+
+\vspace{4mm}
+\gla Bha uisge trom ann nuair bha iad ag iasgach air an loch  //
+\glb be.V.PAST water.N.M.SG heavy.ADJ in.it.PREP+PRON.M.3S when.CONJ be.V.PAST they.PRON.3P -ing.PRT.CONT fish.PRESPART on.PREP the.DEF.M.SG.NGD lake.N.M.SG  //
+\glft It was raining heavily when they were fishing on the loch. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ged a tha iad trang bhiodh iad toilichte gad chuideachadh. 
+
+\vspace{4mm}
+\gla Ged a tha iad trang bhiodh iad toilichte gad chuideachadh  //
+\glb although.CONJ which.PRT.REL be.V.PRES they.PRON.3P busy.ADJ be.V.COND+ASP they.PRON.3P pleased.PASTPART at.your.PREP+POSS.2S help.VN+ASP  //
+\glft Although they are busy they would be pleased to help you. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dèan mar a tha mi ag ràdh. 
+
+\vspace{4mm}
+\gla Dèan mar a tha mi ag ràdh  //
+\glb do.V.IMPER as.CONJ which.PRT.REL be.V.PRES I.PRON.1S -ing.PRT.CONT say.PRESPART  //
+\glft Do as I say. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh e dorcha mus bi i dhachaigh. 
+
+\vspace{4mm}
+\gla Bidh e dorcha mus bi i dhachaigh  //
+\glb be.V.FUT he.PRON.M.3S dark.ADJ before.PREP be.V.IMPER[or]be.V.FUT.INT she.PRON.F.3S homewards.ADV[or]home.N.F.SG+ASP  //
+\glft It will be dark before she's home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha b' urrainn dhomh càr a cheannach on nach robh airgead agam. 
+
+\vspace{4mm}
+\gla Cha b' urrainn dhomh càr a cheannach on nach robh airgead agam  //
+\glb not.PRT.NEG be.V.COP.PAST ability.N.F.SG to.me.PREP+PRON.1S car.N.M.SG to.PRT.INFIN buy.V.INFIN+ASP from.the.PREP+DEF ?not.PRT.INT.NEG be.V.PAST.DEP money.N.M.SG at.me.PREP+PRON.1S  //
+\glft I couldn't buy a car since I hadn't any money. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha i cho bòidheach nuair bha i òg. 
+
+\vspace{4mm}
+\gla Bha i cho bòidheach nuair bha i òg  //
+\glb be.V.PAST she.PRON.F.3S so.ADV beautiful.ADJ when.CONJ be.V.PAST she.PRON.F.3S young.ADJ  //
+\glft She was so beautiful when she was young. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma tha sibh sgìth suidhibh sìos. 
+
+\vspace{4mm}
+\gla Ma tha sibh sgìth suidhibh sìos  //
+\glb if.CONJ be.V.PRES you.PRON.2P tired.ADJ[or]tired.ADJ.COMP.F.SG.GEN sit.V.PL.IMPER down.ADV  //
+\glft If you are tired sit down. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mar as urrainn dhut faicinn chan eil càil agam nam phòcaid. 
+
+\vspace{4mm}
+\gla Mar as urrainn dhut faicinn chan eil càil agam nam phòcaid  //
+\glb as.CONJ be.V.COP.PRES.REL ability.N.F.SG to.you.PREP+PRON.2S see.VN not.PRT.NEG be.V.PRES.DEP.NEG anything.N.F.SG[or]cabbage.N.M.SG.GEN at.me.PREP+PRON.1S if.CONJ[or]of.the.DEF.PL.GEN[or]in.my.PREP+POSS.1S[or]in.their.PREP+POSS.3P pocket.N.F.SG+ASP  //
+\glft As you can see I don't have anything in my pocket. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha mi a' bruidhinn rithe fhads\_a bha sinn a' coiseachd. 
+
+\vspace{4mm}
+\gla Bha mi a' bruidhinn rithe {fhads a} bha sinn a' coiseachd  //
+\glb be.V.PAST I.PRON.1S -ing.PRT.CONT speak.PRESPART to.her.PREP+PRON.F.3S while.CONJ be.V.PAST we.PRON.1P -ing.PRT.CONT walk.PRESPART  //
+\glft I was speaking to her while we were walking. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An toil leat far a bheil thu a' fuireach? 
+
+\vspace{4mm}
+\gla An toil leat far a bheil thu a' fuireach  //
+\glb the.DEF.F.SG.ND wish.N.F.SG with.you.PREP+PRON.2S off.ADV[or]where.REL which.PRT.REL be.V.PRES.DEP.INT you.PRON.2S+ASP -ing.PRT.CONT stay.PRESPART  //
+\glft Do you like where you are staying? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ged nach eil e cho mòr tha e gu\_math làidir. 
+
+\vspace{4mm}
+\gla Ged nach eil e cho mòr tha e {gu math} làidir  //
+\glb although.CONJ ?not.PRT.INT.NEG be.V.PRES.DEP.NEG he.PRON.M.3S so.ADV big.ADJ be.V.PRES he.PRON.M.3S well.ADV strong.ADJ  //
+\glft Although he is not so big he is quite strong. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha mi a' fuireach anns a' bhaile sin nuair a bha mi nam bhalach. 
+
+\vspace{4mm}
+\gla Bha mi a' fuireach anns a' bhaile sin nuair a bha mi nam bhalach  //
+\glb be.V.PAST I.PRON.1S -ing.PRT.CONT stay.PRESPART in.PREP the.DEF.M.SG.GD town.N.M.SG+ASP that.DEM.FAR when.CONJ which.PRT.REL be.V.PAST I.PRON.1S if.CONJ[or]of.the.DEF.PL.GEN[or]in.my.PREP+POSS.1S[or]in.their.PREP+POSS.3P boy.N.M.SG+ASP  //
+\glft I was staying in that town when I was a boy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sin an t-àite far am b' fheàrr leam a bhith. 
+
+\vspace{4mm}
+\gla Sin an t-àite far am b' fheàrr leam a bhith  //
+\glb that.DEM.FAR the.DEF.M.SG.NOM place.N.M.SG+T off.ADV[or]where.REL the.DEF.M.SG.NOM[or]occasion.N.M.SG be.V.COP.PAST good.ADJ.COMP+ASP with.me.PREP+PRON.1S to.PRT.INFIN be.V.INFIN+ASP  //
+\glft That's the place where I would prefer to be. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Na rach a-muigh gus\_am bi an t-uisge dheth. 
+
+\vspace{4mm}
+\gla Na rach a-muigh {gus am} bi an t-uisge dheth  //
+\glb all.that.PRT.REL go.V.PAST outside.ADV until.when.PREP+PRT.REL be.V.FUT.INT the.DEF.M.SG.NOM water.N.M.SG+T of.him.PREP+PRON.M.3S  //
+\glft Don't go outside until the rain is off. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre On a tha e cho leisg cha bhi e deònach a dhol dhan bhùth. 
+
+\vspace{4mm}
+\gla On a tha e cho leisg cha bhi e deònach a dhol dhan bhùth  //
+\glb from.the.PREP+DEF which.PRT.REL be.V.PRES he.PRON.M.3S so.ADV lazy.ADJ not.PRT.NEG be.V.IMPER+ASP[or]be.V.FUT.INT+ASP he.PRON.M.3S willing.ADJ to.PRT.INFIN go.V.INFIN+ASP to.the.PREP+DEF shop.N.F.SG+ASP  //
+\glft Since he is so lazy he will not be willing to go to the shop. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh e a' seinn aig a' chèilidh ged tha e tinn. 
+
+\vspace{4mm}
+\gla Bidh e a' seinn aig a' chèilidh ged tha e tinn  //
+\glb be.V.FUT he.PRON.M.3S -ing.PRT.CONT sing.PRESPART at.PREP the.DEF.F.SG.ND ceilidh.N.F.SG+ASP although.CONJ be.V.PRES he.PRON.M.3S ill.ADJ  //
+\glft He will be singing at the ceilidh although he is ill. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A bheil thu toilichte far a bheil thu nad shuidhe? Tha. 
+
+\vspace{4mm}
+\gla A bheil thu toilichte far a bheil thu nad shuidhe Tha  //
+\glb which.PRT.REL be.V.PRES.DEP.INT you.PRON.2S+ASP pleased.PASTPART off.ADV[or]where.REL which.PRT.REL be.V.PRES.DEP.INT you.PRON.2S+ASP in.your.PREP+POSS.2S sit.VN+ASP be.V.PRES  //
+\glft Are you happy where you're sitting? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ruith dhachaigh mus bi an t-uisge ann. 
+
+\vspace{4mm}
+\gla Ruith dhachaigh mus bi an t-uisge ann  //
+\glb run.VN[or]run.V.IMPER homewards.ADV[or]home.N.F.SG+ASP before.PREP be.V.IMPER[or]be.V.FUT.INT the.DEF.M.SG.NOM water.N.M.SG+T in.it.PREP+PRON.M.3S  //
+\glft Run home before it rains. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dèanaibh ruith nuair a tha mi ag ràdh: deiseil. 
+
+\vspace{4mm}
+\gla Dèanaibh ruith nuair a tha mi ag ràdh deiseil  //
+\glb Dèanaibh.NAME run.VN[or]run.V.IMPER when.CONJ which.PRT.REL be.V.PRES I.PRON.1S -ing.PRT.CONT say.PRESPART ready.ADJ  //
+\glft Run when I say: ready. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha bhi i a' tighinn on nach eil i cinnteach gum bi bus dhachaigh. 
+
+\vspace{4mm}
+\gla Cha bhi i a' tighinn on nach eil i cinnteach gum bi bus dhachaigh  //
+\glb not.PRT.NEG be.V.IMPER+ASP[or]be.V.FUT.INT+ASP she.PRON.F.3S -ing.PRT.CONT come.PRESPART from.the.PREP+DEF ?not.PRT.INT.NEG be.V.PRES.DEP.NEG she.PRON.F.3S certain.ADJ that.CONJ be.V.IMPER[or]be.V.FUT.INT bus.N.M.SG homewards.ADV[or]home.N.F.SG+ASP  //
+\glft She will not be coming since she isn't sure that there will be a bus home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha e a' cluich anns a' phàirc fad an là an-dè 
+
+\vspace{4mm}
+\gla Bha e a' cluich anns a' phàirc fad an là an-dè  //
+\glb be.V.PAST he.PRON.M.3S -ing.PRT.CONT play.PRESPART in.PREP the.DEF.F.SG.ND park.N.F.SG+ASP length.N.M.SG the.DEF.M.SG.NGD day.N.M.SG yesterday.ADV  //
+\glft He was playing in the park all day yesterday. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gun do bhuail iad e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gun do bhuail iad e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART without.PREP[or]that.CONJ[or]to.the.PREP+DEF to.PREP[or]your.ADJ.POSS strike.V.IMPER+ASP they.PRON.3P he.PRON.M.3S  //
+\glft He says that they hit him. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach do bhuail iad e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach do bhuail iad e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG to.PREP[or]your.ADJ.POSS strike.V.IMPER+ASP they.PRON.3P he.PRON.M.3S  //
+\glft He says that they didn't hit him. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gun do dh'fhàg iad. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gun do dh'fhàg iad  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART without.PREP[or]that.CONJ[or]to.the.PREP+DEF to.PREP[or]your.ADJ.POSS leave.V.IMPER+DH they.PRON.3P  //
+\glft He says that they left. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach do dh'fhàg iad. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach do dh'fhàg iad  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.VN ?not.PRT.INT.NEG to.PREP[or]your.ADJ.POSS leave.V.IMPER+DH they.PRON.3P  //
+\glft He says that they didn't leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S iadsan a bhuail mi. 
+
+\vspace{4mm}
+\gla 'S iadsan a bhuail mi  //
+\glb be.V.COP.PRES they.PRON+EMPH.3P which.PRT.REL strike.V.PAST+ASP I.PRON.1S  //
+\glft It's they who hit me. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S iadsan nach do bhuail mi. 
+
+\vspace{4mm}
+\gla 'S iadsan nach do bhuail mi  //
+\glb be.V.COP.PRES they.PRON+EMPH.3P ?not.PRT.INT.NEG to.PREP[or]your.ADJ.POSS strike.V.IMPER+ASP I.PRON.1S  //
+\glft It's they who didn't hit me. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè leugh thu anns\_an sgoil an-diugh? 
+
+\vspace{4mm}
+\gla Dè leugh thu {anns an} sgoil an-diugh  //
+\glb what.INT read.V.IMPER you.PRON.2S+ASP in.the.PREP+DEF school.N.F.SG today.ADV  //
+\glft What did you read in school today? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò sgrìobh an litir? 
+
+\vspace{4mm}
+\gla Cò sgrìobh an litir  //
+\glb who.INTERR write.V.IMPER the.DEF.F.SG.ND letter.N.F.SG.ND  //
+\glft Who wrote the letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a bhuail thu am balach? 
+
+\vspace{4mm}
+\gla Carson a bhuail thu am balach  //
+\glb Carson.NAME which.PRT.REL strike.V.PAST+ASP you.PRON.2S+ASP the.DEF.M.SG.NOM boy.N.M.SG  //
+\glft Why did you hit the boy? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a sheas i? 
+
+\vspace{4mm}
+\gla Ciamar a sheas i  //
+\glb how.INT which.PRT.REL stand.V.PAST+ASP she.PRON.F.3S  //
+\glft How did she stand? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a dh'fhàg thu? 
+
+\vspace{4mm}
+\gla Cuin a dh'fhàg thu  //
+\glb when.INTERR which.PRT.REL leave.V.PAST+DH you.PRON.2S+ASP  //
+\glft When did you leave? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an do thog iad an taigh? 
+
+\vspace{4mm}
+\gla Càit an do thog iad an taigh  //
+\glb Càit.NAME the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR to.PREP[or]your.ADJ.POSS raise.V.IMPER+ASP they.PRON.3P the.DEF.M.SG.NGD house.N.M.SG  //
+\glft Where did they build the house? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sgrìobh mi litir mus do dh'fhàg mi. 
+
+\vspace{4mm}
+\gla Sgrìobh mi litir mus do dh'fhàg mi  //
+\glb write.V.IMPER I.PRON.1S letter.N.F.SG.ND before.PREP to.PREP[or]your.ADJ.POSS leave.V.IMPER+DH I.PRON.1S  //
+\glft I wrote a letter before I left. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha e dorcha nuair a bhuail an càr am balach. 
+
+\vspace{4mm}
+\gla Bha e dorcha nuair a bhuail an càr am balach  //
+\glb be.V.PAST he.PRON.M.3S dark.ADJ when.CONJ which.PRT.REL strike.V.PAST+ASP the.DEF.M.SG.NGD car.N.M.SG the.DEF.M.SG.NOM boy.N.M.SG  //
+\glft It was dark when the car hit the boy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leugh mi am pàipear-naidheachd fhads\_a dh'ith mi dìnnear. 
+
+\vspace{4mm}
+\gla Leugh mi am pàipear-naidheachd {fhads a} dh'ith mi dìnnear  //
+\glb read.V.IMPER I.PRON.1S the.DEF.M.SG.NOM newspaper.N.M.SG while.CONJ eat.V.IMPER+DH I.PRON.1S dinner.N.F.SG  //
+\glft I read the paper while I ate dinner. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mur do bhuail thusa am balach, cò bhuail? 
+
+\vspace{4mm}
+\gla Mur do bhuail thusa am balach cò bhuail  //
+\glb unless.CONJ to.PREP[or]your.ADJ.POSS strike.V.IMPER+ASP you.PRON+EMPH.2S+ASP the.DEF.M.SG.NOM boy.N.M.SG who.INTERR strike.V.IMPER+ASP  //
+\glft If you didn't hit the boy, who did? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An do bhuail iad an cù? 
+
+\vspace{4mm}
+\gla An do bhuail iad an cù  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR to.PREP[or]your.ADJ.POSS strike.V.IMPER+ASP they.PRON.3P the.DEF.M.SG.NGD dog.N.M.SG  //
+\glft Did they hit the dog? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach do sheas iad aig an doras? 
+
+\vspace{4mm}
+\gla Nach do sheas iad aig an doras  //
+\glb ?not.PRT.INT.NEG to.PREP[or]your.ADJ.POSS stand.V.IMPER+ASP they.PRON.3P at.PREP the.DEF.M.SG.NGD door.N.M.SG  //
+\glft Didn't they stand at the door? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'fhàg an toit a\_h-uile rud anns\_an taigh salach. 
+
+\vspace{4mm}
+\gla Dh'fhàg an toit {a h-uile} rud {anns an} taigh salach  //
+\glb leave.V.IMPER+DH the.DEF.F.SG.ND smoke.N.F.SG every.QUAL thing.N.M.SG in.the.PREP+DEF house.N.M.SG dirty.ADJ  //
+\glft The smoke left everything in the house dirty. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An do chuir thu bainne anns a' chopan? Chuir. 
+
+\vspace{4mm}
+\gla An do chuir thu bainne anns a' chopan Chuir  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR to.PREP[or]your.ADJ.POSS put.V.IMPER+ASP[or]twist.N.M.SG.DAT.GEN+ASP[or]twist.N.M.PL+ASP you.PRON.2S+ASP milk.N.M.SG in.PREP the.DEF.M.SG.GD cup.N.M.SG+ASP put.V.IMPER+ASP[or]twist.N.M.SG.GEN+ASP[or]twist.N.M.PL+ASP  //
+\glft Did you put some milk in the cup? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò bhris an uinneag agam? 'S ise a bhris i. 
+
+\vspace{4mm}
+\gla Cò bhris an uinneag agam 'S ise a bhris i  //
+\glb who.INTERR break.V.IMPER+ASP the.DEF.F.SG.ND window.N.F.SG at.me.PREP+PRON.1S be.V.COP.PRES she.PRON+EMPH.F.3S which.PRT.REL break.V.PAST+ASP she.PRON.F.3S  //
+\glft Who broke my window? She broke it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha do dh'fhuirich e fada nuair a thill sinn. 
+
+\vspace{4mm}
+\gla Cha do dh'fhuirich e fada nuair a thill sinn  //
+\glb not.PRT.NEG to.PREP[or]your.ADJ.POSS stay.V.IMPER+DH he.PRON.M.3S long.ADJ[or]long.ADJ when.CONJ which.PRT.REL return.V.PAST+ASP we.PRON.1P  //
+\glft He didn't stay long when we returned. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach do cheannaich iad càr ùr? Cheannaich. 
+
+\vspace{4mm}
+\gla Nach do cheannaich iad càr ùr Cheannaich  //
+\glb ?not.PRT.INT.NEG to.PREP[or]your.ADJ.POSS buy.V.IMPER+ASP they.PRON.3P car.N.M.SG new.ADJ buy.V.IMPER+ASP  //
+\glft Didn't they buy a new car? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chluich ar leanabh leis an dèideig fad an là 
+
+\vspace{4mm}
+\gla Chluich ar leanabh leis an dèideig fad an là  //
+\glb play.V.IMPER+ASP[or]play.VN+ASP our.ADJ.POSS.1P baby.N.M.SG with.PREP the.DEF.F.SG.ND toy.N.F.SG.DAT length.N.M.SG the.DEF.M.SG.NGD day.N.M.SG  //
+\glft Our baby played with the toy all day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chuir mi an t-uisge anns a' choire agus ghoil mi e. 
+
+\vspace{4mm}
+\gla Chuir mi an t-uisge anns a' choire agus ghoil mi e  //
+\glb put.V.IMPER+ASP[or]twist.N.M.SG.GEN+ASP[or]twist.N.M.PL+ASP I.PRON.1S the.DEF.M.SG.NOM water.N.M.SG+T in.PREP the.DEF.M.SG.GD kettle.N.M.SG+ASP and.CONJ boil.V.IMPER+ASP[or]boil.VN+ASP I.PRON.1S he.PRON.M.3S  //
+\glft I put the water in the kettle and I boiled it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'ionnsaich mi Gàidhlig nuair a bha mi nam bhalach. 
+
+\vspace{4mm}
+\gla Dh'ionnsaich mi Gàidhlig nuair a bha mi nam bhalach  //
+\glb learn.V.IMPER+T[or]learn.V.IMPER+T I.PRON.1S Gàidhlig.language.N.F.SG when.CONJ which.PRT.REL be.V.PAST I.PRON.1S if.CONJ[or]of.the.DEF.PL.GEN[or]in.my.PREP+POSS.1S[or]in.their.PREP+POSS.3P boy.N.M.SG+ASP  //
+\glft I learned Gàidhlig when I was a boy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Shaoil mi gum b' aithne dhomh e. 
+
+\vspace{4mm}
+\gla Shaoil mi gum b' aithne dhomh e  //
+\glb think.V.IMPER+ASP I.PRON.1S that.CONJ be.V.COP.PAST knowledge.N.F.SG to.me.PREP+PRON.1S he.PRON.M.3S  //
+\glft I thought that I knew him. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Can e mar a sgrìobh iad e. 
+
+\vspace{4mm}
+\gla Can e mar a sgrìobh iad e  //
+\glb say.V.IMPER he.PRON.M.3S as.CONJ which.PRT.REL write.V.PAST they.PRON.3P he.PRON.M.3S  //
+\glft Say it as they wrote it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An do cheannaich sibh càil anns a' bhùth? Cha do cheannaich. 
+
+\vspace{4mm}
+\gla An do cheannaich sibh càil anns a' bhùth Cha do cheannaich  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR to.PREP[or]your.ADJ.POSS buy.V.IMPER+ASP you.PRON.2P anything.N.F.SG[or]cabbage.N.M.SG.GEN in.PREP the.DEF.F.SG.ND shop.N.F.SG+ASP not.PRT.NEG to.PREP[or]your.ADJ.POSS buy.V.IMPER+ASP  //
+\glft Did you buy anything in the shop? No. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chuir e a làmh-san air a làimh-se. 
+
+\vspace{4mm}
+\gla Chuir e a làmh-san air a làimh-se  //
+\glb put.V.IMPER+ASP[or]twist.N.M.SG.GEN+ASP[or]twist.N.M.PL+ASP he.PRON.M.3S her.ADJ.POSS.F.3S hand.N.F.SG+EMPH on.PREP her.ADJ.POSS.F.3S hand.N.F.SG.GD+EMPH  //
+\glft He put his hand on her hand. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhris mi mo chas nuair a thuit mi sìos na staidhrichean. 
+
+\vspace{4mm}
+\gla Bhris mi mo chas nuair a thuit mi sìos na staidhrichean  //
+\glb break.V.IMPER+ASP I.PRON.1S my.ADJ.POSS.1S foot.N.F.SG+ASP when.CONJ which.PRT.REL fall.V.PAST+ASP I.PRON.1S down.ADV the.DEF.PL.ND stair.N.F.PL  //
+\glft I broke my leg when I fell down the stairs. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thill mo phiuthar bhon saor-là aice a-raoir. 
+
+\vspace{4mm}
+\gla Thill mo phiuthar bhon saor-là aice a-raoir  //
+\glb return.V.IMPER+ASP my.ADJ.POSS.1S sister.N.F.SG+ASP from.the.PREP+DEF holiday.N.M.SG at.her.PREP+PRON.F.3S last.night.ADV  //
+\glft My sister returned from her holiday last night. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An do fhreagair i a' cheist gu ceart? Fhreagair. 
+
+\vspace{4mm}
+\gla An do fhreagair i a' cheist gu ceart Fhreagair  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR to.PREP[or]your.ADJ.POSS answer.V.IMPER+ASP she.PRON.F.3S the.DEF.F.SG.ND question.N.F.SG+ASP that.CONJ correct.ADJ answer.V.IMPER+ASP  //
+\glft Did she answer the question correctly? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'ith mi a' bhriosgaid mun do dh'òl mi am bainne. 
+
+\vspace{4mm}
+\gla Dh'ith mi a' bhriosgaid mun do dh'òl mi am bainne  //
+\glb eat.V.IMPER+DH I.PRON.1S the.DEF.F.SG.ND biscuit.N.F.SG+ASP before.PREP[or]about.the.PREP+DEF to.PREP[or]your.ADJ.POSS drink.V.IMPER+DH[or]drink.VN+DH I.PRON.1S the.DEF.M.SG.NOM milk.N.M.SG  //
+\glft I ate the biscuit before I drank the milk. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò ghluais mo chathair air\_falbh bhon teine? 'S esan a ghluais i. 
+
+\vspace{4mm}
+\gla Cò ghluais mo chathair {air falbh} bhon teine 'S esan a ghluais i  //
+\glb who.INTERR move.V.IMPER+ASP my.ADJ.POSS.1S chair.N.F.SG+ASP[or]chair.N.F.SG.DAT+ASP away.ADV from.the.PREP+DEF fire.N.M.SG be.V.COP.PRES he.PRON+EMPH.M.3S which.PRT.REL move.V.PAST+ASP she.PRON.F.3S  //
+\glft Who moved my chair away from the fire? It's him that moved it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a phòs thu am fear sin? 
+
+\vspace{4mm}
+\gla Carson a phòs thu am fear sin  //
+\glb Carson.NAME which.PRT.REL marry.V.PAST+ASP you.PRON.2S+ASP the.DEF.M.SG.NOM male.N.M.SG that.DEM.FAR  //
+\glft Why did you marry that man? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a phòs thu an tè sin? 
+
+\vspace{4mm}
+\gla Carson a phòs thu an tè sin  //
+\glb Carson.NAME which.PRT.REL marry.V.PAST+ASP you.PRON.2S+ASP the.DEF.F.SG.ND one.N.F.SG that.DEM.FAR  //
+\glft Why did you marry that woman? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sgrìobh mi litir fhada nuair a thill mi dhachaigh. 
+
+\vspace{4mm}
+\gla Sgrìobh mi litir fhada nuair a thill mi dhachaigh  //
+\glb write.V.IMPER I.PRON.1S letter.N.F.SG.ND long.ADJ+ASP[or]long.ADJ+ASP when.CONJ which.PRT.REL return.V.PAST+ASP I.PRON.1S homewards.ADV[or]home.N.F.SG+ASP  //
+\glft I wrote a long letter when I returned home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chluich iad gu sàmhach fhads\_a chaidil i. 
+
+\vspace{4mm}
+\gla Chluich iad gu sàmhach {fhads a} chaidil i  //
+\glb play.V.IMPER+ASP[or]play.VN+ASP they.PRON.3P that.CONJ quiet.ADJ while.CONJ sleep.V.IMPER+ASP she.PRON.F.3S  //
+\glft They played quietly while she slept. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha e a' cluich anns a' phàirc fad an là an-dè 
+
+\vspace{4mm}
+\gla Bha e a' cluich anns a' phàirc fad an là an-dè  //
+\glb be.V.PAST he.PRON.M.3S -ing.PRT.CONT play.PRESPART in.PREP the.DEF.F.SG.ND park.N.F.SG+ASP length.N.M.SG the.DEF.M.SG.NGD day.N.M.SG yesterday.ADV  //
+\glft He was playing in the park all day yesterday. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gun cuala e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gun cuala e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ hear.V.PAST he.PRON.M.3S  //
+\glft He says that he heard. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach cuala e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach cuala e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG hear.V.PAST he.PRON.M.3S  //
+\glft He says that he didn't hear. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gum faca e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gum faca e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ see.V.PAST.DEP he.PRON.M.3S  //
+\glft He says that he saw. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach fhaca e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach fhaca e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG see.V.PAST.DEP+ASP he.PRON.M.3S  //
+\glft He says that he didn't see. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise a chaidh. 
+
+\vspace{4mm}
+\gla Is mise a chaidh  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL go.V.PAST  //
+\glft It's I who went. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise nach deach. 
+
+\vspace{4mm}
+\gla Is mise nach deach  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S ?not.PRT.INT.NEG go.V.PAST.DEP  //
+\glft It's I who didn't go. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ise a rinn sin. 
+
+\vspace{4mm}
+\gla 'S ise a rinn sin  //
+\glb be.V.COP.PRES she.PRON+EMPH.F.3S which.PRT.REL do.V.PAST that.DEM.FAR  //
+\glft It's she who did that. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ise nach d'rinn sin. 
+
+\vspace{4mm}
+\gla 'S ise nach d'rinn sin  //
+\glb be.V.COP.PRES she.PRON+EMPH.F.3S ?not.PRT.INT.NEG do.V.PAST+D that.DEM.FAR  //
+\glft It's she who didn't do that. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè rinn thu leis\_a' phàipear is glaodh? 
+
+\vspace{4mm}
+\gla Dè rinn thu {leis a'} phàipear is glaodh  //
+\glb what.INT do.V.PAST you.PRON.2S+ASP leis.a'.UNK paper.N.M.SG+ASP and.CONJ glue.N.M.SG  //
+\glft What did you make with the paper and glue? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò thuirt sin? 
+
+\vspace{4mm}
+\gla Cò thuirt sin  //
+\glb who.INTERR say.V.PAST+ASP that.DEM.FAR  //
+\glft Who said that? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a thug e airgead dhut? 
+
+\vspace{4mm}
+\gla Carson a thug e airgead dhut  //
+\glb Carson.NAME which.PRT.REL give.V.PAST+ASP he.PRON.M.3S money.N.M.SG to.you.PREP+PRON.2S  //
+\glft Why did he give you some money? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a rinn thu sin? 
+
+\vspace{4mm}
+\gla Ciamar a rinn thu sin  //
+\glb how.INT which.PRT.REL do.V.PAST you.PRON.2S+ASP that.DEM.FAR  //
+\glft How did you do that? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a thàinig iad? 
+
+\vspace{4mm}
+\gla Cuin a thàinig iad  //
+\glb when.INTERR which.PRT.REL come.V.PAST[or]come.V.PAST.DEP+ASP they.PRON.3P  //
+\glft When did they come? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an d'fhuair thu sin? 
+
+\vspace{4mm}
+\gla Càit an d'fhuair thu sin  //
+\glb Càit.NAME the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR d'fhuair.UNK you.PRON.2S+ASP that.DEM.FAR  //
+\glft Where did you get that? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt mi an naidheachd ris nuair a chunnaic mi e. 
+
+\vspace{4mm}
+\gla Thuirt mi an naidheachd ris nuair a chunnaic mi e  //
+\glb say.V.PAST+ASP I.PRON.1S the.DEF.F.SG.ND news.N.F.SG to.him.PREP+PRON.M.3S when.CONJ which.PRT.REL see.V.PAST.INDEP I.PRON.1S he.PRON.M.3S  //
+\glft I told him the news when I saw him. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sgioblaich mi an taigh mus d'ràinig iad. 
+
+\vspace{4mm}
+\gla Sgioblaich mi an taigh mus d'ràinig iad  //
+\glb tidy.V.IMPER I.PRON.1S the.DEF.M.SG.NGD house.N.M.SG before.PREP reach.V.PAST+D they.PRON.3P  //
+\glft I tidied the house before they arrived. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha sinn toilichte ged nach tàinig i. 
+
+\vspace{4mm}
+\gla Bha sinn toilichte ged nach tàinig i  //
+\glb be.V.PAST we.PRON.1P pleased.PASTPART although.CONJ ?not.PRT.INT.NEG come.V.PAST.DEP she.PRON.F.3S  //
+\glft We were happy even although she didn't come. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e air a dhòigh on a fhuair e an càr ùr. 
+
+\vspace{4mm}
+\gla Tha e air a dhòigh on a fhuair e an càr ùr  //
+\glb be.V.PRES he.PRON.M.3S on.PREP his.ADJ.POSS.M.3S method.N.F.SG+ASP from.the.PREP+DEF which.PRT.REL get.V.PAST+ASP he.PRON.M.3S the.DEF.M.SG.NGD car.N.M.SG new.ADJ  //
+\glft He is overjoyed since he got the new car. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mura tug thusa air\_falbh e, cò thug? 
+
+\vspace{4mm}
+\gla Mura tug thusa {air falbh} e cò thug  //
+\glb unless.CONJ give.V.PAST you.PRON+EMPH.2S+ASP away.ADV he.PRON.M.3S who.INTERR give.V.PAST+ASP  //
+\glft If you didn't take it away, who did? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Am faca sibh cò bha anns\_an talla? Chunnaic. 
+
+\vspace{4mm}
+\gla Am faca sibh cò bha {anns an} talla Chunnaic  //
+\glb the.DEF.M.SG.NOM[or]occasion.N.M.SG see.V.PAST.DEP you.PRON.2P who.INTERR be.V.PAST in.the.PREP+DEF hall.N.M.SG see.V.PAST.INDEP  //
+\glft Did you see who was in the hall? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thug mi an dèideag air\_falbh bhuaipe. 
+
+\vspace{4mm}
+\gla Thug mi an dèideag {air falbh} bhuaipe  //
+\glb give.V.PAST+ASP I.PRON.1S the.DEF.F.SG.ND toy.N.F.SG away.ADV from.her.PREP+PRON.F.3S  //
+\glft I took the toy away from her. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha tàinig iad gus meadhan-oidhche. 
+
+\vspace{4mm}
+\gla Cha tàinig iad gus meadhan-oidhche  //
+\glb not.PRT.NEG come.V.PAST.DEP they.PRON.3P until.PREP[or]in.order.to.CONJ midnight.N.M.SG  //
+\glft They didn't come until midnight. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Rug i leanabh bòidheach. 
+
+\vspace{4mm}
+\gla Rug i leanabh bòidheach  //
+\glb Rug.NAME she.PRON.F.3S baby.N.M.SG beautiful.ADJ  //
+\glft She gave birth to a beautiful baby. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach d'ràinig thu an taobh eile? Ràinig. 
+
+\vspace{4mm}
+\gla Nach d'ràinig thu an taobh eile Ràinig  //
+\glb ?not.PRT.INT.NEG reach.V.PAST+D you.PRON.2S+ASP the.DEF.M.SG.NGD side.N.M.SG other.ADJ reach.V.PAST  //
+\glft Didn't you reach the other side? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chaidh sinn sìos dhan tràigh an-dè 
+
+\vspace{4mm}
+\gla Chaidh sinn sìos dhan tràigh an-dè  //
+\glb go.V.PAST we.PRON.1P down.ADV to.the.PREP+DEF beach.N.F.SG yesterday.ADV  //
+\glft We went down to the beach yesterday. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An d'rinn sibh dìnnear dhaibh? Cha d'rinn. 
+
+\vspace{4mm}
+\gla An d'rinn sibh dìnnear dhaibh Cha d'rinn  //
+\glb ?.PRT.INTERR do.V.PAST+D you.PRON.2P dinner.N.F.SG to.them.PREP+PRON.3P not.PRT.NEG do.V.PAST+D  //
+\glft Did you make dinner for them? No. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an cuala tu an sgeul sin? 
+
+\vspace{4mm}
+\gla Càit an cuala tu an sgeul sin  //
+\glb Càit.NAME ?.PRT.INTERR hear.V.PAST you.PRON.2S the.DEF.F.SG.ND story.N.F.SG that.DEM.FAR  //
+\glft Where did you hear that tale? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò fhuair taigh ùr? 
+
+\vspace{4mm}
+\gla Cò fhuair taigh ùr  //
+\glb who.INTERR get.V.PAST+ASP house.N.M.SG new.ADJ  //
+\glft Who got a new house? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thàinig e a-staigh anmoch a-raoir. 
+
+\vspace{4mm}
+\gla Thàinig e a-staigh anmoch a-raoir  //
+\glb come.V.PAST[or]come.V.PAST.DEP+ASP he.PRON.M.3S inside.ADV late.ADJ last.night.ADV  //
+\glft He came in late last night. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Rug mi air an làimh air. 
+
+\vspace{4mm}
+\gla Rug mi air an làimh air  //
+\glb Rug.NAME I.PRON.1S on.PREP the.DEF.F.SG.ND hand.N.F.SG.GD on.PREP  //
+\glft I caught/grasped him on the hand. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Am faca sibh an dealbh sin? Chan fhaca. 
+
+\vspace{4mm}
+\gla Am faca sibh an dealbh sin Chan fhaca  //
+\glb the.DEF.M.SG.NOM[or]occasion.N.M.SG see.V.PAST.DEP you.PRON.2P the.DEF.M.SG.NGD picture.N.M.SG that.DEM.FAR not.PRT.NEG see.V.PAST.DEP+ASP  //
+\glft Did you see that film? No. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a ràinig thu an-dè? 
+
+\vspace{4mm}
+\gla Cuin a ràinig thu an-dè  //
+\glb when.INTERR which.PRT.REL reach.V.PAST you.PRON.2S+ASP yesterday.ADV  //
+\glft When did you arrive yesterday? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thug mi an leabhar do mo bhràthair nuair a chunnaic mi e. 
+
+\vspace{4mm}
+\gla Thug mi an leabhar do mo bhràthair nuair a chunnaic mi e  //
+\glb give.V.PAST+ASP I.PRON.1S the.DEF.M.SG.NGD book.N.M.SG to.PREP[or]your.ADJ.POSS my.ADJ.POSS.1S brother.N.M.SG+ASP when.CONJ which.PRT.REL see.V.PAST.INDEP I.PRON.1S he.PRON.M.3S  //
+\glft I gave the book to my brother when I saw him. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chunnaic sinn iolaire anns\_an speur. 
+
+\vspace{4mm}
+\gla Chunnaic sinn iolaire {anns an} speur  //
+\glb see.V.PAST.INDEP we.PRON.1P eagle.N.F.SG in.the.PREP+DEF sky.N.M.SG  //
+\glft We saw an eagle in the sky. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò fhuair litir bhuapa? 
+
+\vspace{4mm}
+\gla Cò fhuair litir bhuapa  //
+\glb who.INTERR get.V.PAST+ASP letter.N.F.SG.ND from.them.PREP+PRON.F.3P  //
+\glft Who got a letter from them? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson nach tuirt iad gun robh iad sgìth? 
+
+\vspace{4mm}
+\gla Carson nach tuirt iad gun robh iad sgìth  //
+\glb Carson.NAME ?not.PRT.INT.NEG say.V.PAST they.PRON.3P that.CONJ be.V.PAST.DEP they.PRON.3P tired.ADJ[or]tired.ADJ.COMP.F.SG.GEN  //
+\glft Why didn't they say they were tired? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chuala sinn fuaim uabhasach. 
+
+\vspace{4mm}
+\gla Chuala sinn fuaim uabhasach  //
+\glb hear.V.PAST+ASP we.PRON.1P noise.N.F.SG terrible.ADJ  //
+\glft We heard a terrible noise. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha mi toilichte mus tàinig e. 
+
+\vspace{4mm}
+\gla Bha mi toilichte mus tàinig e  //
+\glb be.V.PAST I.PRON.1S pleased.PASTPART before.PREP come.V.PAST.DEP he.PRON.M.3S  //
+\glft I was happy before he came. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach tuirt e gun deach i air\_falbh a-raoir? Thuirt. 
+
+\vspace{4mm}
+\gla Nach tuirt e gun deach i {air falbh} a-raoir Thuirt  //
+\glb ?not.PRT.INT.NEG say.V.PAST he.PRON.M.3S that.CONJ go.V.PAST.DEP she.PRON.F.3S away.ADV last.night.ADV say.V.PAST+ASP  //
+\glft Didn't he say that she went away last night? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh iad a' cluich anns a' phàirc. 
+
+\vspace{4mm}
+\gla Bidh iad a' cluich anns a' phàirc  //
+\glb be.V.FUT they.PRON.3P -ing.PRT.CONT play.PRESPART in.PREP the.DEF.F.SG.ND park.N.F.SG+ASP  //
+\glft They will be playing in the park. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh iad a' cluich anns a' phàirc a\_h-uile là 
+
+\vspace{4mm}
+\gla Bidh iad a' cluich anns a' phàirc {a h-uile} là  //
+\glb be.V.FUT they.PRON.3P -ing.PRT.CONT play.PRESPART in.PREP the.DEF.F.SG.ND park.N.F.SG+ASP every.QUAL day.N.M.SG  //
+\glft They play in the park every day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gum buail e mi. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gum buail e mi  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ strike.V.IMPER he.PRON.M.3S I.PRON.1S  //
+\glft He says that he will hit me. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach buail e mi. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach buail e mi  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG strike.V.IMPER he.PRON.M.3S I.PRON.1S  //
+\glft He says that he will not hit me. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gum fàg e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gum fàg e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ leave.V.IMPER he.PRON.M.3S  //
+\glft He says that he will leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach fhàg e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach fhàg e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG leave.V.IMPER+ASP he.PRON.M.3S  //
+\glft He says that he will not leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre ‘S e deoch a ghabhas mi. 
+
+\vspace{4mm}
+\gla ‘S e deoch a ghabhas mi  //
+\glb ‘S.UNK he.PRON.M.3S drink.N.F.SG which.PRT.REL take.V.FUT.REL+ASP I.PRON.1S  //
+\glft It's a drink which I will have. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise nach fhàg thu. 
+
+\vspace{4mm}
+\gla Is mise nach fhàg thu  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S ?not.PRT.INT.NEG leave.V.IMPER+ASP you.PRON.2S+ASP  //
+\glft It's I who will not leave you. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seo an leabhar a leughas tu. 
+
+\vspace{4mm}
+\gla Seo an leabhar a leughas tu  //
+\glb this.DEM.NEAR the.DEF.M.SG.NGD book.N.M.SG which.PRT.REL read.V.FUT.REL you.PRON.2S  //
+\glft Here's the book you will read. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Agus seo an leabhar nach leugh thu. 
+
+\vspace{4mm}
+\gla Agus seo an leabhar nach leugh thu  //
+\glb and.CONJ this.DEM.NEAR the.DEF.M.SG.NGD book.N.M.SG ?not.PRT.INT.NEG read.V.IMPER you.PRON.2S+ASP  //
+\glft And here's the book you will not read. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè sgrìobhas tu anns\_an litir? 
+
+\vspace{4mm}
+\gla Dè sgrìobhas tu {anns an} litir  //
+\glb what.INT write.V.FUT.REL you.PRON.2S in.the.PREP+DEF letter.N.F.SG.ND  //
+\glft What will you write in the letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò thogas dealbh dhìom? 
+
+\vspace{4mm}
+\gla Cò thogas dealbh dhìom  //
+\glb who.INTERR raise.V.FUT.REL+ASP picture.N.M.SG of.me.PREP+PRON.1S  //
+\glft Who will take a photograph of me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a bhuaileas tu am balach? 
+
+\vspace{4mm}
+\gla Carson a bhuaileas tu am balach  //
+\glb Carson.NAME which.PRT.REL strike.V.FUT.REL+ASP you.PRON.2S the.DEF.M.SG.NOM boy.N.M.SG  //
+\glft Why will you hit the boy? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a sheasas i? 
+
+\vspace{4mm}
+\gla Ciamar a sheasas i  //
+\glb how.INT which.PRT.REL stand.V.FUT.REL+ASP she.PRON.F.3S  //
+\glft How will she stand? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a dh'fhàgas tu? 
+
+\vspace{4mm}
+\gla Cuin a dh'fhàgas tu  //
+\glb when.INTERR which.PRT.REL leave.V.FUT.REL+DH you.PRON.2S  //
+\glft When will you leave? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an òl sinn? 
+
+\vspace{4mm}
+\gla Càit an òl sinn  //
+\glb Càit.NAME ?.PRT.INTERR drink.VN we.PRON.1P  //
+\glft Where will we drink? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sgrìobhaidh mi litir mus fàg mi. 
+
+\vspace{4mm}
+\gla Sgrìobhaidh mi litir mus fàg mi  //
+\glb Sgrìobhaidh.NAME I.PRON.1S letter.N.F.SG.ND before.PREP leave.V.IMPER I.PRON.1S  //
+\glft I will write a letter before I leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma dh'fhàgas tu an taigh, bidh mi nam aonar. 
+
+\vspace{4mm}
+\gla Ma dh'fhàgas tu an taigh bidh mi nam aonar  //
+\glb if.CONJ leave.V.FUT.REL+DH you.PRON.2S the.DEF.M.SG.NGD house.N.M.SG be.V.FUT I.PRON.1S if.CONJ[or]of.the.DEF.PL.GEN[or]in.my.PREP+POSS.1S[or]in.their.PREP+POSS.3P single.person.PRON  //
+\glft If you leave the house, I'll be alone. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leughaidh mi an leabhar fhads\_a dh'itheas mi dìnnear. 
+
+\vspace{4mm}
+\gla Leughaidh mi an leabhar {fhads a} dh'itheas mi dìnnear  //
+\glb Leughaidh.NAME I.PRON.1S the.DEF.M.SG.NGD book.N.M.SG while.CONJ eat.V.FUT.REL+DH I.PRON.1S dinner.N.F.SG  //
+\glft I'll read the book while I eat dinner. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mura fàg thu an-dràsta bidh tu fadalach. 
+
+\vspace{4mm}
+\gla Mura fàg thu an-dràsta bidh tu fadalach  //
+\glb unless.CONJ leave.V.IMPER you.PRON.2S+ASP just.now.ADV be.V.FUT you.PRON.2S late.ADJ  //
+\glft Unless you leave now you will be late. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An sgrìobh thu litir thugam? 
+
+\vspace{4mm}
+\gla An sgrìobh thu litir thugam  //
+\glb ?.PRT.INTERR write.V.IMPER you.PRON.2S+ASP letter.N.F.SG.ND to.me.PREP+PRON.1S  //
+\glft Will you write me a letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach òl thu am bainne? 
+
+\vspace{4mm}
+\gla Nach òl thu am bainne  //
+\glb ?not.PRT.INT.NEG drink.VN you.PRON.2S+ASP the.DEF.M.SG.NOM milk.N.M.SG  //
+\glft Will you not drink the milk? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gabhaidh e bracaist a\_h-uile madainn. 
+
+\vspace{4mm}
+\gla Gabhaidh e bracaist {a h-uile} madainn  //
+\glb can.be.V.FUT he.PRON.M.3S breakfast.N.F.SG every.QUAL morning.N.F.SG  //
+\glft He takes breakfast ever morning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sgrìobhaidh sinn litir thuige a\_h-uile là 
+
+\vspace{4mm}
+\gla Sgrìobhaidh sinn litir thuige {a h-uile} là  //
+\glb Sgrìobhaidh.NAME we.PRON.1P letter.N.F.SG.ND to.her.PREP+PRON.F.3S every.QUAL day.N.M.SG  //
+\glft We write him a letter every day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An sgrìobh thu litir dhomhsa? 
+
+\vspace{4mm}
+\gla An sgrìobh thu litir dhomhsa  //
+\glb ?.PRT.INTERR write.V.IMPER you.PRON.2S+ASP letter.N.F.SG.ND to.me.PREP+PRON+EMPH.1S  //
+\glft Can you write a letter for me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Am buail thu an doras a-rithist? 
+
+\vspace{4mm}
+\gla Am buail thu an doras a-rithist  //
+\glb the.DEF.M.SG.NOM[or]occasion.N.M.SG strike.V.IMPER you.PRON.2S+ASP the.DEF.M.SG.NGD door.N.M.SG again.ADV  //
+\glft Can you knock the door again? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An òl thu an t-uisge gu luath? 
+
+\vspace{4mm}
+\gla An òl thu an t-uisge gu luath  //
+\glb ?.PRT.INTERR drink.VN you.PRON.2S+ASP the.DEF.M.SG.NOM water.N.M.SG+T that.CONJ fast.ADJ  //
+\glft Can you drink the water quickly? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Togaidh mi taigh ùr anns a' ghleann. 
+
+\vspace{4mm}
+\gla Togaidh mi taigh ùr anns a' ghleann  //
+\glb Togaidh.NAME I.PRON.1S house.N.M.SG new.ADJ in.PREP the.DEF.M.SG.GD glen.N.M.SG+ASP  //
+\glft I'll build a new house in the glen. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach till e gus madainn a-màireach. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach till e gus madainn a-màireach  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG return.V.IMPER he.PRON.M.3S until.PREP[or]in.order.to.CONJ morning.N.F.SG tomorrow.ADV  //
+\glft He says he won't return until tomorrow morning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha chuir mi seachad bliadhna anns\_an obair sin. 
+
+\vspace{4mm}
+\gla Cha chuir mi seachad bliadhna {anns an} obair sin  //
+\glb not.PRT.NEG put.V.IMPER+ASP[or]twist.N.M.SG.GEN+ASP[or]twist.N.M.PL+ASP I.PRON.1S past.ADV year.N.F.SG in.the.PREP+DEF work.VN[or]job.N.F.SG.ND that.DEM.FAR  //
+\glft I won't spend a year in that job. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò cheannaicheas cù dhomhsa? 
+
+\vspace{4mm}
+\gla Cò cheannaicheas cù dhomhsa  //
+\glb who.INTERR buy.V.FUT.REL+ASP dog.N.M.SG to.me.PREP+PRON+EMPH.1S  //
+\glft Who'll buy a dog for me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mi cinnteach gun caidil thu gu\_math a-nochd. 
+
+\vspace{4mm}
+\gla Tha mi cinnteach gun caidil thu {gu math} a-nochd  //
+\glb be.V.PRES I.PRON.1S certain.ADJ that.CONJ sleep.V.IMPER you.PRON.2S+ASP well.ADV tonight.ADV  //
+\glft I'm sure that you'll sleep well tonight. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e Calum a phòsas mo nighean a-màireach. 
+
+\vspace{4mm}
+\gla 'S e Calum a phòsas mo nighean a-màireach  //
+\glb be.V.COP.PRES he.PRON.M.3S Calum.NAME which.PRT.REL marry.V.FUT.REL+ASP my.ADJ.POSS.1S girl.N.F.SG tomorrow.ADV  //
+\glft It's Calum who marries my daughter tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit am fuirich sinn nuair a tha sinn an Glaschu? 
+
+\vspace{4mm}
+\gla Càit am fuirich sinn nuair a tha sinn an Glaschu  //
+\glb Càit.NAME the.DEF.M.SG.NOM[or]occasion.N.M.SG stay.V.IMPER we.PRON.1P when.CONJ which.PRT.REL be.V.PRES we.PRON.1P the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR Glasgow.NPLACE  //
+\glft Where will we stay when we are in Glasgow? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e duine làidir a ghluaiseas a' chlach seo. 
+
+\vspace{4mm}
+\gla 'S e duine làidir a ghluaiseas a' chlach seo  //
+\glb be.V.COP.PRES he.PRON.M.3S person.N.M.SG strong.ADJ which.PRT.REL move.V.FUT.REL+ASP the.DEF.F.SG.ND stone.N.F.SG+ASP this.DEM.NEAR  //
+\glft It's a strong man who can move this stone. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach cùm thu do theanga! 
+
+\vspace{4mm}
+\gla Nach cùm thu do theanga  //
+\glb ?not.PRT.INT.NEG keep.V.IMPER[or]keep.V.IMPER you.PRON.2S+ASP to.PREP[or]your.ADJ.POSS tongue.N.F.SG.ND+ASP  //
+\glft Won't you hold your tongue! //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leughaidh mi riut an litir a fhuair mi bhuapa. 
+
+\vspace{4mm}
+\gla Leughaidh mi riut an litir a fhuair mi bhuapa  //
+\glb Leughaidh.NAME I.PRON.1S to.you.PREP+PRON.2S the.DEF.F.SG.ND letter.N.F.SG.ND which.PRT.REL get.V.PAST+ASP I.PRON.1S from.them.PREP+PRON.F.3P  //
+\glft I'll read you the letter I got from them. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An cuir sibh an litir seo anns a' phost dhomh? 
+
+\vspace{4mm}
+\gla An cuir sibh an litir seo anns a' phost dhomh  //
+\glb the.DEF.M.SG.GEN put.V.IMPER[or]twist.N.M.SG.GEN[or]twist.N.M.PL you.PRON.2P the.DEF.F.SG.ND letter.N.F.SG.ND this.DEM.NEAR in.PREP the.DEF.M.SG.GD post.N.M.SG+ASP to.me.PREP+PRON.1S  //
+\glft Will you put this letter in the post for me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tòisichidh mi ri obair mu mheadhan-là 
+
+\vspace{4mm}
+\gla Tòisichidh mi ri obair mu mheadhan-là  //
+\glb Tòisichidh.NAME I.PRON.1S to.PREP work.VN[or]job.N.F.SG.ND about.PREP midday.N.M.SG+ASP  //
+\glft I start work about mid-day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach suidh thu sìos agus cùm sàmhach? 
+
+\vspace{4mm}
+\gla Nach suidh thu sìos agus cùm sàmhach  //
+\glb ?not.PRT.INT.NEG sit.V.IMPER you.PRON.2S+ASP down.ADV and.CONJ keep.V.IMPER[or]keep.V.IMPER quiet.ADJ  //
+\glft Will you not sit down and keep quiet? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò ghabhas drama còmhla rium? 'S mise a ghabhas. 
+
+\vspace{4mm}
+\gla Cò ghabhas drama còmhla rium 'S mise a ghabhas  //
+\glb who.INTERR take.V.FUT.REL+ASP dram.of.drink.N.M.SG together.ADV to.me.PREP+PRON.1S be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL take.V.FUT.REL+ASP  //
+\glft Who will take a dram with me? It's I who will. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Am fosgail sibh an uinneag beagan. 
+
+\vspace{4mm}
+\gla Am fosgail sibh an uinneag beagan  //
+\glb the.DEF.M.SG.NOM[or]occasion.N.M.SG open.V.IMPER[or]open.V.IMPER you.PRON.2P the.DEF.F.SG.ND window.N.F.SG little.N.M.SG  //
+\glft Will you please open the window a little. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S mise a sheinneas aig a' chèilidh a-nochd. 
+
+\vspace{4mm}
+\gla 'S mise a sheinneas aig a' chèilidh a-nochd  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL sing.V.FUT.REL+ASP at.PREP the.DEF.F.SG.ND ceilidh.N.F.SG+ASP tonight.ADV  //
+\glft It's me who will sing at the ceilidh tonight. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bruidhnidh mi riutha a-màireach. 
+
+\vspace{4mm}
+\gla Bruidhnidh mi riutha a-màireach  //
+\glb speak.V.FUT I.PRON.1S to.them.PREP+PRON.3P tomorrow.ADV  //
+\glft I will speak to them tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò cheannaicheas còta ùr dhomh? 
+
+\vspace{4mm}
+\gla Cò cheannaicheas còta ùr dhomh  //
+\glb who.INTERR buy.V.FUT.REL+ASP coat.N.M.SG new.ADJ to.me.PREP+PRON.1S  //
+\glft Who will buy me a new coat? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan iarr mi càil eile. 
+
+\vspace{4mm}
+\gla Chan iarr mi càil eile  //
+\glb not.PRT.NEG want.V.IMPER I.PRON.1S anything.N.F.SG[or]cabbage.N.M.SG.GEN other.ADJ  //
+\glft I will not want anything else. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S i mo mhàthair nach leig leam a bhith a' dol dhan tràigh. 
+
+\vspace{4mm}
+\gla 'S i mo mhàthair nach leig leam a bhith a' dol dhan tràigh  //
+\glb be.V.COP.PRES she.PRON.F.3S my.ADJ.POSS.1S mother.N.F.SG+ASP ?not.PRT.INT.NEG let.V.IMPER[or]allow.V.IMPER with.me.PREP+PRON.1S to.PRT.INFIN be.V.INFIN+ASP -ing.PRT.CONT go.PRESPART to.the.PREP+DEF beach.N.F.SG  //
+\glft It's my mother who will not let me to go to the beach. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gun tèid e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gun tèid e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ go.V.FUT.DEP he.PRON.M.3S  //
+\glft He says that he will go. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach tèid e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach tèid e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG go.V.FUT.DEP he.PRON.M.3S  //
+\glft He says that he will not go. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gum faic e thu. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gum faic e thu  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ see.V.IMPER he.PRON.M.3S you.PRON.2S+ASP  //
+\glft He says that he will see you. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach fhaic e thu. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach fhaic e thu  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG see.V.IMPER+ASP he.PRON.M.3S you.PRON.2S+ASP  //
+\glft He says that he will not see you. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise a chì am balach. 
+
+\vspace{4mm}
+\gla Is mise a chì am balach  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S to.PRT.INFIN[or]which.PRT.REL[or]his.ADJ.POSS.M.3S[or]her.ADJ.POSS.F.3S[or]?.PRT.INTERR chì.UNK the.DEF.M.SG.NOM boy.N.M.SG  //
+\glft It's I who will see the boy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise nach fhaic an dealbh. 
+
+\vspace{4mm}
+\gla Is mise nach fhaic an dealbh  //
+\glb and.CONJ I.PRON+EMPH.1S ?not.PRT.INT.NEG see.V.IMPER+ASP the.DEF.M.SG.NGD picture.N.M.SG  //
+\glft It's me who will not see the picture. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ise a thèid dhachaigh. 
+
+\vspace{4mm}
+\gla 'S ise a thèid dhachaigh  //
+\glb be.V.COP.PRES she.PRON+EMPH.F.3S which.PRT.REL go.V.FUT.DEP+ASP homewards.ADV[or]home.N.F.SG+ASP  //
+\glft It's she who will go home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is ise nach tèid dhachaigh. 
+
+\vspace{4mm}
+\gla Is ise nach tèid dhachaigh  //
+\glb and.CONJ she.PRON+EMPH.F.3S ?not.PRT.INT.NEG go.V.FUT.DEP homewards.ADV[or]home.N.F.SG+ASP  //
+\glft It's she who will not go home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè nì thu leis\_a' phàipear is glaodh? 
+
+\vspace{4mm}
+\gla Dè nì thu {leis a'} phàipear is glaodh  //
+\glb what.INT thing.N.M.SG you.PRON.2S+ASP leis.a'.UNK paper.N.M.SG+ASP and.CONJ glue.N.M.SG  //
+\glft What will you make with the paper and glue? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò gheibh pàipear-naidheachd dhomh? 
+
+\vspace{4mm}
+\gla Cò gheibh pàipear-naidheachd dhomh  //
+\glb who.INTERR get.V.FUT newspaper.N.M.SG to.me.PREP+PRON.1S  //
+\glft Who will get me a newspaper? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson nach toir thu peann dhomh? 
+
+\vspace{4mm}
+\gla Carson nach toir thu peann dhomh  //
+\glb Carson.NAME ?not.PRT.INT.NEG give.V.FUT you.PRON.2S+ASP pen.N.M.SG to.me.PREP+PRON.1S  //
+\glft Why will you not give me a pen? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a nì thu sin? 
+
+\vspace{4mm}
+\gla Ciamar a nì thu sin  //
+\glb how.INT her.ADJ.POSS.F.3S thing.N.M.SG you.PRON.2S+ASP that.DEM.FAR  //
+\glft How will you do that? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a chì thu do mhàthair? 
+
+\vspace{4mm}
+\gla Cuin a chì thu do mhàthair  //
+\glb when.INTERR to.PRT.INFIN[or]which.PRT.REL[or]his.ADJ.POSS.M.3S[or]her.ADJ.POSS.F.3S[or]?.PRT.INTERR chì.UNK you.PRON.2S+ASP to.PREP[or]your.ADJ.POSS mother.N.F.SG+ASP  //
+\glft When will you see your mother? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an tèid sinn a-màireach? 
+
+\vspace{4mm}
+\gla Càit an tèid sinn a-màireach  //
+\glb Càit.NAME ?.PRT.INTERR go.V.FUT.DEP we.PRON.1P tomorrow.ADV  //
+\glft Where will we go tomorrow? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Fuirich gus an tig mi dhachaigh. 
+
+\vspace{4mm}
+\gla Fuirich gus an tig mi dhachaigh  //
+\glb stay.V.IMPER until.PREP[or]in.order.to.CONJ ?.PRT.INTERR come.V.FUT I.PRON.1S homewards.ADV[or]home.N.F.SG+ASP  //
+\glft Wait until I come home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sin an t-eilean far am faic sinn an t-eun tearc. 
+
+\vspace{4mm}
+\gla Sin an t-eilean far am faic sinn an t-eun tearc  //
+\glb that.DEM.FAR the.DEF.M.SG.NOM island.N.M.SG+T off.ADV[or]where.REL the.DEF.M.SG.NOM[or]occasion.N.M.SG see.V.IMPER we.PRON.1P the.DEF.M.SG.NOM bird.N.M.SG+T rare.ADJ  //
+\glft That's the island where we will see the rare bird. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nuair a gheibh mi an t-airgead, gheibh mi càr ùr. 
+
+\vspace{4mm}
+\gla Nuair a gheibh mi an t-airgead gheibh mi càr ùr  //
+\glb when.CONJ which.PRT.REL get.V.FUT I.PRON.1S the.DEF.M.SG.NOM money.N.M.SG+T get.V.FUT I.PRON.1S car.N.M.SG new.ADJ  //
+\glft When I get the money, I will get a new car. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mura tig thu a-màireach chan fhaigh thu tiodhlac. 
+
+\vspace{4mm}
+\gla Mura tig thu a-màireach chan fhaigh thu tiodhlac  //
+\glb unless.CONJ come.V.FUT you.PRON.2S+ASP tomorrow.ADV not.PRT.NEG get.V.IMPER+ASP[or]get.V.IMPER+ASP you.PRON.2S+ASP gift.N.M.SG  //
+\glft If you do not come tomorrow you wont get a present. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chì mi tràth anns a' mhadainn thu. 
+
+\vspace{4mm}
+\gla Chì mi tràth anns a' mhadainn thu  //
+\glb Chì.NAME I.PRON.1S early.ADJ in.PREP the.DEF.F.SG.ND morning.N.F.SG+ASP you.PRON.2S+ASP  //
+\glft I'll see you early in the morning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha toir e airgead dhomh a\_h-uile seachdain. 
+
+\vspace{4mm}
+\gla Cha toir e airgead dhomh {a h-uile} seachdain  //
+\glb not.PRT.NEG give.V.FUT he.PRON.M.3S money.N.M.SG to.me.PREP+PRON.1S every.QUAL week.N.F.SG  //
+\glft He doesn't give me money every week. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Am faigh thu pàipear-naidheachd air an t-slighe dhachaigh? 
+
+\vspace{4mm}
+\gla Am faigh thu pàipear-naidheachd air an t-slighe dhachaigh  //
+\glb the.DEF.M.SG.NOM[or]occasion.N.M.SG get.V.IMPER[or]get.V.IMPER you.PRON.2S+ASP newspaper.N.M.SG on.PREP the.DEF.F.SG.ND way.N.F.SG+T homewards.ADV[or]home.N.F.SG+ASP  //
+\glft Will you get a newspaper on the way home? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An tig thu còmhla rium dhan bhùth? Cha tig. 
+
+\vspace{4mm}
+\gla An tig thu còmhla rium dhan bhùth Cha tig  //
+\glb ?.PRT.INTERR come.V.FUT you.PRON.2S+ASP together.ADV to.me.PREP+PRON.1S to.the.PREP+DEF shop.N.F.SG+ASP not.PRT.NEG come.V.FUT  //
+\glft Will you come with me to the shop? No. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An dèan sibh dìnnear dhuinn nuair a thig sinn a-staigh? 
+
+\vspace{4mm}
+\gla An dèan sibh dìnnear dhuinn nuair a thig sinn a-staigh  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR do.V.IMPER you.PRON.2P dinner.N.F.SG to.us.PREP+PRON.1P when.CONJ which.PRT.REL come.V.PAST[or]come.V.FUT+ASP we.PRON.1P inside.ADV  //
+\glft Will you make dinner for us when we come in? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach tèid i a-steach dhan uisge? Cha tèid. 
+
+\vspace{4mm}
+\gla Nach tèid i a-steach dhan uisge Cha tèid  //
+\glb ?not.PRT.INT.NEG go.V.FUT.DEP she.PRON.F.3S into.ADV to.the.PREP+DEF water.N.M.SG not.PRT.NEG go.V.FUT.DEP  //
+\glft Won't she go into the water? No. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach gabh sibh biadh mus tèid sibh air\_falbh. 
+
+\vspace{4mm}
+\gla Nach gabh sibh biadh mus tèid sibh {air falbh}  //
+\glb ?not.PRT.INT.NEG take.V.IMPER you.PRON.2P food.N.M.SG[or]feed.V.IMPER before.PREP go.V.FUT.DEP you.PRON.2P away.ADV  //
+\glft Won't you take some food before you go away. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mi an dòchas gun ruig sinn Inbhir Nis a\_dh'aithghearr. 
+
+\vspace{4mm}
+\gla Tha mi an dòchas gun ruig sinn Inbhir Nis {a dh'aithghearr}  //
+\glb be.V.PRES I.PRON.1S the.DEF.M.SG.NGD hope.N.M.SG that.CONJ reach.V.IMPER we.PRON.1P Inbhir.NAME Nis.NAME shortly.ADV  //
+\glft I hope that we reach Inverness soon. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Am faic thu i mus faic mise? 
+
+\vspace{4mm}
+\gla Am faic thu i mus faic mise  //
+\glb the.DEF.M.SG.NOM[or]occasion.N.M.SG see.V.IMPER you.PRON.2S+ASP she.PRON.F.3S before.PREP see.V.IMPER I.PRON+EMPH.1S  //
+\glft Will you see her before I do? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Beiridh mi air a' chàr aca. 
+
+\vspace{4mm}
+\gla Beiridh mi air a' chàr aca  //
+\glb Beiridh.NAME I.PRON.1S on.PREP the.DEF.M.SG.GD car.N.M.SG+ASP at.them.PREP+PRON.3P  //
+\glft I'll catch up on their car. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An abair sibh rithe na chunnaic sibh? Their. 
+
+\vspace{4mm}
+\gla An abair sibh rithe na chunnaic sibh Their  //
+\glb ?.PRT.INTERR say.V.IMPER you.PRON.2P to.her.PREP+PRON.F.3S all.that.PRT.REL see.V.PAST.INDEP you.PRON.2P Their.NAME  //
+\glft Will you tell her what you saw? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a ruigeas am bus seo Glaschu? 
+
+\vspace{4mm}
+\gla Cuin a ruigeas am bus seo Glaschu  //
+\glb when.INTERR which.PRT.REL reach.V.FUT.REL the.DEF.M.SG.NOM bus.N.M.SG this.DEM.NEAR Glasgow.NPLACE  //
+\glft When does this bus reach Glasgow? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan fhaic sibh càil anns\_an dùthaich sin ach bochdainn. 
+
+\vspace{4mm}
+\gla Chan fhaic sibh càil {anns an} dùthaich sin ach bochdainn  //
+\glb not.PRT.NEG see.V.IMPER+ASP you.PRON.2P anything.N.F.SG[or]cabbage.N.M.SG.GEN in.the.PREP+DEF country.N.F.SG that.DEM.FAR bu.CONJ poverty.N.F.SG  //
+\glft You can't see anything in that country but poverty. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò bheir cobhair dhaibh? 
+
+\vspace{4mm}
+\gla Cò bheir cobhair dhaibh  //
+\glb who.INTERR bear.V.IMPER+ASP help.N.F.SG[or]help.N.F.SG.DAT to.them.PREP+PRON.3P  //
+\glft Who'll give them some help? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chì mi iad uile ann aig a' chèilidh a-nochd. 
+
+\vspace{4mm}
+\gla Chì mi iad uile ann aig a' chèilidh a-nochd  //
+\glb Chì.NAME I.PRON.1S they.PRON.3P all.QUAL in.it.PREP+PRON.M.3S at.PREP the.DEF.F.SG.ND ceilidh.N.F.SG+ASP tonight.ADV  //
+\glft I will see them all there at the ceilidh tonight. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An toir sibh am peann seo do do phiuthar nuair a chì thu i? 
+
+\vspace{4mm}
+\gla An toir sibh am peann seo do do phiuthar nuair a chì thu i  //
+\glb ?.PRT.INTERR give.V.FUT you.PRON.2P the.DEF.M.SG.NOM pen.N.M.SG this.DEM.NEAR to.PREP[or]your.ADJ.POSS to.PREP[or]your.ADJ.POSS sister.N.F.SG+ASP when.CONJ to.PRT.INFIN[or]which.PRT.REL[or]his.ADJ.POSS.M.3S[or]her.ADJ.POSS.F.3S[or]?.PRT.INTERR chì.UNK you.PRON.2S+ASP she.PRON.F.3S  //
+\glft Will you give this pen to your sister when you see her? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan eil fios agam cuin a ruigeas mi Portrìgh. 
+
+\vspace{4mm}
+\gla Chan eil fios agam cuin a ruigeas mi Portrìgh  //
+\glb not.PRT.NEG be.V.PRES.DEP.NEG knowledge.N.M.SG at.me.PREP+PRON.1S when.INTERR which.PRT.REL reach.V.FUT.REL I.PRON.1S Portrìgh.NAME  //
+\glft I don't know when I will reach Portree. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A bheil thu a' smaointinn gum beir i mac? 
+
+\vspace{4mm}
+\gla A bheil thu a' smaointinn gum beir i mac  //
+\glb which.PRT.REL be.V.PRES.DEP.INT you.PRON.2S+ASP -ing.PRT.CONT think.PRESPART that.CONJ bear.V.IMPER she.PRON.F.3S son.N.M.SG  //
+\glft Do you think that she will have a baby boy? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha chluinn mi thu a' bruidhinn mar\_sin. 
+
+\vspace{4mm}
+\gla Cha chluinn mi thu a' bruidhinn {mar sin}  //
+\glb not.PRT.NEG hear.V.IMPER+ASP I.PRON.1S you.PRON.2S+ASP -ing.PRT.CONT speak.PRESPART like.that..ADV.:LIKE.THAT  //
+\glft I will not hear you talk like that. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha fios aca nach fhaic iad an athair-san a-rithist. 
+
+\vspace{4mm}
+\gla Tha fios aca nach fhaic iad an athair-san a-rithist  //
+\glb be.V.PRES knowledge.N.M.SG at.them.PREP+PRON.3P ?not.PRT.INT.NEG see.V.IMPER+ASP they.PRON.3P the.DEF.M.SG.NGD father.N.M.SG+EMPH again.ADV  //
+\glft They know they will never see their father again. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan abair e facal ri duine sam\_bith. 
+
+\vspace{4mm}
+\gla Chan abair e facal ri duine {sam bith}  //
+\glb not.PRT.NEG say.V.IMPER he.PRON.M.3S word.N.M.SG to.PREP person.N.M.SG any.ADV[or]any.QUAL  //
+\glft He will not say a word to anyone. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mi cinnteach gun tig duine gar cuideachadh. 
+
+\vspace{4mm}
+\gla Tha mi cinnteach gun tig duine gar cuideachadh  //
+\glb be.V.PRES I.PRON.1S certain.ADJ that.CONJ come.V.FUT person.N.M.SG at.our.PREP+POSS.1P help.VN  //
+\glft I am sure someone will come to help us. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cluinnidh sibh ceòl iongantach aig a' chuirm-chiùil. 
+
+\vspace{4mm}
+\gla Cluinnidh sibh ceòl iongantach aig a' chuirm-chiùil  //
+\glb Cluinnidh.NAME you.PRON.2P music.N.M.SG wonderful.ADJ[or]surprising.ADJ at.PREP the.DEF.F.SG.ND concert.N.F.SG+ASP  //
+\glft You'll hear some wonderful music at the concert. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè nì mi nuair a thèid i air\_falbh? 
+
+\vspace{4mm}
+\gla Dè nì mi nuair a thèid i {air falbh}  //
+\glb what.INT thing.N.M.SG I.PRON.1S when.CONJ which.PRT.REL go.V.FUT.DEP+ASP she.PRON.F.3S away.ADV  //
+\glft What do I do when she goes away? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ged a bhios e a' fuireach ann\_an Portrìgh a-nochd, bidh e ann\_an Glaschu a-màireach. 
+
+\vspace{4mm}
+\gla Ged a bhios e a' fuireach {ann an} Portrìgh a-nochd bidh e {ann an} Glaschu a-màireach  //
+\glb although.CONJ which.PRT.REL be.V.FUT.REL+ASP he.PRON.M.3S -ing.PRT.CONT stay.PRESPART in.a.PREP+INDEF Portrìgh.NAME tonight.ADV be.V.FUT he.PRON.M.3S in.a.PREP+INDEF Glasgow.NPLACE tomorrow.ADV  //
+\glft Although he'll be staying in Portree tonight, he'll be in Glasgow tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nuair a dh'fhàgas mi an eaglais, bidh mi a' dol dìreach dhachaigh. 
+
+\vspace{4mm}
+\gla Nuair a dh'fhàgas mi an eaglais bidh mi a' dol dìreach dhachaigh  //
+\glb when.CONJ which.PRT.REL leave.V.FUT.REL+DH I.PRON.1S the.DEF.F.SG.ND church.N.F.SG be.V.FUT I.PRON.1S -ing.PRT.CONT go.PRESPART straight.ADJ homewards.ADV[or]home.N.F.SG+ASP  //
+\glft When I leave the church, I'll be going straight home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mar a thèid thu seachad\_air a' bhùth, chi thu a' phàirc. 
+
+\vspace{4mm}
+\gla Mar a thèid thu {seachad air} a' bhùth chi thu a' phàirc  //
+\glb as.CONJ which.PRT.REL go.V.FUT.DEP+ASP you.PRON.2S+ASP past.PREP the.DEF.F.SG.ND shop.N.F.SG+ASP see.V.FUT you.PRON.2S+ASP the.DEF.F.SG.ND park.N.F.SG+ASP  //
+\glft As you pass the shop, you can see the park. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma chuireas tu dhìot do chòta cha bhi thu cho blàth. 
+
+\vspace{4mm}
+\gla Ma chuireas tu dhìot do chòta cha bhi thu cho blàth  //
+\glb if.CONJ put.V.FUT.REL+ASP you.PRON.2S of.you.PREP+PRON.2S to.PREP[or]your.ADJ.POSS coat.N.M.SG.DAT+ASP not.PRT.NEG be.V.IMPER+ASP[or]be.V.FUT.INT+ASP you.PRON.2S+ASP so.ADV warm.ADJ  //
+\glft If you take off your coat you'll not be so warm. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre On a ruigeas sinn am baile ro mheadhan-là bidh mi a' dol dhan taigh-òsta airson dìnnear. 
+
+\vspace{4mm}
+\gla On a ruigeas sinn am baile ro mheadhan-là bidh mi a' dol dhan taigh-òsta airson dìnnear  //
+\glb from.the.PREP+DEF which.PRT.REL reach.V.FUT.REL we.PRON.1P the.DEF.M.SG.NOM town.N.M.SG too.QUAL midday.N.M.SG+ASP be.V.FUT I.PRON.1S -ing.PRT.CONT go.PRESPART to.the.PREP+DEF hotel.N.M.SG for.PREP dinner.N.F.SG  //
+\glft Since we'll arrive in town before midday I'll be going to the hotel for dinner. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh a' chaileag a choinnicheas tu na seasamh le ròs na làimh. 
+
+\vspace{4mm}
+\gla Bidh a' chaileag a choinnicheas tu na seasamh le ròs na làimh  //
+\glb be.V.FUT the.DEF.F.SG.ND girl.N.F.SG+ASP which.PRT.REL meet.V.FUT.REL+ASP you.PRON.2S in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S stand.VN with.PREP rose.N.M.SG of.the.DEF.F.SG.GEN hand.N.F.SG.GEN  //
+\glft The girl who will meet you will be standing with a rose in her hand. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma bhitheas an oidhche fuar fuirich a-staigh. 
+
+\vspace{4mm}
+\gla Ma bhitheas an oidhche fuar fuirich a-staigh  //
+\glb if.CONJ be.V.COND.REL.EMPH+ASP the.DEF.F.SG.ND night.N.F.SG cold.ADJ stay.V.IMPER inside.ADV  //
+\glft If the night will be cold stay inside. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh mi ag obair anns\_an taigh-òsta sin nuair a dh'fhàgas mi an sgoil. 
+
+\vspace{4mm}
+\gla Bidh mi ag obair {anns an} taigh-òsta sin nuair a dh'fhàgas mi an sgoil  //
+\glb be.V.FUT I.PRON.1S -ing.PRT.CONT work.PRESPART in.the.PREP+DEF hotel.N.M.SG that.DEM.FAR when.CONJ which.PRT.REL leave.V.FUT.REL+DH I.PRON.1S the.DEF.F.SG.ND school.N.F.SG  //
+\glft I will be working in that hotel when I leave school. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bheir mi mìlseag dhut ma bheir thu pòg dhomh. 
+
+\vspace{4mm}
+\gla Bheir mi mìlseag dhut ma bheir thu pòg dhomh  //
+\glb bear.V.IMPER+ASP I.PRON.1S sweet.N.F.SG to.you.PREP+PRON.2S if.CONJ bear.V.IMPER+ASP you.PRON.2S+ASP kiss.N.F.SG to.me.PREP+PRON.1S  //
+\glft I'll give you a sweet if you will give me a kiss. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ach am bith thu toilichte leis na tha agad? 
+
+\vspace{4mm}
+\gla Ach am bith thu toilichte leis na tha agad  //
+\glb bu.CONJ the.DEF.M.SG.NOM[or]occasion.N.M.SG be.VN you.PRON.2S+ASP pleased.PASTPART with.PREP all.that.PRT.REL be.V.PRES at.you.PREP+PRON.2S  //
+\glft But will you be happy with all that you'll have? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhiodh e a' cluich anns a' phàirc. 
+
+\vspace{4mm}
+\gla Bhiodh e a' cluich anns a' phàirc  //
+\glb be.V.COND+ASP he.PRON.M.3S -ing.PRT.CONT play.PRESPART in.PREP the.DEF.F.SG.ND park.N.F.SG+ASP  //
+\glft He would be playing in the park. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhiodh e a' cluich anns a' phàirc a\_h-uile là 
+
+\vspace{4mm}
+\gla Bhiodh e a' cluich anns a' phàirc {a h-uile} là  //
+\glb be.V.COND+ASP he.PRON.M.3S -ing.PRT.CONT play.PRESPART in.PREP the.DEF.F.SG.ND park.N.F.SG+ASP every.QUAL day.N.M.SG  //
+\glft He played in the park every day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gum buaileadh e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gum buaileadh e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ strike.V.23S.COND he.PRON.M.3S  //
+\glft He says that he would strike. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach buaileadh e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach buaileadh e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG strike.V.23S.COND he.PRON.M.3S  //
+\glft He says that he would not strike. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh gum fàgadh e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh gum fàgadh e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART that.CONJ leave.V.23S.COND he.PRON.M.3S  //
+\glft He says that he would leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e ag ràdh nach fhàgadh e. 
+
+\vspace{4mm}
+\gla Tha e ag ràdh nach fhàgadh e  //
+\glb be.V.PRES he.PRON.M.3S -ing.PRT.CONT say.PRESPART ?not.PRT.INT.NEG leave.V.23S.COND+ASP he.PRON.M.3S  //
+\glft He says that he would not leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise a bhuaileadh e. 
+
+\vspace{4mm}
+\gla Is mise a bhuaileadh e  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL strike.V.23S.COND+ASP he.PRON.M.3S  //
+\glft It is I who would hit him. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is esan a bhuaileadh mi. 
+
+\vspace{4mm}
+\gla Is esan a bhuaileadh mi  //
+\glb be.V.COP.PRES he.PRON+EMPH.M.3S which.PRT.REL strike.V.23S.COND+ASP I.PRON.1S  //
+\glft It is he who would hit me. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise nach fhàgadh thu. 
+
+\vspace{4mm}
+\gla Is mise nach fhàgadh thu  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S ?not.PRT.INT.NEG leave.V.23S.COND+ASP you.PRON.2S+ASP  //
+\glft It is I who would not leave you. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise nach fhàgadh tu. 
+
+\vspace{4mm}
+\gla Is mise nach fhàgadh tu  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S ?not.PRT.INT.NEG leave.V.23S.COND+ASP you.PRON.2S  //
+\glft It is I who you would not leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seo leabhar a leughainn. 
+
+\vspace{4mm}
+\gla Seo leabhar a leughainn  //
+\glb this.DEM.NEAR book.N.M.SG which.PRT.REL read.V.1S.COND  //
+\glft Here's a book I would read. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Agus seo leabhar nach leughainn. 
+
+\vspace{4mm}
+\gla Agus seo leabhar nach leughainn  //
+\glb and.CONJ this.DEM.NEAR book.N.M.SG ?not.PRT.INT.NEG read.V.1S.COND  //
+\glft And here's a book I would not read. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè thogadh tu air an talamh? 
+
+\vspace{4mm}
+\gla Dè thogadh tu air an talamh  //
+\glb what.INT raise.V.23S.COND+ASP you.PRON.2S on.PREP the.DEF.M.SG.NGD land.N.M.SG  //
+\glft What would you build on the land? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò sgrìobhadh litir thugam? 
+
+\vspace{4mm}
+\gla Cò sgrìobhadh litir thugam  //
+\glb who.INTERR write.VN letter.N.F.SG.ND to.me.PREP+PRON.1S  //
+\glft Who would write me letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a bhuaileadh tu am balach? 
+
+\vspace{4mm}
+\gla Carson a bhuaileadh tu am balach  //
+\glb Carson.NAME which.PRT.REL strike.V.23S.COND+ASP you.PRON.2S the.DEF.M.SG.NOM boy.N.M.SG  //
+\glft Why would you hit the boy? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a sheasadh i? 
+
+\vspace{4mm}
+\gla Ciamar a sheasadh i  //
+\glb how.INT which.PRT.REL stand.V.23S.COND+ASP she.PRON.F.3S  //
+\glft How would she stand? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a dh'fhàgadh tu? 
+
+\vspace{4mm}
+\gla Cuin a dh'fhàgadh tu  //
+\glb when.INTERR which.PRT.REL leave.V.23S.COND+DH you.PRON.2S  //
+\glft When would you leave? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an òladh iad? 
+
+\vspace{4mm}
+\gla Càit an òladh iad  //
+\glb Càit.NAME ?.PRT.INTERR drink.V.23S.COND they.PRON.3P  //
+\glft Where would they drink? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhithinn toilichte nam fàgadh tu. 
+
+\vspace{4mm}
+\gla Bhithinn toilichte nam fàgadh tu  //
+\glb be.V.1S.COND+ASP pleased.PASTPART if.CONJ[or]of.the.DEF.PL.GEN[or]in.my.PREP+POSS.1S[or]in.their.PREP+POSS.3P leave.V.23S.COND you.PRON.2S  //
+\glft I would be happy if you would leave. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhiodh i as\_aonais mus òladh i an t-uisge salach. 
+
+\vspace{4mm}
+\gla Bhiodh i {as aonais} mus òladh i an t-uisge salach  //
+\glb be.V.COND+ASP she.PRON.F.3S without.PREP before.PREP drink.V.23S.COND she.PRON.F.3S the.DEF.M.SG.NOM water.N.M.SG+T dirty.ADJ  //
+\glft She would be without before she would drink the dirty water. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhiodh tu duilich nan togadh tu taigh an\_sin. 
+
+\vspace{4mm}
+\gla Bhiodh tu duilich nan togadh tu taigh {an sin}  //
+\glb be.V.COND+ASP you.PRON.2S difficult.ADJ if.CONJ raise.V.23S.COND you.PRON.2S house.N.M.SG there.ADV  //
+\glft You would sorry if you built a house there. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nan robh an t-airgead agam, thogainn taigh ùr. 
+
+\vspace{4mm}
+\gla Nan robh an t-airgead agam thogainn taigh ùr  //
+\glb if.CONJ be.V.PAST.DEP the.DEF.M.SG.NOM money.N.M.SG+T at.me.PREP+PRON.1S raise.V.1S.COND+ASP house.N.M.SG new.ADJ  //
+\glft If I had the money, I would build a new house. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An sgrìobhadh tu litir thugam? 
+
+\vspace{4mm}
+\gla An sgrìobhadh tu litir thugam  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR write.VN you.PRON.2S letter.N.F.SG.ND to.me.PREP+PRON.1S  //
+\glft Would you write me a letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Nach òladh tu am bainne? 
+
+\vspace{4mm}
+\gla Nach òladh tu am bainne  //
+\glb ?not.PRT.INT.NEG drink.V.23S.COND you.PRON.2S the.DEF.M.SG.NOM milk.N.M.SG  //
+\glft Would you not drink the milk? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ghabhadh e bracaist a\_h-uile madainn. 
+
+\vspace{4mm}
+\gla Ghabhadh e bracaist {a h-uile} madainn  //
+\glb take.V.23S.COND+ASP he.PRON.M.3S breakfast.N.F.SG every.QUAL morning.N.F.SG  //
+\glft He took breakfast ever morning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Sgrìobhamaid litir thuige a\_h-uile là 
+
+\vspace{4mm}
+\gla Sgrìobhamaid litir thuige {a h-uile} là  //
+\glb Sgrìobhamaid.NAME letter.N.F.SG.ND to.her.PREP+PRON.F.3S every.QUAL day.N.M.SG  //
+\glft We wrote him a letter every day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha fios agamsa far an seasainn. 
+
+\vspace{4mm}
+\gla Tha fios agamsa far an seasainn  //
+\glb be.V.PRES knowledge.N.M.SG at.me.PREP+PRON+EMPH.1S off.ADV[or]where.REL ?.PRT.INTERR stand.V.1S.COND  //
+\glft I know where I would stand. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An sgrìobhadh tu d' ainm dhomhsa? 
+
+\vspace{4mm}
+\gla An sgrìobhadh tu d' ainm dhomhsa  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD[or]?.PRT.INTERR[or]be.V.COP.PRES.INTERR write.VN you.PRON.2S your.ADJ.POSS.2S name.N.M.SG to.me.PREP+PRON+EMPH.1S  //
+\glft Could you write your name for me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'fhàgadh e an taigh sin a-màireach. 
+
+\vspace{4mm}
+\gla Dh'fhàgadh e an taigh sin a-màireach  //
+\glb leave.V.23S.COND+DH he.PRON.M.3S the.DEF.M.SG.NGD house.N.M.SG that.DEM.FAR tomorrow.ADV  //
+\glft He would leave the house tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt mi nach bruidhninn riutha a-rithist. 
+
+\vspace{4mm}
+\gla Thuirt mi nach bruidhninn riutha a-rithist  //
+\glb say.V.PAST+ASP I.PRON.1S ?not.PRT.INT.NEG speak.V.1S.COND to.them.PREP+PRON.3P again.ADV  //
+\glft I said that I wouldn't speak to them again. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha fios aice nach ruitheadh e air\_falbh. 
+
+\vspace{4mm}
+\gla Bha fios aice nach ruitheadh e {air falbh}  //
+\glb be.V.PAST knowledge.N.M.SG at.her.PREP+PRON.F.3S ?not.PRT.INT.NEG run.V.23S.COND he.PRON.M.3S away.ADV  //
+\glft She knew that he wouldn't run away. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè a sgrìobhadh sibh anns\_an litir? 
+
+\vspace{4mm}
+\gla Dè a sgrìobhadh sibh {anns an} litir  //
+\glb what.INT to.PRT.INFIN write.V.INFIN you.PRON.2P in.the.PREP+DEF letter.N.F.SG.ND  //
+\glft What would you write in the letter? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha choisichinn dhachaigh anns\_an dorchadas. 
+
+\vspace{4mm}
+\gla Cha choisichinn dhachaigh {anns an} dorchadas  //
+\glb not.PRT.NEG walk.V.1S.COND+ASP homewards.ADV[or]home.N.F.SG+ASP in.the.PREP+DEF darkness.N.M.SG  //
+\glft I wouldn't walk home in the dark. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Shaoil i gun tilleadh iad ro mheadhan-là 
+
+\vspace{4mm}
+\gla Shaoil i gun tilleadh iad ro mheadhan-là  //
+\glb think.V.IMPER+ASP she.PRON.F.3S without.PREP[or]that.CONJ[or]to.the.PREP+DEF return.VN they.PRON.3P too.QUAL midday.N.M.SG+ASP  //
+\glft She thought that they would return before midday. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An ceannaicheadh tu an taigh sin? Cheannaicheadh. 
+
+\vspace{4mm}
+\gla An ceannaicheadh tu an taigh sin Cheannaicheadh  //
+\glb ?.PRT.INTERR buy.V.23S.COND you.PRON.2S the.DEF.M.SG.NGD house.N.M.SG that.DEM.FAR buy.V.23S.COND+ASP  //
+\glft Would you buy that house? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha do shaoil thu gun glacadh tu iasg anns\_an loch sin? 
+
+\vspace{4mm}
+\gla Cha do shaoil thu gun glacadh tu iasg {anns an} loch sin  //
+\glb not.PRT.NEG to.PREP[or]your.ADJ.POSS think.V.IMPER+ASP you.PRON.2S+ASP without.PREP[or]that.CONJ[or]to.the.PREP+DEF catch.VN you.PRON.2S fish.N.M.SG in.the.PREP+DEF lake.N.M.SG that.DEM.FAR  //
+\glft You didn't think that you would catch any fish in that loch? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan fhuirichinn ann\_an Glaschu idir. 
+
+\vspace{4mm}
+\gla Chan fhuirichinn {ann an} Glaschu idir  //
+\glb not.PRT.NEG stay.V.1S.COND+ASP in.a.PREP+INDEF Glasgow.NPLACE at.all.ADV  //
+\glft I wouldn't stay in Glasgow at all. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt e gun reiceadh e an càr aige a-màireach. 
+
+\vspace{4mm}
+\gla Thuirt e gun reiceadh e an càr aige a-màireach  //
+\glb say.V.PAST+ASP he.PRON.M.3S that.CONJ sell.V.23S.COND he.PRON.M.3S the.DEF.M.SG.NGD car.N.M.SG at.him.PREP+PRON.M.3S tomorrow.ADV  //
+\glft He said he would sell his car tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An atharraicheadh sibh càil anns\_an rùm? Chan atharraicheadh. 
+
+\vspace{4mm}
+\gla An atharraicheadh sibh càil {anns an} rùm Chan atharraicheadh  //
+\glb ?.PRT.INTERR change.V.COND you.PRON.2P anything.N.F.SG[or]cabbage.N.M.SG.GEN in.the.PREP+DEF room.N.M.SG not.PRT.NEG change.V.COND  //
+\glft Would you change anything in the room? No. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan òladh i càil ach uisge glan. 
+
+\vspace{4mm}
+\gla Chan òladh i càil ach uisge glan  //
+\glb not.PRT.NEG drink.V.23S.COND she.PRON.F.3S anything.N.F.SG bu.CONJ water.N.M.SG clean.ADJ  //
+\glft She wouldn't drink anything but fresh water. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha diùltainn gun robh e a' coimhead ciontach. 
+
+\vspace{4mm}
+\gla Cha diùltainn gun robh e a' coimhead ciontach  //
+\glb not.PRT.NEG deny.V.1S.COND that.CONJ be.V.PAST.DEP he.PRON.M.3S -ing.PRT.CONT look.PRESPART guilty.ADJ  //
+\glft I wouldn't deny that he was looking guilty. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt i gun sgrìobhadh i litir gun phàipear naidheachd. 
+
+\vspace{4mm}
+\gla Thuirt i gun sgrìobhadh i litir gun phàipear naidheachd  //
+\glb say.V.PAST+ASP she.PRON.F.3S without.PREP[or]that.CONJ[or]to.the.PREP+DEF write.VN she.PRON.F.3S letter.N.F.SG.ND to.the.PREP+DEF paper.N.M.SG+ASP news.N.F.SG  //
+\glft She said she would write a letter to the newspaper. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha dòchas aca gun obraicheadh a\_h-uile rud gu ceart. 
+
+\vspace{4mm}
+\gla Bha dòchas aca gun obraicheadh {a h-uile} rud gu ceart  //
+\glb be.V.PAST hope.N.M.SG at.them.PREP+PRON.3P that.CONJ work.V.23S.COND every.QUAL thing.N.M.SG that.CONJ correct.ADJ  //
+\glft They hoped that everything would work correctly. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan chanainn gun robh i bòidheach. 
+
+\vspace{4mm}
+\gla Chan chanainn gun robh i bòidheach  //
+\glb not.PRT.NEG say.V.1S.COND+ASP that.CONJ be.V.PAST.DEP she.PRON.F.3S beautiful.ADJ  //
+\glft I wouldn't say she was pretty. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan òlainn a-riamh a-mach à botal. 
+
+\vspace{4mm}
+\gla Chan òlainn a-riamh a-mach à botal  //
+\glb not.PRT.NEG drink.V.1S.COND ever.ADV out.ADV from.PREP bottle.N.M.SG  //
+\glft I would never drink out of a bottle. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'innis e dhomh gun loisgeadh e na pàipearan. 
+
+\vspace{4mm}
+\gla Dh'innis e dhomh gun loisgeadh e na pàipearan  //
+\glb tell.V.IMPER+DH he.PRON.M.3S to.me.PREP+PRON.1S that.CONJ burn.V.23S.COND he.PRON.M.3S the.DEF.PL.ND paper.N.M.PL  //
+\glft He told me he would burn the papers. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha ghabhadh i airgead bho choigreach. 
+
+\vspace{4mm}
+\gla Cha ghabhadh i airgead bho choigreach  //
+\glb not.PRT.NEG take.V.23S.COND+ASP she.PRON.F.3S money.N.M.SG from.PREP stranger.N.M.SG+ASP  //
+\glft She wouldn't accept money from a stranger. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit an togadh sibh ur taigh ùr? 
+
+\vspace{4mm}
+\gla Càit an togadh sibh ur taigh ùr  //
+\glb Càit.NAME ?.PRT.INTERR raise.V.23S.COND you.PRON.2P your.ADJ.POSS.2P house.N.M.SG new.ADJ  //
+\glft Where would you build your new house? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt i gum faigheadh i briosgaid. 
+
+\vspace{4mm}
+\gla Thuirt i gum faigheadh i briosgaid  //
+\glb say.V.PAST+ASP she.PRON.F.3S that.CONJ get.V.23S.COND she.PRON.F.3S biscuit.N.F.SG  //
+\glft She said that she would get a biscuit. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt i nach fhaigheadh e briosgaid. 
+
+\vspace{4mm}
+\gla Thuirt i nach fhaigheadh e briosgaid  //
+\glb say.V.PAST+ASP she.PRON.F.3S ?not.PRT.INT.NEG get.V.23S.COND+ASP he.PRON.M.3S biscuit.N.F.SG  //
+\glft She said that he would not get a biscuit. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Shaoil esan gun tigeadh e a-màireach. 
+
+\vspace{4mm}
+\gla Shaoil esan gun tigeadh e a-màireach  //
+\glb think.V.IMPER+ASP he.PRON+EMPH.M.3S that.CONJ come.V.23S.COND.INDEP he.PRON.M.3S tomorrow.ADV  //
+\glft He thought that he would come tomorrow. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chreid mi nach tigeadh e. 
+
+\vspace{4mm}
+\gla Chreid mi nach tigeadh e  //
+\glb believe.V.IMPER+ASP I.PRON.1S ?not.PRT.INT.NEG come.V.23S.COND.INDEP he.PRON.M.3S  //
+\glft I believed that he would not come. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise a chìtheadh an solas agus is tusa nach fhaiceadh. 
+
+\vspace{4mm}
+\gla Is mise a chìtheadh an solas agus is tusa nach fhaiceadh  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL see.V.23S.COND.INDEP the.DEF.M.SG.NGD light.N.M.SG and.CONJ be.V.COP.PRES you.PRON+EMPH.2S ?not.PRT.INT.NEG see.V.23S.COND+ASP  //
+\glft It's me who could see and you who could not. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is i Màiri a thigeadh mura robh droch shìde ann. 
+
+\vspace{4mm}
+\gla Is i Màiri a thigeadh mura robh droch shìde ann  //
+\glb be.V.COP.PRES she.PRON.F.3S Màiri.NAME which.PRT.REL come.V.23S.COND.INDEP+ASP unless.CONJ be.V.PAST.DEP bad.QUAL weather.N.F.SG+ASP in.it.PREP+PRON.M.3S  //
+\glft It's Màiri who would come unless there was bad weather. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dè gheibhinn do mo mhàthair? 
+
+\vspace{4mm}
+\gla Dè gheibhinn do mo mhàthair  //
+\glb what.INT get.V.1S.COND.INDEP+ASP to.PREP[or]your.ADJ.POSS my.ADJ.POSS.1S mother.N.F.SG+ASP  //
+\glft What could I get for my mother? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cò bheireadh dhomh freagairt? 
+
+\vspace{4mm}
+\gla Cò bheireadh dhomh freagairt  //
+\glb who.INTERR bear.V.23S.COND+ASP to.me.PREP+PRON.1S answer.VN[or]answer.N.F.SG  //
+\glft Who could give me an answer? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson a theireadh tu a\_leithid\_de rud? 
+
+\vspace{4mm}
+\gla Carson a theireadh tu {a leithid de} rud  //
+\glb Carson.NAME which.PRT.REL say.V.23S.COND.INDEP+ASP you.PRON.2S such.a.QUAL thing.N.M.SG  //
+\glft Why would you say such a thing? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ciamar a dh'fhaighinn lethbhreac? 
+
+\vspace{4mm}
+\gla Ciamar a dh'fhaighinn lethbhreac  //
+\glb how.INT to.PRT.INFIN get.V.INFIN+DH copy.N.M.SG  //
+\glft How could I get a copy? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a chìtheadh tu a-rithist e? 
+
+\vspace{4mm}
+\gla Cuin a chìtheadh tu a-rithist e  //
+\glb when.INTERR which.PRT.REL see.V.23S.COND.INDEP you.PRON.2S again.ADV he.PRON.M.3S  //
+\glft When would you see him again? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Càit am faighinn lethbhreac? 
+
+\vspace{4mm}
+\gla Càit am faighinn lethbhreac  //
+\glb Càit.NAME the.DEF.M.SG.NOM[or]occasion.N.M.SG get.VN copy.N.M.SG  //
+\glft Where could I get a copy? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thigeadh e nan tigeadh sibh. 
+
+\vspace{4mm}
+\gla Thigeadh e nan tigeadh sibh  //
+\glb come.V.23S.COND.INDEP+ASP he.PRON.M.3S if.CONJ come.V.23S.COND.INDEP you.PRON.2P  //
+\glft He would come if you would. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha bhiodh i toilichte mura faigheamaid dhachaigh. 
+
+\vspace{4mm}
+\gla Cha bhiodh i toilichte mura faigheamaid dhachaigh  //
+\glb not.PRT.NEG be.V.COND+ASP she.PRON.F.3S pleased.PASTPART unless.CONJ get.V.1P.COND homewards.ADV[or]home.N.F.SG+ASP  //
+\glft She wouldn't be happy if we couldn't get home. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha dhèanainn sin mus faigheadh tu-fhèin cothrom. 
+
+\vspace{4mm}
+\gla Cha dhèanainn sin mus faigheadh tu-fhèin cothrom  //
+\glb not.PRT.NEG do.V.1S.COND+ASP that.DEM.FAR before.PREP get.V.23S.COND yourself.PRON+REFL.2S opportunity.N.M.SG  //
+\glft I wouldn't do that before you got a chance. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt e gun tigeadh e dhan chèilidh a-nochd. 
+
+\vspace{4mm}
+\gla Thuirt e gun tigeadh e dhan chèilidh a-nochd  //
+\glb say.V.PAST+ASP he.PRON.M.3S that.CONJ come.V.23S.COND.INDEP he.PRON.M.3S to.the.PREP+DEF ceilidh.N.F.SG+ASP tonight.ADV  //
+\glft He said he would come to the ceilidh tonight. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mi cinnteach gun dèanadh iad sin. 
+
+\vspace{4mm}
+\gla Tha mi cinnteach gun dèanadh iad sin  //
+\glb be.V.PRES I.PRON.1S certain.ADJ that.CONJ do.V.23S.COND they.PRON.3P that.DEM.FAR  //
+\glft I'm sure they would do that. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'innis mi dhaibh nach fhaiceadh iad a' choille bhon uinneig aca. 
+
+\vspace{4mm}
+\gla Dh'innis mi dhaibh nach fhaiceadh iad a' choille bhon uinneig aca  //
+\glb tell.V.IMPER+DH I.PRON.1S to.them.PREP+PRON.3P ?not.PRT.INT.NEG see.V.23S.COND+ASP they.PRON.3P the.DEF.F.SG.ND wood.N.F.SG+ASP from.the.PREP+DEF window.N.F.SG.DAT at.them.PREP+PRON.3P  //
+\glft I told them they wouldn't see the forest from their window. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha robh fios agam na theirinn riutha. 
+
+\vspace{4mm}
+\gla Cha robh fios agam na theirinn riutha  //
+\glb not.PRT.NEG be.V.PAST.DEP knowledge.N.M.SG at.me.PREP+PRON.1S all.that.PRT.REL say.V.1S.COND.INDEP+ASP to.them.PREP+PRON.3P  //
+\glft I didn't know what I would say to them. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An toireadh sibh cobhair dhan fhear sin? Bheireadh. 
+
+\vspace{4mm}
+\gla An toireadh sibh cobhair dhan fhear sin Bheireadh  //
+\glb ?.PRT.INTERR give.V.23S.COND.DEP you.PRON.2P help.N.F.SG[or]help.N.F.SG.DAT to.the.PREP+DEF male.N.M.SG+ASP that.DEM.FAR bear.V.23S.COND+ASP  //
+\glft Would you give some help to that man? Yes. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is mise a dhèanadh an dìnnear. 
+
+\vspace{4mm}
+\gla Is mise a dhèanadh an dìnnear  //
+\glb be.V.COP.PRES I.PRON+EMPH.1S which.PRT.REL do.V.23S.COND+ASP the.DEF.F.SG.ND dinner.N.F.SG  //
+\glft It's me who would make dinner. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt iad gun ruigeadh iad am baile ann\_an ùine ghoirid. 
+
+\vspace{4mm}
+\gla Thuirt iad gun ruigeadh iad am baile {ann an} ùine ghoirid  //
+\glb say.V.PAST+ASP they.PRON.3P that.CONJ reach.V.23S.COND they.PRON.3P the.DEF.M.SG.NOM town.N.M.SG in.a.PREP+INDEF spell.of.time.N.F.SG short.ADJ+ASP  //
+\glft They said they would reach the town in a short while. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha i an dòchas gum faigheadh i airgead bho a caraid. 
+
+\vspace{4mm}
+\gla Bha i an dòchas gum faigheadh i airgead bho a caraid  //
+\glb be.V.PAST she.PRON.F.3S the.DEF.M.SG.NGD hope.N.M.SG that.CONJ get.V.23S.COND she.PRON.F.3S money.N.M.SG from.PREP her.ADJ.POSS.F.3S friend.N.M.SG  //
+\glft She was hoping that she would get some money from her friend. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt mi gun cluinninn iad a' cluich a-muigh. 
+
+\vspace{4mm}
+\gla Thuirt mi gun cluinninn iad a' cluich a-muigh  //
+\glb say.V.PAST+ASP I.PRON.1S that.CONJ hear.V.1S.COND they.PRON.3P -ing.PRT.CONT play.PRESPART outside.ADV  //
+\glft I said that I could hear them playing outside. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt iad nach rachadh iad a-mach ann\_am bàta. 
+
+\vspace{4mm}
+\gla Thuirt iad nach rachadh iad a-mach {ann am} bàta  //
+\glb say.V.PAST+ASP they.PRON.3P ?not.PRT.INT.NEG go.V.23S.COND they.PRON.3P out.ADV in.a.PREP+INDEF boat.N.M.SG  //
+\glft They said that they wouldn't go out in a boat. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha tigeadh i leam dhan chuirm-chiùil. 
+
+\vspace{4mm}
+\gla Cha tigeadh i leam dhan chuirm-chiùil  //
+\glb not.PRT.NEG come.V.23S.COND.INDEP she.PRON.F.3S with.me.PREP+PRON.1S to.the.PREP+DEF concert.N.F.SG+ASP  //
+\glft She wouldn't come with me to the concert. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha fios agam nach dèanadh iad a\_leithid\_de rud. 
+
+\vspace{4mm}
+\gla Tha fios agam nach dèanadh iad {a leithid de} rud  //
+\glb be.V.PRES knowledge.N.M.SG at.me.PREP+PRON.1S ?not.PRT.INT.NEG do.V.23S.COND they.PRON.3P such.a.QUAL thing.N.M.SG  //
+\glft I know that they wouldn't do such a thing. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mi cinnteach gum beirinn orra mus ruigeadh iad an geata. 
+
+\vspace{4mm}
+\gla Tha mi cinnteach gum beirinn orra mus ruigeadh iad an geata  //
+\glb be.V.PRES I.PRON.1S certain.ADJ that.CONJ bear.V.1S.COND on.them.PREP+PRON.3P before.PREP reach.V.23S.COND they.PRON.3P the.DEF.M.SG.NGD gate.N.M.SG  //
+\glft I am sure I would catch them before they would reach the gate. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ann air an dùthaich a chluinneadh sibh uiseag a' seinn. 
+
+\vspace{4mm}
+\gla 'S ann air an dùthaich a chluinneadh sibh uiseag a' seinn  //
+\glb be.V.COP.PRES in.it.PREP+PRON.M.3S on.PREP the.DEF.F.SG.ND country.N.F.SG which.PRT.REL hear.V.23S.COND+ASP you.PRON.2P skylark.N.F.SG -ing.PRT.CONT sing.PRESPART  //
+\glft It's in the country that you would hear the skylark singing. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cuin a dhèanadh tu an obair? 
+
+\vspace{4mm}
+\gla Cuin a dhèanadh tu an obair  //
+\glb when.INTERR which.PRT.REL do.V.23S.COND+ASP you.PRON.2S the.DEF.F.SG.ND work.VN[or]job.N.F.SG.ND  //
+\glft When would you do the job? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ruigeadh iad an t-eilean ron mhadainn. 
+
+\vspace{4mm}
+\gla Ruigeadh iad an t-eilean ron mhadainn  //
+\glb reach.V.23S.COND they.PRON.3P the.DEF.M.SG.NOM island.N.M.SG+T before.the.PREP+DEF morning.N.F.SG+ASP  //
+\glft They would reach the island before morning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt duine nach fhaigheadh i a h-airgead air\_ais. 
+
+\vspace{4mm}
+\gla Thuirt duine nach fhaigheadh i a h-airgead {air ais}  //
+\glb say.V.PAST+ASP person.N.M.SG ?not.PRT.INT.NEG get.V.23S.COND+ASP she.PRON.F.3S her.ADJ.POSS.F.3S money.N.M.SG+H back.ADV  //
+\glft Someone said that she would not get her money back. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha toirinn dhut sgillinn airson càr mar\_sin. 
+
+\vspace{4mm}
+\gla Cha toirinn dhut sgillinn airson càr {mar sin}  //
+\glb not.PRT.NEG give.V.1S.COND.DEP to.you.PREP+PRON.2S penny.N.F.SG for.PREP car.N.M.SG like.that..ADV.:LIKE.THAT  //
+\glft I wouldn't give you a penny for a car like that. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson nach rachadh sibh leam? 
+
+\vspace{4mm}
+\gla Carson nach rachadh sibh leam  //
+\glb Carson.NAME ?not.PRT.INT.NEG go.V.23S.COND you.PRON.2P with.me.PREP+PRON.1S  //
+\glft Why would you not go with me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Carson nach rachadh sibh còmhla rium? 
+
+\vspace{4mm}
+\gla Carson nach rachadh sibh còmhla rium  //
+\glb Carson.NAME ?not.PRT.INT.NEG go.V.23S.COND you.PRON.2P together.ADV to.me.PREP+PRON.1S  //
+\glft Why would you not go with me? //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An abaireadh tu gun robh e eireachdail? 
+
+\vspace{4mm}
+\gla An abaireadh tu gun robh e eireachdail  //
+\glb ?.PRT.INTERR say.V.COND.DEP you.PRON.2S that.CONJ be.V.PAST.DEP he.PRON.M.3S handsome.ADJ  //
+\glft Would you say that he was handsome? //
+\endgl
+\xe
+
+
+\vfill
+
+\begin{flushright}
+Typeset using \LaTeX\ (\textit{latex-project.org}), running on Ubuntu, on \longdate\today
+\end{flushright}
+
+\end{document}

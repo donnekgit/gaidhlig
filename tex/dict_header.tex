@@ -1,0 +1,26 @@
+\documentclass[a4paper,12pt, oneside]{article}
+
+\usepackage{fontspec} % loads xltxtra
+\defaultfontfeatures{Mapping=tex-text, Scale=MatchLowercase}
+\setmainfont{Charis SIL}
+\newfontfamily{\headword}{GFS Artemisia}
+\newfontfamily{\lemword}{Liberation Sans}
+\newfontfamily{\subword}{Charis SIL}
+
+\usepackage[usenames]{xcolor} 
+\definecolor{mygreen}{rgb}{0.0, 0.5, 0.0}
+
+\newcommand \hw[1]{{\color{mygreen}{\large{\headword #1}}}}
+
+\newcommand \lw[1]{{\textbf{\lemword #1}}}
+
+\newcommand \sw[1]{{\textbf{{\subword #1}}}}
+
+\title{\Large\headword{\color{mygreen}{A Gàidhlig Dictionary}}}
+\author{Bangor Autoglosser proof-of-concept}
+\date{}
+
+\begin{document}
+
+\maketitle
+

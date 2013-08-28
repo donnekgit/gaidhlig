@@ -1,0 +1,1813 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{tipa}
+\usepackage{expex}
+\usepackage[british]{babel}
+\usepackage[nodayofweek]{datetime}
+\usepackage[usenames,dvipsnames]{color}
+
+\usepackage[usenames]{xcolor} 
+\definecolor{mygreen}{rgb}{0.0, 0.5, 0.0}
+
+% \renewcommand{\rmdefault}{phv}  % Uncomment to get sans-serif text.
+
+\defineglwlevels{c}
+
+\lingset
+{
+    everyglpreamble={\tt \spaceskip=.5em plus .1em},
+    everygla={\bf},
+    everyglb={\it},
+    everyglc={\sf\it},
+    everyglft={\it},
+    glhangstyle=none,
+    aboveglftskip=4mm
+}
+
+% Thanks to Manas Tungare (http://manas.tungare.name/software/latex) for these settings.
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{247mm}
+
+\setlength{\evensidemargin}{1in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\topmargin}{-0.5in}
+
+\title{\Large\headword{\color{mygreen}{A POS-tagged Gàidhlig Corpus}}}
+\author{Bangor Autoglosser proof-of-concept}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\ex
+\begingl
+\glpre Chaidh Sabhal Mòr Ostaig a stèidheachadh ann an 1973 agus bhon uair sin tha i air cliù a chosnadh air feadh an t-saoghail mar Ionad Nàiseanta airson cànan agus cultar na Gàidhlig. 
+
+\vspace{4mm}
+\gla Chaidh Sabhal Mòr Ostaig a stèidheachadh {ann an} 1973 agus bhon uair sin tha i air cliù a chosnadh {air feadh} an t-saoghail mar Ionad Nàiseanta airson cànan agus cultar na Gàidhlig  //
+\glb go.V.PAST barn.N.M.SG big.ADJ Ostaig.NAME to.PRT.INFIN establish.V.INFIN in.a.PREP+INDEF 1973.YEAR and.CONJ from.the.PREP+DEF hour.N.F.SG that.DEM.FAR be.V.PRES she.PRON.F.3S on.PREP fame.N.M.SG to.PRT.INFIN employ.V.INFIN+ASP throughout.PREP the.DEF.M.SG.GD world.N.M.SG.GEN+T as.CONJ centre.N.M.SG national.ADJ for.PREP language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft Founded in 1973, Sabhal Mòr Ostaig has become internationally recognised as a National Centre for the Gaelic language and culture. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha a' Cholaiste na com-pàirtiche ann an Oilthigh na Gàidhealtachd is nan Eilean (OGE), is i a' tairgsinn fìor chothroman foghlaim is rannsachaidh tro mheadhan na Gàidhlig a tha ga neartachadh tro bheatha ann an àrainneachd làn-Ghàidhlig. 
+
+\vspace{4mm}
+\gla Tha a' Cholaiste na com-pàirtiche {ann an} Oilthigh na Gàidhealtachd is nan Eilean OGE is i a' tairgsinn fìor chothroman foghlaim is rannsachaidh tro mheadhan na Gàidhlig a tha ga neartachadh tro bheatha {ann an} àrainneachd làn-Ghàidhlig  //
+\glb be.V.PRES the.DEF.F.SG.ND college.N.F.SG+ASP in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S partner.N.M.SG in.a.PREP+INDEF university.N.M.SG of.the.DEF.F.SG.GEN Highlands.N.F.SG and.CONJ of.the.DEF.PL.GEN island.N.M.SG OGE.UNK and.CONJ[or]be.V.COP.PRES she.PRON.F.3S -ing.PRT.CONT offer.PRESPART true.ADJ opportunities.N.M.PL+ASP learn.V.IMPER[or]education.N.M.SG.GEN and.CONJ investigation.N.M.SG.GEN through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG which.PRT.REL be.V.PRES at.her.PREP+POSS.F.3S strengthen.VN through.PREP life.N.F.SG+ASP in.a.PREP+INDEF environment.N.F.SG fully.Gaelic.ADJ  //
+\glft The College is an academic partner within the University of the Highlands and Islands (UHI), and provides high quality education and research opportunities through the medium of Scottish Gaelic. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e colaiste ùr-ghnàthach a th' ann an Sabhal Mòr Ostaig agus tha goireasan ionnsachaidh air leth ann, leabharlann sònraichte fhèin math, stiùideo craolaidh is clàraidh, agus tha àiteachan-fuirich agus ionad cùraim chloinne air an àrainn. 
+
+\vspace{4mm}
+\gla 'S e colaiste ùr-ghnàthach a th' {ann an} Sabhal Mòr Ostaig agus tha goireasan ionnsachaidh {air leth} ann leabharlann sònraichte fhèin math stiùideo craolaidh is clàraidh agus tha àiteachan-fuirich agus ionad cùraim chloinne air an àrainn  //
+\glb be.V.COP.PRES he.PRON.M.3S college.N.F.SG innovative.ADJ which.PRT.REL be.V.PRES in.a.PREP+INDEF barn.N.M.SG big.ADJ Ostaig.NAME and.CONJ be.V.PRES facilities.N.M.PL education.N.M.SG.GEN particularly.ADV in.it.PREP+PRON.M.3S library.N.F.SG special.ADJ self.ADJ good.ADJ studio.N.M.SG broadcast.N.M.SG.GEN and.CONJ recording.N.F.SG.GD and.CONJ be.V.PRES accommodation.N.M.PL and.CONJ centre.N.M.SG care.N.M.SG.GEN children.N.F.PL.GD+ASP on.PREP the.DEF.F.SG.ND campus.N.F.SG  //
+\glft Sabhal Mòr Ostaig is a modern, innovative college and has excellent learning resources on-campus including an exceptional library collection, broadcast and recording facilities, residential student accommodation and a Gaelic-medium childcare facility. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mu 90 oileanach clàraichte air cùrsaichean làn-thìde, mu 260 air cùrsaichean air astar agus bidh suas ri 800 a' clàradh air cùrsaichean goirid gach bliadhna. 
+
+\vspace{4mm}
+\gla Tha mu 90 oileanach clàraichte air cùrsaichean làn-thìde mu 260 air cùrsaichean air astar agus bidh suas ri 800 a' clàradh air cùrsaichean goirid gach bliadhna  //
+\glb be.V.PRES about.PREP 90.DIGINUM student.N.M.SG registered.PASTPART on.PREP courses.N.M.PL full-time.ADJ about.PREP 260.DIGINUM on.PREP courses.N.M.PL on.PREP distance.N.M.SG and.CONJ be.V.FUT up.ADV to.PREP 800.DIGINUM -ing.PRT.CONT register.PRESPART on.PREP courses.N.M.PL short.ADJ every.QUAL year.N.F.SG  //
+\glft Current student numbers stand at approximately 90 on full-time courses, 260 on distance learning and access courses, and up to 800 on short courses each year. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha obair na Colaiste ga neartachadh tro chàirdeas leis a' choimhearsnachd Ghàidhlig agus tha iomadh pròiseact cultarach agus cruthachail stèidhichte aig Sabhal Mòr, Tobar an Dualchais, Faclair na Gàidhlig agus Cànan nam measg. 
+
+\vspace{4mm}
+\gla Tha obair na Colaiste ga neartachadh tro chàirdeas leis a' choimhearsnachd Ghàidhlig agus tha iomadh pròiseact cultarach agus cruthachail stèidhichte aig Sabhal Mòr Tobar an Dualchais Faclair na Gàidhlig agus Cànan {nam measg}  //
+\glb be.V.PRES work.N.F.SG of.the.DEF.F.SG.GEN college.N.F.SG at.her.PREP+POSS.F.3S strengthen.VN through.PREP friendship.N.M.SG+ASP with.PREP the.DEF.F.SG.ND community.N.F.SG+ASP Scots.Gaelic.N.F.SG+ASP and.CONJ be.V.PRES many.N.M.SG project.N.M.SG cultural.ADJ and.CONJ creative.ADJ established.PASTPART at.PREP barn.N.M.SG big.ADJ well.N.M.SG the.DEF.M.SG.GEN heritage.N.M.SG.GEN dictionary.N.M.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ language.N.F.SG among.them.PREP+PRON  //
+\glft The College's activities are greatly enhanced by co-operative links within the wider Gaelic community and the College is home to a number of creative and cultural projects such as Tobar an Dualchais, Faclair na Gàidhlig and the multimedia and design company Cànan. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha na h-ealain is cultar Gàidhlig fìor chudromach do Shabhal Mòr Ostaig agus tha a' Cholaiste a' ruith prògram còmhnaidh ann an ceòl, litreachas agus na h-ealain lèirsinneach. 
+
+\vspace{4mm}
+\gla Tha na h-ealain is cultar Gàidhlig fìor chudromach do Shabhal Mòr Ostaig agus tha a' Cholaiste a' ruith prògram còmhnaidh {ann an} ceòl litreachas agus na h-ealain lèirsinneach  //
+\glb be.V.PRES the.DEF.PL.ND arts.N.F.PL+H and.CONJ culture.N.M Scots.Gaelic.N.F.SG true.ADJ important.ADJ+ASP to.PREP barn.N.M.SG.DAT+ASP big.ADJ Ostaig.NAME and.CONJ be.V.PRES the.DEF.F.SG.ND college.N.F.SG+ASP -ing.PRT.CONT run.PRESPART programme.N.M.SG residency.N.F.SG in.a.PREP+INDEF music.N.M.SG literature.N.M.SG and.CONJ the.DEF.PL.ND arts.N.F.PL+H visual.ADJ  //
+\glft The College also plays a leading role in the promotion of the Gaelic arts and culture and hosts a programme of residencies for artists in music, literature and the visual arts. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Sabhal Mòr Ostaig airson a bhith na shàr-ionad aig cridhe leasachaidhean ann an cànan agus dualchas nan Gàidheal le bhith a' tairgsinn deagh chothroman foghlaim, trèanaidh agus rannsachaidh agus beatha shòisealta tro mheadhan na Gàidhlig agus le bhith a' dol an sàs gu h-innleachdach còmhla ri daoine eile, luchd-gnìomhachais agus a' choimhearsnachd air fad gus leasachaidhean sòisealta, dualchasach agus eaconomach a chur air adhart. 
+
+\vspace{4mm}
+\gla Tha Sabhal Mòr Ostaig airson a bhith na shàr-ionad aig cridhe leasachaidhean {ann an} cànan agus dualchas nan Gàidheal le bhith a' tairgsinn deagh chothroman foghlaim trèanaidh agus rannsachaidh agus beatha shòisealta tro mheadhan na Gàidhlig agus le bhith a' dol an sàs gu h-innleachdach còmhla ri daoine eile luchd-gnìomhachais agus a' choimhearsnachd air fad gus leasachaidhean sòisealta dualchasach agus eaconomach a chur air adhart  //
+\glb be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME for.PREP to.PRT.INFIN be.V.INFIN+ASP in.his.PREP+POSS.M.3S centre.of.excellence.N.M.SG+ASP at.PREP heart.N.M.SG developments.N.M.PL in.a.PREP+INDEF language.N.F.SG and.CONJ heritage.N.M.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN Highlander.N.M.SG with.PREP be.VN+ASP -ing.PRT.CONT offer.PRESPART good.QUAL opportunities.N.M.PL+ASP education.N.M.SG.GEN[or]learn.V.IMPER training.N.M.SG.GEN and.CONJ investigation.N.M.SG.GEN and.CONJ life.N.F.SG social.ADJ+ASP through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ with.PREP be.VN+ASP -ing.PRT.CONT go.PRESPART the.DEF.M.SG.NGD placement.N.M.SG that.CONJ innovative.ADJ+H together.ADV to.PREP persons.N.M.PL other.ADJ businesspeople.N.M.PL and.CONJ the.DEF.F.SG.ND community.N.F.SG+ASP on.PREP length.N.M.SG in.order.to.CONJ developments.N.M.PL social.ADJ ancestral.ADJ and.CONJ economical.ADJ to.PRT.INFIN put.V.INFIN+ASP on.PREP front.N.M.SG  //
+\glft Sabhal Mòr Ostaig is committed to being a centre of excellence for the development and enhancement of the Gaelic language, culture and heritage, by providing quality educational, training and research opportunities through the medium of Scottish Gaelic; and by interacting innovatively with individuals, communities and businesses, to contribute to social, cultural and economic development. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Fàilte gu làrach-lìn Sabhal Mòr Ostaig, an t-Ionad Nàiseanta airson Cànan is Cultar na Gàidhlig, far a bheil mòran cothroman ionnsachaidh airson daoine aig a bheil ùidh ann an Gàidhlig, an dà chuid aig a' Cholaiste agus air astar. 
+
+\vspace{4mm}
+\gla Fàilte gu làrach-lìn Sabhal Mòr Ostaig an t-Ionad Nàiseanta airson Cànan is Cultar na Gàidhlig far a bheil mòran cothroman ionnsachaidh airson daoine aig a bheil ùidh {ann an} Gàidhlig an dà chuid aig a' Cholaiste agus air astar  //
+\glb welcome.N.F.SG that.CONJ website.N.F.SG barn.N.M.SG big.ADJ Ostaig.NAME the.DEF.M.SG.NOM centre.N.M.SG+T national.ADJ for.PREP language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG where.REL which.PRT.REL be.V.PRES.DEP.INT many.N.M.SG opportunities.N.M.PL education.N.M.SG.GEN for.PREP persons.N.M.PL at.PREP which.PRT.REL be.V.PRES.DEP.INT interest.N.F.SG in.a.PREP+INDEF Scots.Gaelic.N.F.SG the.DEF.F.SG.ND two.NUM.ORD portion.N.F.SG+ASP at.PREP the.DEF.F.SG.ND college.N.F.SG+ASP and.CONJ on.PREP distance.N.M.SG  //
+\glft Welcome to the Sabhal Mòr Ostaig website. The College is a National Centre for Gaelic Language and Culture and there are lots of learning opportunities for people with an interest in Gaelic, both at the College and by distance-learning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e colaiste ùr-ghnàthach a th' ann an Sabhal Mòr Ostaig agus tha goireasan ionnsachaidh air leth ann, leabharlann sònraichte fhèin math, stiùideo craolaidh is clàraidh, agus tha àiteachan-fuirich is ionad cùraim chloinne air an àrainn. 
+
+\vspace{4mm}
+\gla 'S e colaiste ùr-ghnàthach a th' {ann an} Sabhal Mòr Ostaig agus tha goireasan ionnsachaidh {air leth} ann leabharlann sònraichte fhèin math stiùideo craolaidh is clàraidh agus tha àiteachan-fuirich is ionad cùraim chloinne air an àrainn  //
+\glb be.V.COP.PRES he.PRON.M.3S college.N.F.SG innovative.ADJ which.PRT.REL be.V.PRES in.a.PREP+INDEF barn.N.M.SG big.ADJ Ostaig.NAME and.CONJ be.V.PRES facilities.N.M.PL education.N.M.SG.GEN particularly.ADV in.it.PREP+PRON.M.3S library.N.F.SG special.ADJ self.ADJ good.ADJ studio.N.M.SG broadcast.N.M.SG.GEN and.CONJ recording.N.F.SG.GD and.CONJ be.V.PRES accommodation.N.M.PL and.CONJ centre.N.M.SG care.N.M.SG.GEN children.N.F.PL.GD+ASP on.PREP the.DEF.F.SG.ND campus.N.F.SG  //
+\glft Sabhal Mòr Ostaig is a modern, innovative college and has excellent learning resources on-campus including an exceptional library collection, broadcast and recording facilities, residential student accommodation and a Gaelic-medium childcare facility. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha obair na Colaiste ga neartachadh tro chàirdeas le coimhearsnachd na Gàidhlig agus tha iomadh pròiseact cultarach agus cruthachail stèidhichte aig Sabhal Mòr, Tobar an Dualchais, Faclair na Gàidhlig agus Cànan nam measg. 
+
+\vspace{4mm}
+\gla Tha obair na Colaiste ga neartachadh tro chàirdeas le coimhearsnachd na Gàidhlig agus tha iomadh pròiseact cultarach agus cruthachail stèidhichte aig Sabhal Mòr Tobar an Dualchais Faclair na Gàidhlig agus Cànan {nam measg}  //
+\glb be.V.PRES work.N.F.SG of.the.DEF.F.SG.GEN college.N.F.SG at.her.PREP+POSS.F.3S strengthen.VN through.PREP friendship.N.M.SG+ASP with.PREP community.N.F.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ be.V.PRES many.N.M.SG project.N.M.SG cultural.ADJ and.CONJ creative.ADJ established.PASTPART at.PREP barn.N.M.SG big.ADJ well.N.M.SG the.DEF.M.SG.GEN heritage.N.M.SG.GEN dictionary.N.M.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ language.N.F.SG among.them.PREP+PRON  //
+\glft The College's activities are greatly enhanced by co-operative links within the wider Gaelic community and the College is home to a number of creative and cultural projects such as Tobar an Dualchais, Faclair na Gàidhlig and the multimedia and design company Cànan. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha na h-ealain is cultar na Gàidhlig fìor chudromach do Shabhal Mòr Ostaig agus tha a' Cholaiste a' ruith prògram air mhuinntireas ann an ceòl, litreachas agus na h-ealain lèirsinneach. 
+
+\vspace{4mm}
+\gla Tha na h-ealain is cultar na Gàidhlig fìor chudromach do Shabhal Mòr Ostaig agus tha a' Cholaiste a' ruith prògram air mhuinntireas {ann an} ceòl litreachas agus na h-ealain lèirsinneach  //
+\glb be.V.PRES the.DEF.PL.ND arts.N.F.PL+H and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG true.ADJ important.ADJ+ASP to.PREP barn.N.M.SG.DAT+ASP big.ADJ Ostaig.NAME and.CONJ be.V.PRES the.DEF.F.SG.ND college.N.F.SG+ASP -ing.PRT.CONT run.PRESPART programme.N.M.SG on.PREP residency.N.F.SG+ASP in.a.PREP+INDEF music.N.M.SG literature.N.M.SG and.CONJ the.DEF.PL.ND arts.N.F.PL+H visual.ADJ  //
+\glft The College also plays a leading role in the promotion of the Gaelic arts and culture and hosts a programme of residencies for artists in music, literature and the visual arts. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha sinn an dòchas gum bi cothrom agad a thighinn don Cholaiste agus sinn a' coimhead air adhart ri d' fhaicinn. 
+
+\vspace{4mm}
+\gla Tha sinn an dòchas gum bi cothrom agad a thighinn don Cholaiste agus sinn a' coimhead air adhart ri d' fhaicinn  //
+\glb be.V.PRES we.PRON.1P the.DEF.M.SG.NGD hope.N.M.SG that.CONJ be.V.IMPER[or]be.V.FUT.INT opportunity.N.M.SG at.you.PREP+PRON.2S to.PRT.INFIN come.V.INFIN+ASP to.the.PREP+DEF college.N.F.SG+ASP and.CONJ we.PRON.1P -ing.PRT.CONT look.PRESPART on.PREP front.N.M.SG to.PREP your.PRON.POSS.2S see.VN+ASP  //
+\glft We hope you will get the chance to visit the college and we look forward to seeing you. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma tha beachd sam bith agad mun làraich, cuir post-d gu sm00en@uhi.ac.uk. 
+
+\vspace{4mm}
+\gla Ma tha beachd {sam bith} agad mun làraich cuir post-d gu sm00en@uhiacuk  //
+\glb if.CONJ be.V.PRES opinion.N.M.SG any.QUAL at.you.PREP+PRON.2S about.the.PREP+DEF site.N.F.SG.GD put.V.IMPER email.V.IMPER that.CONJ sm00en@uhiacuk.UNK  //
+\glft If you have any comments about the website, please e-mail sm00en@uhi.ac.uk. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e bliadhna air leth eachdraidheil a bhios ann an 2013 do Shabhal Mòr Ostaig agus don a h-uile duine aig a bheil ceangal ris a' Cholaiste. Bidh sinn a' comharrachadh dà fhichead bliadhna on a chaidh a' Cholaiste a' stèidheachadh agus on a chaidh a' chiad cùrsa a ruith san t-Sultain 1973. 
+
+\vspace{4mm}
+\gla 'S e bliadhna {air leth} eachdraidheil a bhios {ann an} 2013 do Shabhal Mòr Ostaig agus don {a h-uile} duine aig a bheil ceangal ris a' Cholaiste Bidh sinn a' comharrachadh dà fhichead bliadhna on a chaidh a' Cholaiste a' stèidheachadh agus on a chaidh a' chiad cùrsa a ruith san t-Sultain 1973  //
+\glb be.V.COP.PRES he.PRON.M.3S year.N.F.SG particularly.ADV historical.ADJ which.PRT.REL be.V.FUT.REL+ASP in.a.PREP+INDEF 2013.YEAR to.PREP barn.N.M.SG.DAT+ASP big.ADJ Ostaig.NAME and.CONJ to.the.PREP+DEF every.QUAL person.N.M.SG at.PREP which.PRT.REL be.V.PRES.DEP.INT connect.VN to.him.PREP+PRON.M.3S the.DEF.F.SG.ND college.N.F.SG+ASP be.V.FUT we.PRON.1P -ing.PRT.CONT specify.PRESPART two.NUM.ORD twenty.NUM.ORD+ASP year.N.F.SG from.the.PREP+DEF which.PRT.REL go.V.PAST the.DEF.F.SG.ND college.N.F.SG+ASP -ing.PRT.CONT establish.PRESPART and.CONJ from.the.PREP+DEF which.PRT.REL go.V.PAST the.DEF.M.SG.GD first.NUM.CARD+ASP course.N.M.SG which.PRT.REL run.V.PAST in.the.PREP+DEF September.N.F.SG+T 1973.YEAR  //
+\glft 2013 is a special year for Sabhal Mòr Ostaig and for everyone associated with it, as we celebrate 40 years since the College was established and since the first short course took place in September 1973. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh iomadh rud a' tachairt tron bhliadhna a' tarraing dhaoine bho gach ceàrnaidh agus gheibh sibh blas de na rudan a bhios a' dol air an làraich-lìn seo agus air na duilleagan Facebook againn. 
+
+\vspace{4mm}
+\gla Bidh iomadh rud a' tachairt tron bhliadhna a' tarraing dhaoine bho gach ceàrnaidh agus gheibh sibh blas de na rudan a bhios a' dol air an làraich-lìn seo agus air na duilleagan Facebook againn  //
+\glb be.V.FUT many.N.M.SG thing.N.M.SG -ing.PRT.CONT happen.PRESPART through.the.PREP+DEF year.N.F.SG+ASP -ing.PRT.CONT attract.PRESPART persons.N.M.PL+ASP from.PREP every.QUAL area.N.F.SG and.CONJ get.V.FUT you.PRON.2P flavour.N.M.SG of.PREP the.DEF.PL.ND thing.N.M.PL which.PRT.REL be.V.FUT.REL+ASP -ing.PRT.CONT go.PRESPART on.PREP the.DEF.F.SG.ND website.N.F.SG.GD this.DEM.NEAR and.CONJ on.PREP the.DEF.PL.ND pages.N.F.PL Facebook.NAME at.us.PREP+PRON.1P  //
+\glft There will be lots of events taking place throughout the year which we hope will attract people from far and wide. A taster of these events is available on the website and will also be posted on our Facebook page. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha sinn cuideachd air Gairm-maoineachaidh 40 Bliadhna a chur air bhog agus tha barrachd fiosrachaidh ri fhaighinn aig www.smo.uhi.ac.uk. 
+
+\vspace{4mm}
+\gla Tha sinn cuideachd air Gairm-maoineachaidh 40 Bliadhna a chur air bhog agus tha barrachd fiosrachaidh ri fhaighinn aig wwwsmouhiacuk  //
+\glb be.V.PRES we.PRON.1P also.ADV on.PREP appeal.N.M.SG.GEN 40.DIGINUM year.N.F.SG to.PRT.INFIN put.V.INFIN+ASP on.PREP[or]on.him.PREP+PRON.M.3S launch.V.IMPER+ASP and.CONJ be.V.PRES more.ADV information.N.M.SG.GEN to.PREP get.VN+ASP at.PREP wwwsmouhiacuk.UNK  //
+\glft We have also launched a 40th Anniversary Appeal and more information about it is available at www.smo.uhi.ac.uk. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Urras Leasachaidh Sabhal Mòr Ostaig a' foillseachadh Gairm-maoineachaidh 40 Bliadhna an t-Sabhail airson taic a chumail ris a' cholaiste, is i an t-aon ionad foghlaim adhartach is àrd-ìre anns an t-saoghal a tha a' liubhairt a chuid chothroman ionnsachaidh, cultarail is rannsachaidh tro mheadhan na Gàidhlig. 
+
+\vspace{4mm}
+\gla Tha Urras Leasachaidh Sabhal Mòr Ostaig a' foillseachadh Gairm-maoineachaidh 40 Bliadhna an t-Sabhail airson taic a chumail ris a' cholaiste is i an t-aon ionad foghlaim adhartach is àrd-ìre anns an t-saoghal a tha a' liubhairt a chuid chothroman ionnsachaidh cultarail is rannsachaidh tro mheadhan na Gàidhlig  //
+\glb be.V.PRES trust.N.M.SG development.N.M.SG.GEN barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT publish.PRESPART appeal.N.M.SG.GEN 40.DIGINUM year.N.F.SG the.DEF.M.SG.GD barn.N.M.SG.GEN+T for.PREP support.N.F.SG to.PRT.INFIN hold.V.INFIN+ASP to.him.PREP+PRON.M.3S the.DEF.F.SG.ND college.N.F.SG+ASP and.CONJ she.PRON.F.3S the.DEF.M.SG.NOM one.NUM.ORD+T centre.N.M.SG learn.V.IMPER[or]education.N.M.SG.GEN advanced.ADJ and.CONJ[or]be.V.COP.PRES higher.level.N.M.SG in.PREP the.DEF.M.SG.GD world.N.M.SG+T which.PRT.REL be.V.PRES -ing.PRT.CONT deliver.PRESPART his.PRON.POSS.M.3S portion.N.F.SG+ASP opportunities.N.M.PL+ASP education.N.M.SG.GEN cultural.ADJ and.CONJ[or]be.V.COP.PRES investigation.N.M.SG.GEN through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft The Sabhal Mòr Ostaig Development Trust is launching this 40th Anniversary Appeal to support the college in its role as the only institution of further and higher education in the world dedicated to providing learning, cultural, and research opportunities through the medium of Scottish Gaelic. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha bhitheadh Sabhal Mòr Ostaig air a chiad amasan a choileanadh airson cothroman foghlaim is eaconomach nan Gàidheal a leasachadh agus cothroman ionnsachaidh air a' Ghàidhlig is a cultar a sgaoileadh mura b' e dìlseachd is saothair a chuid luchd-obrach is oileanach, agus taic nan seann oileanach is nan caraidean air feadh an t-saoghail. 
+
+\vspace{4mm}
+\gla Cha bhitheadh Sabhal Mòr Ostaig air a chiad amasan a choileanadh airson cothroman foghlaim is eaconomach nan Gàidheal a leasachadh agus cothroman ionnsachaidh air a' Ghàidhlig is a cultar a sgaoileadh mura b' e dìlseachd is saothair a chuid luchd-obrach is oileanach agus taic nan seann oileanach is nan caraidean {air feadh} an t-saoghail  //
+\glb not.PRT.NEG be.V.COND.EMPH+ASP barn.N.M.SG big.ADJ Ostaig.NAME on.PREP his.PRON.POSS.M.3S first.NUM.CARD+ASP aims.N.M.PL to.PRT.INFIN enhance.V.INFIN+ASP for.PREP opportunities.N.M.PL learn.V.IMPER[or]education.N.M.SG.GEN and.CONJ economical.ADJ in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN Highlander.N.M.SG to.PRT.INFIN develop.V.INFIN and.CONJ opportunities.N.M.PL education.N.M.SG.GEN on.PREP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP and.CONJ her.PRON.POSS.F.3S culture.N.M to.PRT.INFIN disseminate.V.INFIN unless.CONJ be.V.COP.PAST he.PRON.M.3S loyalty.N.F.SG and.CONJ work.N.F.SG his.PRON.POSS.M.3S portion.N.F.SG+ASP workers.N.M.PL and.CONJ student.N.M.SG and.CONJ support.N.F.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN old.ADJ student.N.M.SG and.CONJ of.the.DEF.PL.GEN friend.N.M.PL throughout.PREP the.DEF.M.SG.GD world.N.M.SG.GEN+T  //
+\glft Sabhal Mòr Ostaig would not have realised its early ambitions to improve the educationaland economic opportunities of Gaelic speakers and to widen access to the Gaelic languageand culture without the dedication and commitment of staff and students, and the support of alumni and friends worldwide. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an t-Urras a' sireadh dhòighean innleachdach air co-obrachadh le luchd-taice na Gàidhlig is a cultair, agus tha e airson a bhith na mheadhan anns an gabh daoine, companaidhean, comainn, urrasan is ionadan an sàs ann a bhith a' toirt taic dhan cholaiste. 
+
+\vspace{4mm}
+\gla Tha an t-Urras a' sireadh dhòighean innleachdach air co-obrachadh le luchd-taice na Gàidhlig is a cultair agus tha e airson a bhith na mheadhan anns an gabh daoine companaidhean comainn urrasan is ionadan an sàs ann a bhith a' toirt taic dhan cholaiste  //
+\glb be.V.PRES the.DEF.M.SG.NOM trust.N.M.SG+T -ing.PRT.CONT seek.PRESPART methods.N.F.PL+ASP innovative.ADJ after.PREP collaborate.VN with.PREP supporters.N.M.PL of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ her.PRON.POSS.F.3S culture.N.M.SG.GEN and.CONJ be.V.PRES he.PRON.M.3S for.PREP to.PRT.INFIN be.V.INFIN+ASP in.his.PREP+POSS.M.3S medium.N.M.SG+ASP in.PREP the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD take.V.IMPER persons.N.M.PL company.N.F.PL society.N.M.SG.GEN trusts.N.M.PL and.CONJ centres.N.M.PL the.DEF.M.SG.NGD placement.N.M.SG in.it.PREP+PRON.M.3S to.PRT.INFIN be.V.INFIN+ASP -ing.PRT.CONT give.PRESPART support.N.F.SG to.the.PREP+DEF college.N.F.SG+ASP  //
+\glft The Trust seeks innovative ways to engage with the wide community of support for the Gaelic language and culture, and to be the conduit through which private individuals, companies, corporations, trusts and foundations are able to play a vital part in supporting the college. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bu mhath leinn iarraidh air daoine air feadh an t-saoghail a tha bàidheil ris a' Ghàidhlig is a cultar is a tha airson a glèidheadh do na ginealaichean ri teachd an cuid taic a chur ris a' Ghairm-maoineachaidh seo a bheir cuideachadh do dh'obair dheatamach Sabhal Mòr Ostaig. 
+
+\vspace{4mm}
+\gla Bu mhath leinn iarraidh air daoine {air feadh} an t-saoghail a tha bàidheil ris a' Ghàidhlig is a cultar is a tha airson a glèidheadh do na ginealaichean ri teachd an cuid taic a chur ris a' Ghairm-maoineachaidh seo a bheir cuideachadh do dh'obair dheatamach Sabhal Mòr Ostaig  //
+\glb be.V.COP.PAST good.ADJ+ASP with.us.PREP+PRON.1P want.VN on.PREP persons.N.M.PL throughout.PREP the.DEF.M.SG.GD world.N.M.SG.GEN+T which.PRT.REL be.V.PRES friendly.ADJ to.him.PREP+PRON.M.3S the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP and.CONJ her.PRON.POSS.F.3S culture.N.M and.CONJ which.PRT.REL be.V.PRES for.PREP to.PRT.INFIN keep.V.INFIN to.PREP the.DEF.PL.DAT generation.N.M.PL.GD to.PREP come.VN the.DEF.F.SG.ND portion.N.F.SG support.N.F.SG to.PRT.INFIN put.V.INFIN+ASP to.him.PREP+PRON.M.3S the.DEF.M.SG.GD appeal.N.M.SG.GEN+ASP this.DEM.NEAR which.PRT.REL bear.V.PAST+ASP help.VN to.PREP work.N.F.SG+DH crucial.ADJ+ASP barn.N.M.SG big.ADJ Ostaig.NAME  //
+\glft Through this Anniversary Appeal we would urge people throughout the world who care passionately about the future of the Gaelic language and culture to help Sabhal Mòr Ostaig with its vital work. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Feumaidh a' cholaiste mu 47\% de a cosgaisean bliadhnail a thogail dhi fhèin a chionn 's gu bheil i na charthannas clàraichte, mar sin, tha ur taic nas fheumaile na bha e riamh. 
+
+\vspace{4mm}
+\gla Feumaidh a' cholaiste mu 47\% de a cosgaisean bliadhnail a thogail dhi fhèin {a chionn 's gu} bheil i na charthannas clàraichte mar sin tha ur taic nas fheumaile na bha e riamh  //
+\glb must.V.FUT the.DEF.F.SG.ND college.N.F.SG+ASP about.PREP 47\%.PERCENT of.PREP her.PRON.POSS.F.3S expenses.N.F.PL annual.ADJ to.PRT.INFIN raise.V.INFIN+ASP to.her.PREP+PRON.F.3S self.ADJ because.CONJ be.V.PRES.DEP.INT she.PRON.F.3S in.his.PREP+POSS.M.3S charity.N.M.SG+ASP registered.PASTPART as.CONJ that.DEM.FAR be.V.PRES your.PRON.POSS.2P support.N.F.SG more.PRT.COMP necessary.ADJ.COMP+ASP all.that.PRT.REL be.V.PAST he.PRON.M.3S ever.before.ADV  //
+\glft As a registered charity, Sabhal Mòr Ostaig is currently required to raise around 47\% of its annual costs so your help is more crucial than ever before. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an t-Urras airson cur ris an taic air leth a tha Sabhal Mòr Ostaig air fhaighinn thar an dà fhichead bliadhna bho chaidh a stèidheachadh agus airson coimhearsnachd eadar-nàiseanta a chur ri chèile anns am bitheadh seann oileanaich, luchd-taice agus caraidean. 
+
+\vspace{4mm}
+\gla Tha an t-Urras airson cur ris an taic {air leth} a tha Sabhal Mòr Ostaig air fhaighinn thar an dà fhichead bliadhna bho chaidh a stèidheachadh agus airson coimhearsnachd eadar-nàiseanta a chur {ri chèile} anns am bitheadh seann oileanaich luchd-taice agus caraidean  //
+\glb be.V.PRES the.DEF.M.SG.NOM trust.N.M.SG+T for.PREP put.VN to.him.PREP+PRON.M.3S the.DEF.F.SG.ND support.N.F.SG particularly.ADV which.PRT.REL be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME after.PREP get.VN+ASP over.PREP the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD two.NUM.ORD twenty.NUM.ORD+ASP year.N.F.SG from.PREP go.V.PAST to.PRT.INFIN establish.V.INFIN and.CONJ for.PREP community.N.F.SG international.ADJ to.PRT.INFIN put.V.INFIN+ASP together.ADV in.PREP the.DEF.M.SG.NOM[or]time.N.M.SG be.V.COND.EMPH old.ADJ students.N.M.PL supporters.N.M.PL and.CONJ friend.N.M.PL  //
+\glft The Trust aims to build on the incredible support that Sabhal Mòr Ostaig has received over the past forty years and develop an international community of alumni, supporters and friends. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha sinn ag iarraidh taic leis na prìomhachasan seo gu sònraichte: 
+
+\vspace{4mm}
+\gla Tha sinn ag iarraidh taic leis na prìomhachasan seo gu sònraichte  //
+\glb be.V.PRES we.PRON.1P -ing.PRT.CONT want.PRESPART support.N.F.SG with.PREP the.DEF.PL.ND priorities.N.M.PL this.DEM.NEAR that.CONJ special.ADJ  //
+\glft In particular we are seeking support for the following priority areas: //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Maoin Sgoilearachd nan Oileanach 
+
+\vspace{4mm}
+\gla Maoin Sgoilearachd nan Oileanach  //
+\glb fund.N.F.SG scholarship.N.F.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN student.N.M.SG  //
+\glft Student Scholarship Fund //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tochradh nan Cathraichean Foghlaim is nan Caidreachasan Rannsachaidh 
+
+\vspace{4mm}
+\gla Tochradh nan Cathraichean Foghlaim is nan Caidreachasan Rannsachaidh  //
+\glb endowment.N.M.SG of.the.DEF.PL.GEN chairman.N.M.PL[or]chairs.N.F.PL learn.V.IMPER[or]education.N.M.SG.GEN and.CONJ of.the.DEF.PL.GEN federations.N.M.PL investigation.N.M.SG.GEN  //
+\glft Endowment of Academic Chairs and Research Fellowships //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An Leabharlann is na Cruinneachaidhean Eachdraidheil 
+
+\vspace{4mm}
+\gla An Leabharlann is na Cruinneachaidhean Eachdraidheil  //
+\glb the.DEF.F.SG.ND library.N.F.SG and.CONJ the.DEF.PL.ND collections.N.M.PL.GD historical.ADJ  //
+\glft Library and Historic Collections //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh nan Ealain – Ceòl, sgrìobhadh, dràma is ealain lèirsinneach na Gàidhlig 
+
+\vspace{4mm}
+\gla Leasachadh nan Ealain – Ceòl sgrìobhadh dràma is ealain lèirsinneach na Gàidhlig  //
+\glb develop.VN of.the.DEF.PL.GEN arts.N.F.PL –.UNK music.N.M.SG write.VN drama.N.M.SG and.CONJ arts.N.F.PL visual.ADJ of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft Arts Development – Gaelic music, writing, drama and the visual arts //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Iomairtean Cruthachail, Cultarail is Sòisealta 
+
+\vspace{4mm}
+\gla Iomairtean Cruthachail Cultarail is Sòisealta  //
+\glb initiatives.N.F.PL creative.ADJ cultural.ADJ and.CONJ social.ADJ  //
+\glft Creative, Cultural and Social Enterprise //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh Seirbheisean nan Seann Oileanach 
+
+\vspace{4mm}
+\gla Leasachadh Seirbheisean nan Seann Oileanach  //
+\glb develop.VN services.N.F.PL in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN old.ADJ student.N.M.SG  //
+\glft Development of alumni services //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh na Cille Bige: Goireasan Spòrs is Cur-seachad; Ath-leasachadh Àrainn Ostaig; Goireasan co-labhairt; agus Taigheadas 
+
+\vspace{4mm}
+\gla Leasachadh na Cille Bige Goireasan Spòrs is Cur-seachad Ath-leasachadh Àrainn Ostaig Goireasan co-labhairt agus Taigheadas  //
+\glb develop.VN of.the.DEF.F.SG.GEN chapel.N.F.SG small.ADJ.GD facilities.N.M.PL sports.N.M.PL and.CONJ recreation.N.M.SG refurbish.VN campus.N.F.SG Ostaig.NAME facilities.N.M.PL conference.N.F.SG and.CONJ housing.N.M.SG  //
+\glft Kilbeg Village Development: Sports and Recreation Facilities; Refurbishment of Àrainn Ostaig campus; Conference Facilities; and Housing //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mòran taing airson ar cuideachadh. 
+
+\vspace{4mm}
+\gla Mòran taing airson ar cuideachadh  //
+\glb many.N.M.SG thanks.N.F.PL for.PREP our.PRON.POSS.1P help.VN  //
+\glft Many thanks for choosing to donate to Sabhal Mòr Ostaig. Your support is invaluable. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Urras Leasachaidh Sabhal Mòr Ostaig taingeil taic fhaighinn bho dhaoine fa leth, companaidhean, urrasan, co-chomainn is buidhnean eile a tha airson a' cholaiste a chuideachadh agus airson a' Ghàidhlig is a cultar a dhìon do na ginealaichean ri teachd. 
+
+\vspace{4mm}
+\gla Tha Urras Leasachaidh Sabhal Mòr Ostaig taingeil taic fhaighinn bho dhaoine {fa leth} companaidhean urrasan co-chomainn is buidhnean eile a tha airson a' cholaiste a chuideachadh agus airson a' Ghàidhlig is a cultar a dhìon do na ginealaichean ri teachd  //
+\glb be.V.PRES trust.N.M.SG development.N.M.SG.GEN barn.N.M.SG big.ADJ Ostaig.NAME thankful.ADJ support.N.F.SG get.VN+ASP from.PREP persons.N.M.PL+ASP individually.ADV company.N.F.PL trusts.N.M.PL co-operative.N.M.SG.GEN and.CONJ groups.N.F.PL other.ADJ which.PRT.REL be.V.PRES for.PREP the.DEF.F.SG.ND college.N.F.SG+ASP to.PRT.INFIN help.V.INFIN+ASP and.CONJ for.PREP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP and.CONJ her.PRON.POSS.F.3S culture.N.M which.PRT.REL protect.V.PAST+ASP to.PREP the.DEF.PL.DAT generation.N.M.PL.GD to.PREP come.VN  //
+\glft Sabhal Mòr Ostaig Development Trust welcomes support from individuals, corporations, trusts, societies and other bodies committed to supporting the college and to securing the future of the Scottish Gaelic language and culture. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chithear stiùireadh anns an fhiosrachadh a leanas air ciamar as urrainn dhuibh taic a chur rinn: 
+
+\vspace{4mm}
+\gla Chithear stiùireadh anns an fhiosrachadh a leanas air ciamar as urrainn dhuibh taic a chur rinn  //
+\glb see.V.FUT.PASS steer.VN in.PREP the.DEF.M.SG.NGD information.N.M.SG+ASP which.PRT.REL follow.V.FUT.REL on.PREP[or]on.him.PREP+PRON.M.3S how.INT be.V.COP.PRES.REL ability.N.F.SG to.you.PREP+PRON.3P support.N.F.SG to.PRT.INFIN put.V.INFIN+ASP do.V.PAST  //
+\glft There is a range of ways to support the college and the following offers some guidance as to how you may wish to do this: //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 1. Faodar Tabhartasan Gun Chùmhnant a thoirt don Urras Leasachaidh ann an aon iomlaid airgid no mar shreath de iomlaidean cunbhalach airson cur ri amasan coitcheann na colaiste. 
+
+\vspace{4mm}
+\gla 1 Faodar Tabhartasan Gun Chùmhnant a thoirt don Urras Leasachaidh {ann an} aon iomlaid airgid no mar shreath de iomlaidean cunbhalach airson cur ri amasan coitcheann na colaiste  //
+\glb 1.DIGINUM may.V.FUT.PASS donations.N.M.PL that.CONJ covenant.N.M.SG+ASP to.PRT.INFIN give.V.INFIN+ASP to.the.PREP+DEF trust.N.M.SG development.N.M.SG.GEN in.a.PREP+INDEF one.NUM.ORD payment.N.F.SG money.N.M.SG.GEN or.CONJ as.CONJ series.N.M.SG+ASP of.PREP payments.N.F.PL regular.ADJ for.PREP put.VN to.PREP aims.N.M.PL common.ADJ of.the.DEF.F.SG.GEN college.N.F.SG  //
+\glft 1. Unconditional Donations may be made to the Development Trust either as a one off payment or as a series of regular payments for the general furtherance of the college's aims. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 2. Faodar Tabhartasan Le Cùmhnant a thoirt don Urras Leasachaidh ann an aon iomlaid no mar shreath de iomlaidean cunbhalach a shònraicheas pròiseact no roinn shònraichte don tèid am maoineachadh. 
+
+\vspace{4mm}
+\gla 2 Faodar Tabhartasan Le Cùmhnant a thoirt don Urras Leasachaidh {ann an} aon iomlaid no mar shreath de iomlaidean cunbhalach a shònraicheas pròiseact no roinn shònraichte don tèid am maoineachadh  //
+\glb 2.DIGINUM may.V.FUT.PASS donations.N.M.PL with.PREP covenant.N.M.SG to.PRT.INFIN give.V.INFIN+ASP to.the.PREP+DEF trust.N.M.SG development.N.M.SG.GEN in.a.PREP+INDEF one.NUM.ORD payment.N.F.SG or.CONJ as.CONJ series.N.M.SG+ASP of.PREP payments.N.F.PL regular.ADJ which.PRT.REL specify.V.FUT.REL+ASP project.N.M.SG or.CONJ section.N.F.SG special.ADJ+ASP to.the.PREP+DEF go.V.FUT.DEP the.DEF.M.SG.NOM[or]time.N.M.SG fund.VN  //
+\glft 2. Conditional Donations may be made either as a one off payment or as regular payments which specify a particular project or area to which funds may be applied. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 3. Faodar Dìleaban fhàgail don Urras Leasachaidh, gun chùmhnant no le cùmhnant, airson roinnean no pròiseactan sònraichte anns a' cholaiste. 
+
+\vspace{4mm}
+\gla 3 Faodar Dìleaban fhàgail don Urras Leasachaidh gun chùmhnant no le cùmhnant airson roinnean no pròiseactan sònraichte anns a' cholaiste  //
+\glb 3.DIGINUM may.V.FUT.PASS legacies.N.F.PL leave.VN+ASP to.the.PREP+DEF trust.N.M.SG development.N.M.SG.GEN that.CONJ covenant.N.M.SG+ASP or.CONJ with.PREP covenant.N.M.SG for.PREP section.N.F.SG or.CONJ projects.N.M.PL special.ADJ in.PREP the.DEF.F.SG.ND college.N.F.SG+ASP  //
+\glft 3. Legacies may be left to the Development Trust which can either be unconditional or in support of particular areas of activity. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 4. Faodar tabhartasan a thoirt do Mhaoin Thochraidh Na Cholaiste a chaidh a stèidheachadh airson sruth airgid a chur air bhonn a bheir taic do dh'iomairtean sònraichte. 
+
+\vspace{4mm}
+\gla 4 Faodar tabhartasan a thoirt do Mhaoin Thochraidh Na Cholaiste a chaidh a stèidheachadh airson sruth airgid a chur air bhonn a bheir taic do dh'iomairtean sònraichte  //
+\glb 4.DIGINUM may.V.FUT.PASS donations.N.M.PL to.PRT.INFIN give.V.INFIN+ASP to.PREP fund.N.F.SG+ASP endowment.N.M.SG.GEN+ASP of.the.DEF.F.SG.GEN college.N.F.SG+ASP which.PRT.REL go.V.PAST to.PRT.INFIN establish.V.INFIN for.PREP stream.N.M.SG money.N.M.SG.GEN to.PRT.INFIN put.V.INFIN+ASP on.PREP foundation.N.M.SG+ASP his.PRON.POSS.M.3S[or]her.PRON.POSS.F.3S[or]to.PRT.INFIN[or]which.PRT.REL bear.V.IMPER+ASP support.N.F.SG to.PREP initiatives.N.F.PL+DH special.ADJ  //
+\glft 4. Towards the college Endowment Fund which has been set up to provide a flow of income in support of a particular purpose. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 5. Caidreabh An t-Sabhail a tha a' toirt fo-sgrìobhadh bliadhnail seachad don luchd-taice anns am faighear ìsleachadh phrìsean air bathar, seirbheisean is tachartasan na colaiste. 
+
+\vspace{4mm}
+\gla 5 Caidreabh An t-Sabhail a tha a' toirt fo-sgrìobhadh bliadhnail seachad don luchd-taice anns am faighear ìsleachadh phrìsean air bathar seirbheisean is tachartasan na colaiste  //
+\glb 5.DIGINUM companionship.N.M.SG the.DEF.M.SG.GD barn.N.M.SG.GEN+T which.PRT.REL be.V.PRES -ing.PRT.CONT give.PRESPART subscription.N.M.SG annual.ADJ past.ADV to.the.PREP+DEF supporters.N.M.PL in.PREP the.DEF.M.SG.NOM[or]time.N.M.SG get.V.FUT.PASS reduction.N.M.SG prices.N.F.PL+ASP on.PREP product.N.M.SG services.N.F.PL and.CONJ events.N.M.PL of.the.DEF.F.SG.GEN college.N.F.SG  //
+\glft 5. Caidreabh An t-Sabhail/Friends Of Sabhal Mòr Ostaig which allows supporters to subscribe to an annual membership with added benefit of discounted rates on college products, services and events. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Faodar Gift Aid fhaighinn an lùib gach tabhartais agus tha sin a' ciallachadh gum faigh an t-Urras Leasachaidh na cìsean air ais air an tabhartas agaibh a tha sibh air pàigheadh mar-thà agus gun tèid luach an tabhartais agaibh am meud don treas cuid a-rithist. 
+
+\vspace{4mm}
+\gla Faodar Gift Aid fhaighinn an lùib gach tabhartais agus tha sin a' ciallachadh gum faigh an t-Urras Leasachaidh na cìsean {air ais} air an tabhartas agaibh a tha sibh air pàigheadh mar-thà agus gun tèid luach an tabhartais agaibh am meud don treas cuid a-rithist  //
+\glb may.V.FUT.PASS Gift.NAME Aid.NAME get.VN+ASP the.DEF.F.SG.ND angle.N.F.SG every.QUAL donation.N.M.SG.GEN and.CONJ be.V.PRES that.DEM.FAR -ing.PRT.CONT mean.PRESPART that.CONJ get.V.IMPER the.DEF.M.SG.NOM trust.N.M.SG+T development.N.M.SG.GEN the.DEF.PL.ND taxes.N.F.PL backwards.ADV on.PREP the.DEF.M.SG.NGD donation.N.M.SG at.you.PREP+PRON.2P which.PRT.REL be.V.PRES you.PRON.2P after.PREP pay.VN already.ADV and.CONJ that.CONJ go.V.FUT.DEP value.N.M.SG the.DEF.M.SG.GEN donation.N.M.SG.GEN at.you.PREP+PRON.2P the.DEF.M.SG.NOM size.N.M.SG to.the.PREP+DEF third.NUM.CARD portion.N.F.SG again.ADV  //
+\glft All donations may be made as Gift Aid which allows Sabhal Mòr Ostaig Development Trust to reclaim the tax you have already paid on your gift, increasing its value by almost one third. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Faodaidh muinntir nan cìsean àrda buannachd fhaighinn à tabhartas cuideachd is iad a' dèanamh tagradh airson an t-suim eadar a' chìs nas àirde is a' chìs bhunaiteach fhaighinn air ais air na foirmichean bliadhnail. 
+
+\vspace{4mm}
+\gla Faodaidh muinntir nan cìsean àrda buannachd fhaighinn à tabhartas cuideachd is iad a' dèanamh tagradh airson an t-suim eadar a' chìs nas àirde is a' chìs bhunaiteach fhaighinn {air ais} air na foirmichean bliadhnail  //
+\glb may.V.FUT people.N.F.SG of.the.DEF.PL.GEN taxes.N.F.PL high.ADJ.PL advantage.N.F.SG get.VN+ASP from.PREP donation.N.M.SG also.ADV and.CONJ[or]be.V.COP.PRES they.PRON.3P -ing.PRT.CONT do.PRESPART plead.VN for.PREP the.DEF.M.SG.DAT sum.N.M.SG.DAT+T between.PREP the.DEF.F.SG.ND tax.N.F.SG+ASP more.PRT.COMP high.ADJ.COMP.GSF and.CONJ the.DEF.F.SG.ND tax.N.F.SG+ASP basic.ADJ+ASP get.VN+ASP backwards.ADV on.PREP the.DEF.PL.ND forms.N.M.PL annual.ADJ  //
+\glft Higher rate tax payers can also benefit from making a gift by reclaiming the difference between higher rate tax and basic rate tax on their annual returns. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Faodaidh luchd-tabhartais às na Stàitean Aonaichte tabhartas a thoirt seachad tron t-sruth chlàraichte US 501(C)3 agus faodar a h-uile suidheachadh a rèiteachadh gus dèanamh cinnteach gum faighear na sochairean chìsean as buannachdail às na tabhartasan. 
+
+\vspace{4mm}
+\gla Faodaidh luchd-tabhartais às na Stàitean Aonaichte tabhartas a thoirt seachad tron t-sruth chlàraichte US 501C3 agus faodar {a h-uile} suidheachadh a rèiteachadh gus dèanamh cinnteach gum faighear na sochairean chìsean as buannachdail às na tabhartasan  //
+\glb may.V.FUT donors.N.M.PL from.PREP the.DEF.PL.ND state.N.F.PL united.PASTPART donation.N.M.SG to.PRT.INFIN give.V.INFIN+ASP past.ADV through.the.PREP+DEF stream.N.M.SG+T registered.PASTPART+ASP US.UNK 501C3.UNK and.CONJ may.V.FUT.PASS every.QUAL locate.VN to.PRT.INFIN resolve.V.INFIN in.order.to.CONJ do.VN certain.ADJ that.CONJ get.V.FUT.PASS the.DEF.PL.ND benefits.N.F.PL taxes.N.F.PL+ASP be.V.COP.PRES.REL advantageous.ADJ from.PREP the.DEF.PL.ND donations.N.M.PL  //
+\glft US donors have the opportunity to donate through a registered US 501(C)3 conduit and, in all circumstances, arrangements can be made to ensure the most beneficial taxation treatment of donations. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Faodar am foirm gu h-ìosal a chlò-bhualadh, a lìonadh agus a chur thugainn. 
+
+\vspace{4mm}
+\gla Faodar am foirm gu h-ìosal a chlò-bhualadh a lìonadh agus a chur thugainn  //
+\glb may.V.FUT.PASS the.DEF.M.SG.NOM form.N.M.SG that.CONJ low.ADJ+H to.PRT.INFIN print.V.INFIN+ASP to.PRT.INFIN fill.V.INFIN and.CONJ to.PRT.INFIN put.V.INFIN+ASP to.us.PREP+PRON.1P  //
+\glft You can make a donation by printing and completing the donations form below and sending it to us. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha sinn an dòchas gum bi goireas air-loidhne againn a dh'aithghearr. 
+
+\vspace{4mm}
+\gla Tha sinn an dòchas gum bi goireas air-loidhne againn {a dh'aithghearr}  //
+\glb be.V.PRES we.PRON.1P the.DEF.M.SG.NGD hope.N.M.SG that.CONJ be.V.IMPER[or]be.V.FUT.INT facility.N.M.SG online.ADJ at.us.PREP+PRON.1P shortly.ADV  //
+\glft We hope to have an online donation facility available in the near future. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha Talla a' Bhaile ann an Glaschu loma-làn oidhche Shathairne airson cuirm-chiùil shònraichte, SMO@40, far an tàinig iomadach neach-ciùil iomraiteach còmhla gus buaidh Sabhal Mòr Ostaig thar nam bliadhnaichean agus an dlùth cheangal a tha air a bhith aig a' cholaiste ri ceòl sna 40 bliadhna bhon a chaidh a cur air chois a chomharrachadh. 
+
+\vspace{4mm}
+\gla Bha Talla a' Bhaile {ann an} Glaschu loma-làn oidhche Shathairne airson cuirm-chiùil shònraichte SMO@40 far an tàinig iomadach neach-ciùil iomraiteach còmhla gus buaidh Sabhal Mòr Ostaig thar nam bliadhnaichean agus an dlùth cheangal a tha {air a bhith} aig a' cholaiste ri ceòl sna 40 bliadhna bhon a chaidh a cur air chois a chomharrachadh  //
+\glb be.V.PAST hall.N.M.SG the.DEF.M.SG.GD town.N.M.SG+ASP in.a.PREP+INDEF Glasgow.NPLACE chock-full.ADV night.N.F.SG Saturday.N.M.SG+ASP for.PREP concert.N.F.SG special.ADJ+ASP SMO@40.UNK where.REL the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD come.V.PAST.DEP various.QUAL musician.N.M.SG celebrity.ADJ together.ADV in.order.to.CONJ virtue.N.F.SG.GD barn.N.M.SG big.ADJ Ostaig.NAME over.PREP of.the.DEF.PL.GEN year.N.F.PL and.CONJ the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD close.ADJ connect.VN+ASP which.PRT.REL be.V.PRES be.V.PERF.CONT at.PREP the.DEF.F.SG.ND college.N.F.SG+ASP to.PREP music.N.M.SG in.the.PREP+DEF.PL 40.DIGINUM year.N.F.SG from.the.PREP+DEF which.PRT.REL go.V.PAST to.PRT.INFIN put.V.INFIN on.PREP foot.N.F.SG.GD+ASP to.PRT.INFIN specify.V.INFIN+ASP  //
+\glft Glasgow's City Halls venue was jam-packed for Sabhal Mòr Ostaig's special 40th anniversary concert, SMO@40. A host of musical stars who have shared in the college's rich history were onstage to celebrate the college's continuing contribution to Gaelic and Scotland's culture and to showcase the intimate relationship SMO has enjoyed with music over the years since it was established 40 years ago. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Mar phàirt de Celtic Connections 2013, bha a' chuirm-chiùil mar urram dhan cholaiste is an obair phrìseil is thorrach a tha i air a dhèanamh mar Ionad Nàiseanta Cànan is Cultar na Gàidhlig, agus gus comharrachadh mar a tha Sabhal Mòr air buaidh mhòr a thoirt air beatha chultarach na h-Alba thar nan dà fhichead bliadhna a dh'fhalbh. 
+
+\vspace{4mm}
+\gla Mar phàirt de Celtic Connections 2013 bha a' chuirm-chiùil mar urram dhan cholaiste is an obair phrìseil is thorrach a tha i air a dhèanamh mar Ionad Nàiseanta Cànan is Cultar na Gàidhlig agus gus comharrachadh mar a tha Sabhal Mòr air buaidh mhòr a thoirt air beatha chultarach na h-Alba thar nan dà fhichead bliadhna a dh'fhalbh  //
+\glb as.CONJ part.N.F.SG+ASP of.PREP Celtic.NAME Connections.NAME 2013.YEAR be.V.PAST the.DEF.F.SG.ND concert.N.F.SG+ASP as.CONJ honour.N.M.SG to.the.PREP+DEF college.N.F.SG+ASP and.CONJ the.DEF.F.SG.ND work.N.F.SG valuable.+ASP and.CONJ[or]be.V.COP.PRES fruitful.ADJ+ASP which.PRT.REL be.V.PRES she.PRON.F.3S on.PREP his.PRON.POSS.M.3S do.VN+ASP as.CONJ centre.N.M.SG national.ADJ language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ in.order.to.CONJ specify.VN as.CONJ which.PRT.REL be.V.PRES barn.N.M.SG big.ADJ on.PREP virtue.N.F.SG.GD big.ADJ+ASP to.PRT.INFIN give.V.INFIN+ASP on.PREP life.N.F.SG cultural.ADJ+ASP of.the.DEF.F.SG.GEN Scotland.N.F.SG+H over.PREP in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN two.NUM.ORD twenty.NUM.ORD+ASP year.N.F.SG which.PRT.REL leave.V.PAST+DH  //
+\glft The concert was held as part of Celtic Connections 2013 in honour of Sabhal Mòr and the critical role it plays as the National Centre for the Gaelic Language, Culture and the Arts, and to pay tribute to and to celebrate the contribution which the institution has made to the cultural life of Scotland. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thuirt Donaidh Rothach, An Stiùiriche aig Sabhal Mòr Ostaig airson Leasachaidh, Tional-airgid agus nan Ealain agus a chuir an tachartas air adhart còmhla ri Stiùiriche Celtic Connections Dòmhnall Seathach: 
+
+\vspace{4mm}
+\gla Thuirt Donaidh Rothach An Stiùiriche aig Sabhal Mòr Ostaig airson Leasachaidh Tional-airgid agus nan Ealain agus a chuir an tachartas air adhart còmhla ri Stiùiriche Celtic Connections Dòmhnall Seathach  //
+\glb say.V.PAST Donnie.NPERSON Munro.NPERSON the.DEF.M.SG.NGD director.N.M.SG at.PREP barn.N.M.SG big.ADJ Ostaig.NAME for.PREP development.N.M.SG.GEN fundraising.N.M.SG and.CONJ of.the.DEF.PL.GEN arts.N.F.PL and.CONJ which.PRT.REL put.V.PAST+ASP the.DEF.M.SG.NGD event.N.M.SG on.PREP front.N.M.SG together.ADV to.PREP director.N.M.SG Celtic.NAME Connections.NAME Donald.NPERSON Shaw.NPERSON  //
+\glft Sabhal Mòr Ostaig Director of Development, Fundraising and the Arts Donnie Munro, who along with Festival Director Donald Shaw arranged for the event to take place, said: //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha b' urrainn dòigh na b' fheàrr a bhith againn airson tòiseachadh a' comharrachadh na bliadhna shònraichte seo ann an eachdraidh an t-Sabhail. 
+
+\vspace{4mm}
+\gla Cha b' urrainn dòigh na b' fheàrr a bhith againn airson tòiseachadh a' comharrachadh na bliadhna shònraichte seo {ann an} eachdraidh an t-Sabhail  //
+\glb not.PRT.NEG be.V.COP.PAST ability.N.F.SG method.N.F.SG all.that.PRT.REL be.V.COP.PAST good.ADJ.COMP+ASP to.PRT.INFIN be.V.INFIN+ASP at.us.PREP+PRON.1P for.PREP start.VN -ing.PRT.CONT specify.PRESPART of.the.DEF.F.SG.GEN year.N.F.SG special.ADJ+ASP this.DEM.NEAR in.a.PREP+INDEF history.N.F.SG the.DEF.M.SG.GD barn.N.M.SG.GEN+T  //
+\glft This concert has been a very special way to launch this important year in Sabhal Mòr Ostaig's history. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha mar a tha cruinneachadh iongantach agus air leth tàlantach de luchd-ciùil is seinneadairean eadar-nàiseanta air tighinn còmhla gus urram a shealltainn dha SMO na chomharra air a' bhàidh is an spèis a th' aig daoine don cholaiste. Tha e cuideachd a' sealltainn mar a tha àite sònraichte aig Sabhal Mòr Ostaig ann an saoghal cultarach na h-Alba. 
+
+\vspace{4mm}
+\gla Tha mar a tha cruinneachadh iongantach agus {air leth} tàlantach de luchd-ciùil is seinneadairean eadar-nàiseanta air tighinn còmhla gus urram a shealltainn dha SMO na chomharra air a' bhàidh is an spèis a th' aig daoine don cholaiste Tha e cuideachd a' sealltainn mar a tha àite sònraichte aig Sabhal Mòr Ostaig {ann an} saoghal cultarach na h-Alba  //
+\glb be.V.PRES as.CONJ which.PRT.REL be.V.PRES collect.VN surprising.ADJ and.CONJ particularly.ADV talented.ADJ of.PREP musicians.N.M.PL and.CONJ singers.N.M.PL international.ADJ after.PREP come.VN together.ADV in.order.to.CONJ honour.N.M.SG to.PRT.INFIN show.V.INFIN+ASP to.him.PREP+PRON.M.3S SMO.UNK in.his.PREP+POSS.M.3S sign.N.M.SG+ASP on.PREP the.DEF.F.SG.ND affection.N.F.SG+ASP and.CONJ the.DEF.F.SG.ND respect.N.F.SG which.PRT.REL be.V.PRES at.PREP persons.N.M.PL to.the.PREP+DEF college.N.F.SG+ASP be.V.PRES he.PRON.M.3S also.ADV -ing.PRT.CONT show.PRESPART as.CONJ which.PRT.REL be.V.PRES place.N.M.SG special.ADJ at.PREP barn.N.M.SG big.ADJ Ostaig.NAME in.a.PREP+INDEF world.N.M.SG cultural.ADJ of.the.DEF.F.SG.GEN Scotland.N.F.SG+H  //
+\glft That such an amazing array of talented international musicians and singers should come together in this way to celebrate and to honour the work of Sabhal Mòr is a wonderful testimony to the deep affection and respect in which it is held and, furthermore, is a recognition of the unique and special place which Sabhal Mòr occupies at the heart of Scottish cultural life. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chaidh cuirm shònraichte a chumail air an aon latha air an fheasgar aig Conservatoire Rìoghail na h-Alba aig 2.00f le oileanaich ciùil na Colaiste bhon chùrsa BA (le Urram) Gàidhlig is Ceòl Traidiseanta. 
+
+\vspace{4mm}
+\gla Chaidh cuirm shònraichte a chumail air an aon latha air an fheasgar aig Conservatoire Rìoghail na h-Alba aig 200f le oileanaich ciùil na Colaiste bhon chùrsa BA le Urram Gàidhlig is Ceòl Traidiseanta  //
+\glb go.V.PAST concert.N.F.SG special.ADJ+ASP to.PRT.INFIN hold.V.INFIN+ASP on.PREP the.DEF.M.SG.NGD one.NUM.ORD day.N.M.SG on.PREP the.DEF.M.SG.NGD afternoon.N.M.SG+ASP at.PREP Conservatoire.NAME royal.ADJ of.the.DEF.F.SG.GEN Scotland.N.F.SG+H at.PREP 200f.UNK with.PREP students.N.M.PL music.N.M.SG.GEN of.the.DEF.F.SG.GEN college.N.F.SG from.the.PREP+DEF course.N.M.SG+ASP BA.UNK with.PREP honour.N.M.SG Scots.Gaelic.N.F.SG and.CONJ music.N.M.SG traditional.ADJ  //
+\glft Also taking place at Celtic Connections on the same day was a special afternoon concert in the Royal Conservatoire of Scotland at 2.00pm featuring the best of the College's current BA (Hons) Gaelic \& Traditional Music student talent. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha cuideachd cothrom aig duine blasad Gàidhlig a thogail air no piseach a thoirt air an cuid Gàidhlig le cùrsa a ruith tron latha aig an Lèanag ann am Partaig. 
+
+\vspace{4mm}
+\gla Bha cuideachd cothrom aig duine blasad Gàidhlig a thogail air no piseach a thoirt air an cuid Gàidhlig le cùrsa a ruith tron latha aig an Lèanag {ann am} Partaig  //
+\glb be.V.PAST also.ADV opportunity.N.M.SG at.PREP person.N.M.SG taste.N.M.SG Scots.Gaelic.N.F.SG to.PRT.INFIN raise.V.INFIN+ASP on.PREP[or]on.him.PREP+PRON.M.3S or.CONJ improvement.N.M.SG to.PRT.INFIN give.V.INFIN+ASP on.PREP the.DEF.F.SG.ND portion.N.F.SG Scots.Gaelic.N.F.SG with.PREP course.N.M.SG which.PRT.REL run.V.PAST through.the.PREP+DEF day.N.M.SG at.PREP the.DEF.F.SG.ND green.N.F.SG in.a.PREP+INDEF Partick.NPLACE  //
+\glft There was also the opportunity during the day for people to learn some Gaelic or improve their Gaelic skills at a course run by the College's Short Courses team, which took place in An Lèanag in Partick. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh Maighread Stiùbhart, a bha na Ceòladair air Mhuinntearas aig Sabhal Mòr Ostaig, a' taisbeanadh A' Bhanais Ghàidhealach (The Highland Wedding),  air Dihaoine 1 Gearran aig Celtic Connections. 
+
+\vspace{4mm}
+\gla Bidh Maighread Stiùbhart a bha na Ceòladair air Mhuinntearas aig Sabhal Mòr Ostaig a' taisbeanadh A' Bhanais Ghàidhealach The Highland Wedding air Dihaoine 1 Gearran aig Celtic Connections  //
+\glb be.V.FUT Mairead.NPERSON Stewart.NPERSON which.PRT.REL be.V.PAST in.his.PREP+POSS.M.3S musician.N.M.SG on.PREP residency.N.F.SG+ASP at.PREP barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT present.PRESPART the.DEF.F.SG.ND wedding.N.F.SG+ASP Highland.ADJ+ASP The.NAME Highland.NAME Wedding.NAME on.PREP Friday.N.M.SG 1.DIGINUM February.N.F.SG at.PREP Celtic.NAME Connections.NAME  //
+\glft Margaret Stewart, recent Musician in Residence at Sabhal Mòr Ostaig, will be performing A Bhanais Ghàidhealach (The Highland Wedding) on Friday 1 February as part of the Celtic Connections festival. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh òrain, ceòl is ealain bho na làithean a dh'fhalbh agus an latha an-diugh ri chluinntinn is ri fhaicinn, an dà chuid ceòl traidiseanta agus ceòl ùr, cho math ri ceòl a rinn Maighread a dh'aona-ghnothaich don chuirm seo. 
+
+\vspace{4mm}
+\gla Bidh òrain ceòl is ealain bho na làithean a dh'fhalbh agus an latha an-diugh ri chluinntinn is ri fhaicinn an dà chuid ceòl traidiseanta agus ceòl ùr cho math ri ceòl a rinn Maighread {a dh'aona-ghnothaich} don chuirm seo  //
+\glb be.V.FUT songs.N.M.PL music.N.M.SG and.CONJ arts.N.F.PL from.PREP the.DEF.PL.ND days.N.M.PL which.PRT.REL leave.V.PAST+DH and.CONJ the.DEF.M.SG.NGD day.N.M.SG today.ADV to.PREP hear.VN+ASP and.CONJ[or]be.V.COP.PRES to.PREP see.VN+ASP the.DEF.F.SG.ND two.NUM.ORD portion.N.F.SG+ASP music.N.M.SG traditional.ADJ and.CONJ music.N.M.SG new.ADJ as.ADV good.ADJ to.PREP music.N.M.SG which.PRT.REL do.V.PAST Mairead.NPERSON intentionally.ADV to.the.PREP+DEF concert.N.F.SG+ASP this.DEM.NEAR  //
+\glft This celebration of Highland nuptial customs, both past and present will include songs, music and visual art; both traditional and modern material, together with some of Margaret's new compositions for the piece. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh an consart a' tòiseachadh aig 7.30f ann an Leabharlann Mitchell. 
+
+\vspace{4mm}
+\gla Bidh an consart a' tòiseachadh aig 730f {ann an} Leabharlann Mitchell  //
+\glb be.V.FUT the.DEF.M.SG.NGD concert.N.M.SG -ing.PRT.CONT start.PRESPART at.PREP 730f.UNK in.a.PREP+INDEF library.N.F.SG Mitchell.NAME  //
+\glft The concert will take place in the Mitchell Library at 7.30pm. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gheibhear tiocaidean agus tuilleadh fios bho www.celticconnections.com. 
+
+\vspace{4mm}
+\gla Gheibhear tiocaidean agus tuilleadh fios bho wwwcelticconnectionscom  //
+\glb get.V.FUT.PASS tickets.N.F.PL and.CONJ more.N.M.SG knowledge.N.M.SG from.PREP wwwcelticconnectionscom.UNK  //
+\glft Tickets are available online at www.celticconnections.com. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thàinig a' Ghàidhlig à Èirinn còmhla ris na Gàidheil nuair a thuinich iad ann an Earra-Ghàidheal mu 500 AD agus sgap i a-mach nuair a leudaich rìoghachd nan Gàidheal air feadh na dùthcha. 
+
+\vspace{4mm}
+\gla Thàinig a' Ghàidhlig à Èirinn còmhla ris na Gàidheil nuair a thuinich iad {ann an} Earra-Ghàidheal mu 500 AD agus sgap i a-mach nuair a leudaich rìoghachd nan Gàidheal {air feadh} na dùthcha  //
+\glb come.V.PAST[or]come.V.PAST.DEP+ASP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP from.PREP Ireland.NPLACE.F.SG together.ADV to.him.PREP+PRON.M.3S in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S[or]all.that.PRT.REL[or]of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND Highlander.N.M.SG.GEN when.CONJ which.PRT.REL settle.V.PAST+ASP they.PRON.3P in.a.PREP+INDEF Argyll.NPLACE about.PREP 500.DIGINUM AD.UNK and.CONJ spread.V.IMPER she.PRON.F.3S out.ADV when.CONJ which.PRT.REL expand.V.PAST kingdom.N.F.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN Highlander.N.M.SG throughout.PREP of.the.DEF.F.SG.GEN native.land.N.F.SG.GEN  //
+\glft Gaelic came to with the Gaels or Scots from Ireland when they settled in Argyll around 500 AD and spread out when the Kingdom of the Scots extended throughout the country. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ràinig a' Ghàidhlig àirde a neirt mu 1100 AD, nuair a bhathar ga bruidhinn eadar Gallaibh mu thuath is Anainn mu dheas agus eadar Fìobha mun ear is na h-Eileanan mun iar. 
+
+\vspace{4mm}
+\gla Ràinig a' Ghàidhlig àirde a neirt mu 1100 AD nuair a bhathar ga bruidhinn eadar Gallaibh mu thuath is Anainn mu dheas agus eadar Fìobha mun ear is na h-Eileanan mun iar  //
+\glb reach.V.PAST the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP high.ADJ.COMP.GSF her.PRON.POSS.F.3S strength.N.M.SG.GEN about.PREP 1100.YEAR AD.UNK when.CONJ his.PRON.POSS.M.3S be.V.0.PAST[or]product.N.M.SG+ASP at.her.PREP+POSS.F.3S speak.VN[or]speak.V.IMPER between.PREP Caithness.NPLACE about.PREP northern.ADJ+ASP and.CONJ Annan.NPLACE about.PREP southern.ADJ+ASP and.CONJ between.PREP Fife.NPLACE about.the.PREP+DEF east.N.F.SG and.CONJ the.DEF.PL.ND islands.N.M.PL+H about.the.PREP+DEF west.N.F.SG  //
+\glft Gaelic reached its zenith around 1100 AD when it was spoken from Caithness in the north to Annan in the south and from Fife in the east to the Islands in the west. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre B' i a' Ghàidhlig cànan rìghrean na h-Alba gus an do phòs Maol-Chaluim Ceann Mòr a bhean aig nach robh a' Ghàidhlig. 
+
+\vspace{4mm}
+\gla B' i a' Ghàidhlig cànan rìghrean na h-Alba gus an do phòs Maol-Chaluim Ceann Mòr a bhean aig nach robh a' Ghàidhlig  //
+\glb be.V.COP.PAST she.PRON.F.3S the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP language.N.F.SG king.N.M.PL of.the.DEF.F.SG.GEN Scotland.N.F.SG+H in.order.to.CONJ the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD to.PREP marry.V.IMPER+ASP Malcolm.NPERSON head.N.M.SG big.ADJ his.PRON.POSS.M.3S woman.N.F.SG+ASP at.PREP ?not.PRT.INT.NEG be.V.PAST.DEP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP  //
+\glft Gaelic was the language of the kings of Scotland until Malcolm Canmore married his wife who spoke no Gaelic. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhon àm sin thòisich cumhachd na Gàidhlig am measg uaislean na Galltachd a' crìonadh. 
+
+\vspace{4mm}
+\gla Bhon àm sin thòisich cumhachd na Gàidhlig {am measg} uaislean na Galltachd a' crìonadh  //
+\glb from.the.PREP+DEF time.N.M.SG that.DEM.FAR start.V.IMPER+ASP influence.N.F.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG among.PREP aristocrats.N.PL of.the.DEF.F.SG.GEN Lowlands.N.F.SG -ing.PRT.CONT fade.PRESPART  //
+\glft Henceforth the influence of Gaelic began to wane among the aristocrats of the Lowlands. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhathar fhathast a' bruidhinn na Gàidhlig ann an Carraig is Gall-ghàidheil anns an 17mh linn, ach b' ann air a' Ghàidhealtachd agus anns na h-Eileanan a bu treasa i. 
+
+\vspace{4mm}
+\gla Bhathar fhathast a' bruidhinn na Gàidhlig {ann an} Carraig is Gall-ghàidheil anns an 17mh linn ach b' ann air a' Ghàidhealtachd agus anns na h-Eileanan a bu treasa i  //
+\glb be.V.0.PAST[or]product.N.M.SG+ASP still.ADV -ing.PRT.CONT speak.PRESPART of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG in.a.PREP+INDEF rock.N.F.SG and.CONJ Galloway.NPLACE in.PREP the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD 17th.DATE.CARD century.N.F.SG bu.CONJ be.V.COP.PAST in.it.PREP+PRON.M.3S on.PREP the.DEF.F.SG.ND Highlands.N.F.SG+ASP and.CONJ in.PREP the.DEF.PL.ND islands.N.M.PL+H which.PRT.REL be.V.COP.PAST strong.ADJ.COMP she.PRON.F.3S  //
+\glft Gaelic was still spoken in Carrick and Galloway in the 17th century, but it was at its strongest in the Highlands and Islands. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ri linn Rìoghachd nan Eilean thàinig ùrachadh is leudachadh air cultar is sgoilearachd na Gàidhlig. 
+
+\vspace{4mm}
+\gla Ri linn Rìoghachd nan Eilean thàinig ùrachadh is leudachadh air cultar is sgoilearachd na Gàidhlig  //
+\glb to.PREP century.N.F.SG kingdom.N.F.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN island.N.M.SG come.V.PAST[or]come.V.PAST.DEP+ASP renewal.N.M and.CONJ expand.VN on.PREP culture.N.M and.CONJ scholarship.N.F.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft At the time of the Lordship of the Isles Gaelic culture and scholarship underwent a revival and expansion. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha a' Ghàidhlig Chlasaigeach ga cleachdadh ann am bàrdachd le Clann MhicMhuirich ann an Uibhist suas chun na 18mh linn. 
+
+\vspace{4mm}
+\gla Bha a' Ghàidhlig Chlasaigeach ga cleachdadh {ann am} bàrdachd le Clann MhicMhuirich {ann an} Uibhist suas chun na 18mh linn  //
+\glb be.V.PAST the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP classical.ADJ+ASP at.her.PREP+POSS.F.3S use.VN in.a.PREP+INDEF poetry.N.F.SG with.PREP clan.N.F.SG MacMurray.NPERSON.GD in.a.PREP+INDEF Uist.NPLACE up.ADV to.PREP of.the.DEF.F.SG.GEN 18th.NUM.CARD century.N.F.SG  //
+\glft Classical Gaelic was used in the poetry of the MacMhuirich family in Uist until the 18th century. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thàinig ùrachadh eile ann am bàrdachd na Gàidhlig aig an aon àm ri linn bhàrd mar Uilleam Ros, Mac Mhaighstir Alasdair is Donnchadh Bàn, ach bha cuibhle an fhortain a' cur nan caran. 
+
+\vspace{4mm}
+\gla Thàinig ùrachadh eile {ann am} bàrdachd na Gàidhlig aig an aon àm ri linn bhàrd mar Uilleam Ros Mac Mhaighstir Alasdair is Donnchadh Bàn ach bha cuibhle an fhortain a' cur nan caran  //
+\glb come.V.PAST[or]come.V.PAST.DEP+ASP renewal.N.M other.ADJ in.a.PREP+INDEF poetry.N.F.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG at.PREP the.DEF.M.SG.NGD one.NUM.ORD time.N.M.SG to.PREP century.N.F.SG poet.N.M.SG+ASP as.CONJ William.NPERSON Ross.NPERSON son.N.M.SG master.N.M.SG+ASP Alasdair.NPERSON and.CONJ[or]be.V.COP.PRES Duncan.NPERSON fair-haired.ADJ bu.CONJ be.V.PAST wheel.N.F.SG the.DEF.M.SG.GEN fortune.N.M.SG.GEN+ASP -ing.PRT.CONT put.PRESPART of.the.DEF.PL.GEN turns.N.M.PL  //
+\glft Another flourishing occurred in Gaelic poetry at the still time under the influence of poets such as William Ross, Alexander MacDonald and Duncan Bàn Macintyre, but the wheels of fortune were turning. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Anns an 17mh linn, thàinig sreath de laghannan a-mach à Pàrlamaid Dhùn Èideann an aghaidh na Gàidhlig; às dèidh Blàr Chùil Lodair chaidh laghannan eile a chur an sàs an aghaidh cànan is cultar nan Gàidheal; cha do leig buidhnean mar an SSPCK a' Ghàidhlig a-steach dha na sgoiltean aca gu deireadh na 18mh linn; agus chuir Achd an Fhoghlaim 1872 crìoch air a' chànan ann an siostam an fhoghlaim. 
+
+\vspace{4mm}
+\gla Anns an 17mh linn thàinig sreath de laghannan a-mach à Pàrlamaid Dhùn Èideann {an aghaidh} na Gàidhlig às dèidh Blàr Chùil Lodair chaidh laghannan eile a chur an sàs {an aghaidh} cànan is cultar nan Gàidheal cha do leig buidhnean mar an SSPCK a' Ghàidhlig a-steach dha na sgoiltean aca gu deireadh na 18mh linn agus chuir Achd an Fhoghlaim 1872 crìoch air a' chànan {ann an} siostam an fhoghlaim  //
+\glb in.PREP the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD 17th.DATE.CARD century.N.F.SG come.V.PAST[or]come.V.PAST.DEP+ASP series.N.M.SG of.PREP laws.N.M.PL out.ADV from.PREP parliament.N.F.SG fortress.N.M.SG+ASP Edinburgh.NPLACE against.PREP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG from.PREP after.PREP battle.N.M.SG Chùil.NAME ladle.N.M.SG.GEN go.V.PAST laws.N.M.PL other.ADJ to.PRT.INFIN put.V.INFIN+ASP the.DEF.M.SG.NGD placement.N.M.SG against.PREP language.N.F.SG and.CONJ culture.N.M in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN Highlander.N.M.SG not.PRT.NEG to.PREP allow.V.IMPER groups.N.F.PL as.CONJ the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD SSPCK.UNK the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP in.ADV to.him.PREP+PRON.M.3S the.DEF.PL.ND school.N.F.PL at.them.PREP+PRON.3P that.CONJ end.N.M.SG of.the.DEF.F.SG.GEN 18th.NUM.CARD century.N.F.SG and.CONJ put.V.IMPER+ASP act.N.M.SG the.DEF.M.SG.GEN learn.V.IMPER+ASP[or]education.N.M.SG.GEN+ASP 1872.YEAR end.N.F.SG on.PREP the.DEF.F.SG.ND language.N.F.SG+ASP in.a.PREP+INDEF system.N.M.SG the.DEF.M.SG.GEN learn.V.IMPER+ASP[or]education.N.M.SG.GEN+ASP  //
+\glft In the 17th century a series of anti-Gaelic laws emanated from Parliament in Edinburgh; after the Battle of Culloden other laws were enacted against Gaelic language and culture; organisations such as the SSPCK would not allow Gaelic to be used in their schools until the end of the 18th century; and the Education Act of 1872 ended the use of the language in the education system. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thòisich na Fuadaichean aig deireadh na 18mh linn agus chùm iad orra fad ceud bliadhna. 
+
+\vspace{4mm}
+\gla Thòisich na Fuadaichean aig deireadh na 18mh linn agus chùm iad orra fad ceud bliadhna  //
+\glb start.V.IMPER+ASP the.DEF.PL.ND eviction.N.M.PL at.PREP end.N.M.SG of.the.DEF.F.SG.GEN 18th.NUM.CARD century.N.F.SG and.CONJ keep.V.IMPER+ASP they.PRON.3P on.them.PREP+PRON.3P length.N.M.SG hundred.NUM.ORD year.N.F.SG  //
+\glft The Highland Clearances began in the late 18th century and continued for a hundred years. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha mòran a' creidsinn nach fhaigheadh iad cothrom na Fèinne air a' Ghàidhealtachd agus thog iad orra a Chanada no dha na bailtean mòra air a' Ghalltachd. 
+
+\vspace{4mm}
+\gla Bha mòran a' creidsinn nach fhaigheadh iad cothrom na Fèinne air a' Ghàidhealtachd agus thog iad orra a Chanada no dha na bailtean mòra air a' Ghalltachd  //
+\glb be.V.PAST many.N.M.SG -ing.PRT.CONT believe.PRESPART ?not.PRT.INT.NEG get.V.COND+ASP they.PRON.3P opportunity.N.M.SG of.the.DEF.F.SG.GEN Fianna.N.F.SG on.PREP the.DEF.F.SG.ND Highlands.N.F.SG+ASP and.CONJ raise.V.IMPER+ASP they.PRON.3P on.them.PREP+PRON.3P his.PRON.POSS.M.3S[or]her.PRON.POSS.F.3S[or]to.PRT.INFIN[or]which.PRT.REL Canada.NPLACE+ASP or.CONJ to.him.PREP+PRON.M.3S the.DEF.PL.ND towns.N.M.PL big.ADJ.PL on.PREP the.DEF.F.SG.ND Lowlands.N.F.SG+ASP  //
+\glft Many believed they would never get a fair deal in the Highlands and left for Canada of the Lowland cities. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A dh'aindeoin gach anaceartais a rinneadh air luchd na Gàidhlig, ged-thà, cha b' e am bàs a bha an dàn don chànan. 
+
+\vspace{4mm}
+\gla {A dh'aindeoin} gach anaceartais a rinneadh air luchd na Gàidhlig ged-thà cha b' e am bàs a bha an dàn don chànan  //
+\glb despite.PREP every.QUAL injustice.N.M.SG.GEN which.PRT.REL do.V.PAST.PASS on.PREP people.N.M.PL of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG however.CONJ not.PRT.NEG be.V.COP.PAST he.PRON.M.3S the.DEF.M.SG.NOM death.N.M.SG which.PRT.REL be.V.PAST the.DEF.M.SG.NGD fate.N.M.SG to.the.PREP+DEF language.N.F.SG+ASP  //
+\glft Despite the injustice handed out to Gaelic speakers, the language was not destined to die off. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thàinig ath-bheothachadh air cultar na Gàidhlig anns an 19mh linn ann am bàrdachd, rosg is ceòl, agus lean an t-ath-bheothachadh sin suas chun an latha an-diugh. 
+
+\vspace{4mm}
+\gla Thàinig ath-bheothachadh air cultar na Gàidhlig anns an 19mh linn {ann am} bàrdachd rosg is ceòl agus lean an t-ath-bheothachadh sin suas chun an latha an-diugh  //
+\glb come.V.PAST[or]come.V.PAST.DEP+ASP revive.VN on.PREP culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG in.PREP the.DEF.F.SG.ND 19th.NUM.CARD century.N.F.SG in.a.PREP+INDEF poetry.N.F.SG prose.N.M.SG and.CONJ music.N.M.SG and.CONJ follow.V.IMPER the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD revive.VN+T that.DEM.FAR up.ADV to.PREP the.DEF.M.SG.NGD day.N.M.SG today.ADV  //
+\glft Gaelic culture underwent a revival in the 19th century in areas such as poetry, prose and music, and the revival has continued to the present day. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Eadar an dà Chogadh Mhòr bha a' Ghàidhlig ri cluinntinn air an rèidio 's air a teagasg ann an sgoiltean. 
+
+\vspace{4mm}
+\gla Eadar an dà Chogadh Mhòr bha a' Ghàidhlig ri cluinntinn air an rèidio 's air a teagasg {ann an} sgoiltean  //
+\glb between.PREP the.DEF.M.SG.NGD two.NUM.ORD war.N.M.SG+ASP big.ADJ+ASP be.V.PAST the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP to.PREP hear.VN on.PREP the.DEF.M.SG.NGD radio.N.M.SG be.V.COP.PRES on.PREP its.PRON.POSS.MF.3S teach.VN in.a.PREP+INDEF school.N.F.PL  //
+\glft Between the two World Wars, Gaelic was to be heard on radio and was taught in schools. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha barrachd nobhailean gam foillseachadh san latha an-diugh na bha riamh roimhe. 
+
+\vspace{4mm}
+\gla Tha barrachd nobhailean gam foillseachadh san latha an-diugh na bha riamh roimhe  //
+\glb be.V.PRES more.ADV novels.N.F.PL at.my.PREP+POSS.1S[or]at.their.PREP+POSS.3P publish.VN in.the.PREP+DEF day.N.M.SG today.ADV all.that.PRT.REL be.V.PAST ever.before.ADV before.him.PREP+PRON.M.3S  //
+\glft More novels are being published today than at any other time. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thòisich foghlam tro mheadhan na Gàidhlig aig deireadh na 20mh linn agus thathar an dùil ri tuilleadh sgoiltean Gàidhlig. 
+
+\vspace{4mm}
+\gla Thòisich foghlam tro mheadhan na Gàidhlig aig deireadh na 20mh linn agus thathar an dùil ri tuilleadh sgoiltean Gàidhlig  //
+\glb start.V.IMPER+ASP learn.VN through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG at.PREP end.N.M.SG of.the.DEF.F.SG.GEN 20th.NUM.CARD century.N.F.SG and.CONJ be.V.0.PRES the.DEF.F.SG.ND expectation.N.F.SG to.PREP more.N.M.SG school.N.F.PL Scots.Gaelic.N.F.SG  //
+\glft Gaelic medium education began in the late 20th century and more Gaelic medium schools are in the pipeline. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gheibh daoine òga foghlam aig gach ìre bho chròileag gu oilthigh tro mheadhan na Gàidhlig. 
+
+\vspace{4mm}
+\gla Gheibh daoine òga foghlam aig gach ìre bho chròileag gu oilthigh tro mheadhan na Gàidhlig  //
+\glb get.V.FUT persons.N.M.PL young.ADJ.PL learn.VN at.PREP every.QUAL degree.N.M.SG from.PREP playgroup.N.M.SG+ASP that.CONJ university.N.M.SG through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft Young people can be educated through the medium of Gaelic at all levels from playgroup to university. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Radio nan Gàidheal air a bhith ann bho na 1980an agus thòisich seanail telebhisein, BBC Alba, air craoladh aig toiseach na 21mh linn. 
+
+\vspace{4mm}
+\gla Tha Radio nan Gàidheal {air a bhith} ann bho na 1980an agus thòisich seanail telebhisein BBC Alba air craoladh aig toiseach na 21mh linn  //
+\glb be.V.PRES Radio.N.M.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN Highlander.N.M.SG be.V.PERF.CONT in.it.PREP+PRON.M.3S from.PREP of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND 1980s.DEC and.CONJ start.V.IMPER+ASP channel.N.F.SG television.N.M.SG.GEN BBC.UNK Scotland.N.F.SG after.PREP broadcast.VN at.PREP start.N.M.SG of.the.DEF.F.SG.GEN 21st.NUM.CARD century.N.F.SG  //
+\glft Radio nan Gàidheal has been in operation since the 1980s and a television channel, BBC Alba, began broadcasting in the early 2000s. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ged a thathar a' dèanamh gàirdeachas ri linn nan leasachaidhean dòchasach sin, chan ann buileach dòchasach a tha cor na Gàidhlig aig ìre na coimhearsnachd, ged-thà. 
+
+\vspace{4mm}
+\gla Ged a thathar a' dèanamh gàirdeachas ri linn nan leasachaidhean dòchasach sin chan ann buileach dòchasach a tha cor na Gàidhlig aig ìre na coimhearsnachd ged-thà  //
+\glb although.CONJ which.PRT.REL be.V.0.PRES -ing.PRT.CONT do.PRESPART joy.N.M.SG to.PREP century.N.F.SG of.the.DEF.PL.GEN developments.N.M.PL hopeful.ADJ that.DEM.FAR not.PRT.NEG in.it.PREP+PRON.M.3S entirely.ADV hopeful.ADJ which.PRT.REL be.V.PRES condition.N.M.SG of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG at.PREP degree.N.M.SG of.the.DEF.F.SG.GEN community.N.F.SG however.CONJ  //
+\glft Despite satisfaction with such optimistic developments, the situation facing Gaelic at local level is not entirely positive. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A rèir Cunntas-sluaigh 2001, bha nas lugha na 60,000 duine ann a bha comasach air an cànan a bhruidhinn, ged a bha còrr is 92,000 comasach air a tuigsinn. 
+
+\vspace{4mm}
+\gla {A rèir} Cunntas-sluaigh 2001 bha nas lugha na 60000 duine ann a bha comasach air an cànan a bhruidhinn ged a bha {còrr is} 92000 comasach air a tuigsinn  //
+\glb according.to.PREP census.N.M.SG 2001.YEAR be.V.PAST more.PRT.COMP small.ADJ.COMP in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S[or]all.that.PRT.REL[or]of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND 60000.DIGINUM person.N.M.SG in.it.PREP+PRON.M.3S which.PRT.REL be.V.PAST able.ADJ on.PREP the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD language.N.F.SG which.PRT.REL speak.V.PAST+ASP although.CONJ which.PRT.REL be.V.PAST more.than.ADV 92000.DIGINUM able.ADJ on.PREP its.PRON.POSS.MF.3S understand.VN  //
+\glft The 2001 Census showed that fewer than 60,000 people could speak Gaelic although over 92,000 can understand it. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha robh sgìre sam bith ann far an robh a' Ghàidhlig cho làidir 's a bha i ceud bliadhna roimhe sin. 
+
+\vspace{4mm}
+\gla Cha robh sgìre {sam bith} ann far an robh a' Ghàidhlig cho làidir 's a bha i ceud bliadhna roimhe sin  //
+\glb not.PRT.NEG be.V.PAST.DEP parish.N.F.SG any.QUAL in.it.PREP+PRON.M.3S where.REL the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD be.V.PAST.DEP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP as.ADV strong.ADJ be.V.COP.PRES which.PRT.REL be.V.PAST she.PRON.F.3S hundred.NUM.ORD year.N.F.SG before.him.PREP+PRON.M.3S that.DEM.FAR  //
+\glft There were no parishes in which Gaelic remained as strong as it had been 100 years earlier. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha ceàrnaidhean anns na h-Eileanan Siar far an robh a' Ghàidhlig na mion-chànan, agus cha robh ach aon sgìre air tìr-mòr, Loch Aillse, far an robh còrr is 20\% de na daoine comasach air a' Ghàidhlig a bhruidhinn. 
+
+\vspace{4mm}
+\gla Bha ceàrnaidhean anns na h-Eileanan Siar far an robh a' Ghàidhlig na mion-chànan agus cha robh ach aon sgìre air tìr-mòr Loch Aillse far an robh {còrr is} 20\% de na daoine comasach air a' Ghàidhlig a bhruidhinn  //
+\glb be.V.PAST areas.N.F.PL in.PREP the.DEF.PL.ND islands.N.M.PL+H western.ADJ where.REL the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD be.V.PAST.DEP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S minority.language.N.M.SG and.CONJ not.PRT.NEG be.V.PAST.DEP bu.CONJ one.NUM.ORD parish.N.F.SG on.PREP mainland.N.M.SG lake.N.M.SG Lochalsh.NPLACE where.REL the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD be.V.PAST.DEP more.than.ADV 20\%.PERCENT of.PREP the.DEF.PL.ND persons.N.M.PL able.ADJ on.PREP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP which.PRT.REL speak.V.PAST+ASP  //
+\glft There were areas even in the Western Isles where Gaelic had become a minority language, and only one mainland parish, Lochalsh, could muster a Gaelic speaking population of 20\%. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chaidh cunntas-sluaigh a chumail ann an 2011, agus seallaidh na figearan a bheil a' Ghàidhlig fhathast a' crìonadh anns na sgìrean a bu dachaigh dhi fad iomadh linn. 
+
+\vspace{4mm}
+\gla Chaidh cunntas-sluaigh a chumail {ann an} 2011 agus seallaidh na figearan a bheil a' Ghàidhlig fhathast a' crìonadh anns na sgìrean a bu dachaigh dhi fad iomadh linn  //
+\glb go.V.PAST census.N.M.SG to.PRT.INFIN hold.V.INFIN+ASP in.a.PREP+INDEF 2011.YEAR and.CONJ show.V.FUT the.DEF.PL.ND figure.N.M.PL which.PRT.REL be.V.PRES.DEP.INT the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP still.ADV -ing.PRT.CONT fade.PRESPART in.PREP the.DEF.PL.ND parish.N.F.PL which.PRT.REL be.V.COP.PAST home.N.F.SG to.her.PREP+PRON.F.3S length.N.M.SG many.N.M.SG century.N.F.SG  //
+\glft A census was held in 2011, and the figures will show whether Gaelic is still contracting in its traditional heartlands. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Dh'fhosgail Sabhal Mòr Ostaig ann an 1973, ann an seann toglaichean tuathanais ann an Ostaig, Slèite. 
+
+\vspace{4mm}
+\gla Dh'fhosgail Sabhal Mòr Ostaig {ann an} 1973 {ann an} seann toglaichean tuathanais {ann an} Ostaig Slèite  //
+\glb open.V.IMPER+DH barn.N.M.SG big.ADJ Ostaig.NAME in.a.PREP+INDEF 1973.YEAR in.a.PREP+INDEF old.ADJ constructions.N.F.PL farm.N.M.SG.GEN in.a.PREP+INDEF Ostaig.NAME Sleat.NPLACE  //
+\glft Sabhal Mòr Ostaig was founded in 1973 in old farm steadings at Ostaig in Sleat. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre B' e am prìomh amas leabharlann Gàidhlig a chur air bhonn ach bha colaiste Ghàidhlig cuideachd san amharc, airson foghlam adhartach agus dreuchdail a thabhann do luchd-labhairt na Gàidhlig, anns a' chànan aca fhèin agus ann an coimhearsnachd dhùthchail. Bha barrachd is barrachd luchd-ionnsachaidh a' togail ùidh anns a' chànan agus bhiodh cothroman ionnsachaidh ann dhaibhsan cuideachd. 
+
+\vspace{4mm}
+\gla B' e am prìomh amas leabharlann Gàidhlig a chur air bhonn ach bha colaiste Ghàidhlig cuideachd san amharc airson foghlam adhartach agus dreuchdail a thabhann do luchd-labhairt na Gàidhlig anns a' chànan aca fhèin agus {ann an} coimhearsnachd dhùthchail Bha barrachd is barrachd luchd-ionnsachaidh a' togail ùidh anns a' chànan agus bhiodh cothroman ionnsachaidh ann dhaibhsan cuideachd  //
+\glb be.V.COP.PAST he.PRON.M.3S the.DEF.M.SG.NOM[or]time.N.M.SG primary.QUAL aim.N.M.SG library.N.F.SG Scots.Gaelic.N.F.SG to.PRT.INFIN put.V.INFIN+ASP on.PREP foundation.N.M.SG+ASP bu.CONJ be.V.PAST college.N.F.SG Scots.Gaelic.N.F.SG+ASP also.ADV in.the.PREP+DEF view.N.M.SG for.PREP learn.VN advanced.ADJ and.CONJ vocational.ADJ to.PRT.INFIN offer.V.INFIN+ASP to.PREP speakers.N.M.PL of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG in.PREP the.DEF.F.SG.ND language.N.F.SG+ASP at.them.PREP+PRON.3P self.ADJ and.CONJ in.a.PREP+INDEF community.N.F.SG rural.ADJ+ASP be.V.PAST more.ADV and.CONJ[or]be.V.COP.PRES more.ADV learners.N.M.PL -ing.PRT.CONT raise.PRESPART interest.N.F.SG in.PREP the.DEF.F.SG.ND language.N.F.SG+ASP and.CONJ be.V.COND+ASP opportunities.N.M.PL education.N.M.SG.GEN in.it.PREP+PRON.M.3S to.them.PREP+PRON.3P also.ADV  //
+\glft While the initial aim was to establish a Gaelic library, the long term plan was for a Gaelic-medium college providing vocational further education for Gaelic speakers, in their own language and rural environment, while also giving the growing number of Gaelic enthusiasts the opportunity to learn the language. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bhiodh seirbheisean agus goireasan a bheireadh taic do dh'obair na Colaiste rin cur air dòigh a bharrachd, ionad rannsachaidh mar eisimpleir. 
+
+\vspace{4mm}
+\gla Bhiodh seirbheisean agus goireasan a bheireadh taic do dh'obair na Colaiste rin cur air dòigh {a bharrachd} ionad rannsachaidh mar eisimpleir  //
+\glb be.V.COND+ASP services.N.F.PL and.CONJ facilities.N.M.PL which.PRT.REL bear.V.COND+ASP support.N.F.SG to.PREP work.N.F.SG+DH of.the.DEF.F.SG.GEN college.N.F.SG to.the.PREP+DEF put.VN on.PREP method.N.F.SG in.addition.PREP centre.N.M.SG investigation.N.M.SG.GEN as.CONJ example.N.M.SG  //
+\glft Additional Gaelic-related services and facilities such as a research centre were also envisaged at this early stage. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ged nach eil cho fada sin bho thòisich a' Cholaiste, tha i air na h-amasan seo a choileanadh, agus fada a bharrachd air sin, is i a' leantainn oirre gus barrachd chothroman Gàidhlig a thabhann don mhòr-shluagh. 
+
+\vspace{4mm}
+\gla Ged nach eil cho fada sin bho thòisich a' Cholaiste tha i air na h-amasan seo a choileanadh agus fada {a bharrachd} air sin is i a' leantainn oirre gus barrachd chothroman Gàidhlig a thabhann don mhòr-shluagh  //
+\glb although.CONJ ?not.PRT.INT.NEG be.V.PRES.DEP.NEG as.ADV long.ADJ that.DEM.FAR from.PREP start.V.IMPER+ASP the.DEF.F.SG.ND college.N.F.SG+ASP be.V.PRES she.PRON.F.3S on.PREP the.DEF.PL.ND aims.N.M.PL+H this.DEM.NEAR to.PRT.INFIN enhance.V.INFIN+ASP and.CONJ long.ADJ in.addition.PREP on.him.PREP+PRON.M.3S[or]on.PREP that.DEM.FAR be.V.COP.PRES[or]and.CONJ she.PRON.F.3S -ing.PRT.CONT follow.PRESPART on.her.PREP+PRON.F.3S in.order.to.CONJ more.ADV opportunities.N.M.PL+ASP Scots.Gaelic.N.F.SG to.PRT.INFIN offer.V.INFIN+ASP to.the.PREP+DEF general.public.N.M.SG+ASP  //
+\glft In its relatively short history, Sabhal Mòr Ostaig has achieved and surpassed these core aims and continues to widen access to the Gaelic language and culture. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha Sir Iain Noble, Somhairle MacGill-Eain, D.R. Dòmhnallach, an Dr Fionnlagh MacLeòid agus Gòrdan Barr am measg a' chiad urrasairean aig a' Cholaiste. Bhon chiad dol-a-mach tha iomadh gaisgeach is buidheann càirdeil air taic a thoirt don t-Sabhal. 
+
+\vspace{4mm}
+\gla Bha Sir Iain Noble Somhairle MacGill-Eain DR Dòmhnallach an Dr Fionnlagh MacLeòid agus Gòrdan Barr {am measg} a' chiad urrasairean aig a' Cholaiste Bhon chiad dol-a-mach tha iomadh gaisgeach is buidheann càirdeil air taic a thoirt don t-Sabhal  //
+\glb be.V.PAST seek.V.IMPER Ian.NPERSON Noble.NAME Sorley.NPERSON MacLean.NPERSON DR.UNK MacDonald.NPERSON the.DEF.M.SG.NGD[or]the.DEF.F.SG.ND Dr.ABBREV Finlay.NPERSON MacLeod.NPERSON and.CONJ Gordon.NPERSON Barr.NAME among.PREP the.DEF.M.SG.GD first.NUM.CARD+ASP trustees.N.M.PL at.PREP the.DEF.F.SG.ND college.N.F.SG+ASP from.the.PREP+DEF first.NUM.CARD+ASP outset.N.M.SG be.V.PRES many.N.M.SG hero.N.M.SG and.CONJ group.N.F.SG kind.ADJ on.PREP support.N.F.SG to.PRT.INFIN give.V.INFIN+ASP to.the.PREP+DEF barn.N.M.SG+T  //
+\glft The first board of trustees included Sir Iain Noble, Sorley MacLean, D.R. MacDonald, Dr Finlay MacLeod and Gordon Barr, and from the outset the College has had the support and encouragement of many notable individuals and organisations. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Thòisich Sabhal Mòr Ostaig a' tabhann sgoiltean samhraidh is clasaichean oidhche sa Ghàidhlig agus a' cumail thachartasan sòisealta san sgìre. 
+
+\vspace{4mm}
+\gla Thòisich Sabhal Mòr Ostaig a' tabhann sgoiltean samhraidh is clasaichean oidhche sa Ghàidhlig agus a' cumail thachartasan sòisealta san sgìre  //
+\glb start.V.IMPER+ASP barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT offer.PRESPART school.N.F.PL summer.N.M.SG.GEN and.CONJ classes.N.M.PL night.N.F.SG in.the.PREP+DEF Scots.Gaelic.N.F.SG+ASP and.CONJ -ing.PRT.CONT hold.PRESPART events.N.M.PL+ASP social.ADJ in.the.PREP+DEF parish.N.F.SG  //
+\glft Sabhal Mòr Ostaig began by offering Gaelic summer schools and night classes and organising social events in the area. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Aig an aon àm, lean an obair gus na toglaichean a chur air dòigh, airgead a thogail, an leabharlann a leasachadh agus beachdachadh air barrachd leudachaidh. 
+
+\vspace{4mm}
+\gla Aig an aon àm lean an obair gus na toglaichean a chur air dòigh airgead a thogail an leabharlann a leasachadh agus beachdachadh air barrachd leudachaidh  //
+\glb at.PREP the.DEF.M.SG.NGD one.NUM.ORD time.N.M.SG follow.V.IMPER the.DEF.F.SG.ND work.N.F.SG in.order.to.CONJ the.DEF.PL.ND constructions.N.F.PL to.PRT.INFIN put.V.INFIN+ASP on.PREP method.N.F.SG money.N.M.SG to.PRT.INFIN raise.V.INFIN+ASP the.DEF.F.SG.ND library.N.F.SG to.PRT.INFIN develop.V.INFIN and.CONJ consider.VN on.PREP[or]on.him.PREP+PRON.M.3S more.ADV expansion.N.M.SG  //
+\glft Meanwhile renovation of the buildings continued, as did fundraising, development of the library and planning for greater growth. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ann an 1983 bha Sabhal Mòr Ostaig deiseil gus a' chiad chùrsa adhartach làn-thìde a thabhann agus tha a' Cholaiste air a bhith a' cur ri a taghadh chùrsaichean bhon uair sin. 
+
+\vspace{4mm}
+\gla {Ann an} 1983 bha Sabhal Mòr Ostaig deiseil gus a' chiad chùrsa adhartach làn-thìde a thabhann agus tha a' Cholaiste {air a bhith} a' cur ri a taghadh chùrsaichean bhon uair sin  //
+\glb in.a.PREP+INDEF 1983.YEAR be.V.PAST barn.N.M.SG big.ADJ Ostaig.NAME ready.ADJ in.order.to.CONJ the.DEF.M.SG.GD first.NUM.CARD+ASP course.N.M.SG+ASP advanced.ADJ full-time.ADJ to.PRT.INFIN offer.V.INFIN+ASP and.CONJ be.V.PRES the.DEF.F.SG.ND college.N.F.SG+ASP be.V.PERF.CONT -ing.PRT.CONT put.PRESPART to.PREP to.PRT.INFIN choose.V.INFIN courses.N.M.PL+ASP from.the.PREP+DEF hour.N.F.SG that.DEM.FAR  //
+\glft By 1983 Sabhal Mòr Ostaig was ready to deliver its first full-time further education course and has continued to expand its course provision. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bho chaidh i na com-pàirtiche acadaimigeach ann an Oilthigh na Gàidhealtachd agus nan Eilean, tha a' Cholaiste air a bhith a' lìbhrigeadh chùrsaichean ceuma Gàidhlig, agus cùrsaichean for-cheum. 
+
+\vspace{4mm}
+\gla Bho chaidh i na com-pàirtiche acadaimigeach {ann an} Oilthigh na Gàidhealtachd agus nan Eilean tha a' Cholaiste {air a bhith} a' lìbhrigeadh chùrsaichean ceuma Gàidhlig agus cùrsaichean for-cheum  //
+\glb from.PREP go.V.PAST she.PRON.F.3S in.her.PREP+POSS.F.3S partner.N.M.SG academic.ADJ in.a.PREP+INDEF university.N.M.SG of.the.DEF.F.SG.GEN Highlands.N.F.SG and.CONJ of.the.DEF.PL.GEN[or]in.their.PREP+POSS.3P island.N.M.SG be.V.PRES the.DEF.F.SG.ND college.N.F.SG+ASP be.V.PERF.CONT -ing.PRT.CONT deliver.PRESPART courses.N.M.PL+ASP degree.N.M.SG.GEN Scots.Gaelic.N.F.SG and.CONJ courses.N.M.PL postgraduate.ADJ  //
+\glft Since becoming an active partner in the University of the Highlands and Islands, the College has offered Gaelic-related degree programmes and postgraduate qualifications. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha cùrsaichean na Colaiste riamh a' toirt seachad oideachaidh ann an cuspairean co-aimsireil, dreuchdail, a bhiodh gu feum air Ghàidhealtachd agus don choimhearsnachd Ghàidhlig anns an fharsaingeachd. 
+
+\vspace{4mm}
+\gla Bha cùrsaichean na Colaiste riamh a' toirt seachad oideachaidh {ann an} cuspairean co-aimsireil dreuchdail a bhiodh gu feum air Ghàidhealtachd agus don choimhearsnachd Ghàidhlig anns an fharsaingeachd  //
+\glb be.V.PAST courses.N.M.PL of.the.DEF.F.SG.GEN college.N.F.SG ever.before.ADV -ing.PRT.CONT give.PRESPART past.ADV instruction.N.M.SG.GEN in.a.PREP+INDEF subjects.N.M.PL contemporary.ADJ vocational.ADJ which.PRT.REL be.V.COND+ASP that.CONJ must.V.IMPER on.PREP Highlands.N.F.SG+ASP and.CONJ to.the.PREP+DEF community.N.F.SG+ASP Scots.Gaelic.N.F.SG+ASP in.PREP the.DEF.F.SG.ND extent.N.F.SG+ASP  //
+\glft The course curriculum has always offered contemporary, vocational subjects relevant to the needs of the Gaidhealtachd and the wider Gaelic community. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha craoladh iomadh-mheadhan Gàidhlig, rianachd ghnìomhachais agus teicneolas fiosrachaidh am measg cuspairean a' chiad chùrsaichean. 
+
+\vspace{4mm}
+\gla Bha craoladh iomadh-mheadhan Gàidhlig rianachd ghnìomhachais agus teicneolas fiosrachaidh {am measg} cuspairean a' chiad chùrsaichean  //
+\glb be.V.PAST broadcast.VN multimedia.N.M.SG Scots.Gaelic.N.F.SG administration.N.F.SG business.N.M.SG.GEN+ASP and.CONJ technology.N.M.SG information.N.M.SG.GEN among.PREP subjects.N.M.PL the.DEF.M.SG.GD first.NUM.CARD+ASP courses.N.M.PL+ASP  //
+\glft Early subjects included Gaelic broadcasting and multi-media, business management and information technology. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An-diugh, tha cùrsaichean àrd-ìre na Colaiste a' coimhead air caochladh chuspairean a thuilleadh air na raointean cudromach sin, mar eisimpleir, ceòl, litreachas, nam meadhanan, planadh cànain agus leasachadh eaconomach. 
+
+\vspace{4mm}
+\gla An-diugh tha cùrsaichean àrd-ìre na Colaiste a' coimhead air caochladh chuspairean a thuilleadh air na raointean cudromach sin mar eisimpleir ceòl litreachas nam meadhanan planadh cànain agus leasachadh eaconomach  //
+\glb today.ADV be.V.PRES courses.N.M.PL higher.level.N.M.SG of.the.DEF.F.SG.GEN college.N.F.SG -ing.PRT.CONT look.PRESPART after.PREP a.number.of.QUAL subjects.N.M.PL+ASP his.PRON.POSS.M.3S more.N.M.SG+ASP on.PREP the.DEF.PL.ND fields.N.M.PL important.ADJ that.DEM.FAR as.CONJ example.N.M.SG music.N.M.SG literature.N.M.SG of.the.DEF.PL.GEN media.N.M.PL planning.N.M.SG language.N.F.SG.GD and.CONJ develop.VN economical.ADJ  //
+\glft In addition to these important fields, today's HE provision addresses subjects as diverse as music, literature, media studies, language planning and economic development. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Sabhal Mòr Ostaig a' cur leasachaidhean ùra ann an teicneolas fiosrachaidh agus dòighean teagaisg an gnìomh cuideachd, gus barrachd chothroman a thabhann tro theagasg air astar. 
+
+\vspace{4mm}
+\gla Tha Sabhal Mòr Ostaig a' cur leasachaidhean ùra {ann an} teicneolas fiosrachaidh agus dòighean teagaisg an gnìomh cuideachd gus barrachd chothroman a thabhann tro theagasg air astar  //
+\glb be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT put.PRESPART developments.N.M.PL new.ADJ.PL in.a.PREP+INDEF technology.N.M.SG information.N.M.SG.GEN and.CONJ methods.N.F.PL teach.V.IMPER the.DEF.M.SG.NGD action.N.M.SG also.ADV in.order.to.CONJ more.ADV opportunities.N.M.PL+ASP to.PRT.INFIN offer.V.INFIN+ASP through.PREP teach.VN+ASP on.PREP distance.N.M.SG  //
+\glft Sabhal Mòr Ostaig has embraced developments in ICT and new teaching methods, providing greater access to Gaelic through distance learning courses. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha àrainn na Colaiste air leudachadh gu mòr leis mar a tha àireamh nan oileanach agus pròiseactan ùra a' dol am meud. 
+
+\vspace{4mm}
+\gla Tha àrainn na Colaiste air leudachadh gu mòr leis mar a tha àireamh nan oileanach agus pròiseactan ùra a' dol am meud  //
+\glb be.V.PRES campus.N.F.SG of.the.DEF.F.SG.GEN college.N.F.SG after.PREP expand.VN that.CONJ big.ADJ with.him.PREP+PRON.M.3S as.CONJ which.PRT.REL be.V.PRES number.N.F.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN student.N.M.SG and.CONJ projects.N.M.PL new.ADJ.PL -ing.PRT.CONT go.PRESPART the.DEF.M.SG.NOM size.N.M.SG  //
+\glft The College campus has expanded significantly to meet the needs of growing numbers of students and projects. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chaidh cur ri Àrainn Ostaig, le seòmraichean-cadail, oifisean agus stiùidio telebhisein. 
+
+\vspace{4mm}
+\gla Chaidh cur ri Àrainn Ostaig le seòmraichean-cadail oifisean agus stiùidio telebhisein  //
+\glb go.V.PAST put.VN to.PREP campus.N.F.SG Ostaig.NAME with.PREP bedrooms.N.M.PL office.N.F.PL and.CONJ studio.N.M.SG television.N.M.SG.GEN  //
+\glft The Àrainn Ostaig campus was extended with accommodation blocks, office space and a full-sized broadcast-standard studio. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Beagan bhliadhnaichean às dèidh sin, rinneadh luadh mòr air fosgladh Àrainn Chaluim Chille far a bheil an tuilleadh seòmraichean teagaisg, seòmraichean-cadail, talla mòr grinn, seòmar-bìdh agus leabharlann àraid. 
+
+\vspace{4mm}
+\gla Beagan bhliadhnaichean às dèidh sin rinneadh luadh mòr air fosgladh Àrainn Chaluim Chille far a bheil an tuilleadh seòmraichean teagaisg seòmraichean-cadail talla mòr grinn seòmar-bìdh agus leabharlann àraid  //
+\glb a.few.N.M.SG year.N.F.PL+ASP from.PREP after.PREP that.DEM.FAR do.V.PAST.PASS mention.N.M.SG big.ADJ after.PREP open.VN campus.N.F.SG Colm.NPERSON.GD+ASP chapel.N.F.SG+ASP where.REL which.PRT.REL be.V.PRES.DEP.INT the.DEF.M.SG.NGD more.N.M.SG rooms.N.M.PL teach.V.IMPER bedrooms.N.M.PL hall.N.M.SG big.ADJ elegant.ADJ cafeteria.N.M.SG and.CONJ library.N.F.SG unique.ADJ  //
+\glft A few years later, the highly-acclaimed and award-winning Àrainn Chaluim Chille campus was completed, providing more classrooms, accommodation, a lecture/performance hall, cafeteria and an extensive library. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bho chionn ghoirid, chaidh an t-Ionad Nàiseanta airson Cànan agus Cultar na Gàidhlig, Fàs, fhosgladh gu h-oifigeil le Ailig Salmond BPA, Prìomh Mhinistear na h-Alba. 
+
+\vspace{4mm}
+\gla {Bho chionn ghoirid} chaidh an t-Ionad Nàiseanta airson Cànan agus Cultar na Gàidhlig Fàs fhosgladh gu h-oifigeil le Ailig Salmond BPA Prìomh Mhinistear na h-Alba  //
+\glb recently.ADV go.V.PAST the.DEF.M.SG.NOM centre.N.M.SG+T national.ADJ for.PREP language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG grow.V.IMPER[or]grow.VN open.VN+ASP that.CONJ official.ADJ+H with.PREP Alex.NPERSON Salmond.NAME BPA.UNK primary.QUAL minister.N.M.SG+ASP of.the.DEF.F.SG.GEN Scotland.N.F.SG+H  //
+\glft More recently, the new Centre for Creative and Cultural Industries, Fàs, was officially opened by Alex Salmond, First Minister for Scotland. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an goireas ùr seo a' coileanadh aon de phrìomh amasan na Colaiste mar an t-Ionad Nàiseanta airson Cànan agus Cultar na Gàidhlig ann a bhith a' cur ri leasachadh eaconomach na sgìre cho math ri bhith a' neartachadh na h-obrach a tha a' Cholaiste a' dèanamh ann an teagasg, ionnsachadh, cultar agus rannsachadh. 
+
+\vspace{4mm}
+\gla Tha an goireas ùr seo a' coileanadh aon de phrìomh amasan na Colaiste mar an t-Ionad Nàiseanta airson Cànan agus Cultar na Gàidhlig ann a bhith a' cur ri leasachadh eaconomach na sgìre cho math ri bhith a' neartachadh na h-obrach a tha a' Cholaiste a' dèanamh {ann an} teagasg ionnsachadh cultar agus rannsachadh  //
+\glb be.V.PRES the.DEF.M.SG.NGD facility.N.M.SG new.ADJ this.DEM.NEAR -ing.PRT.CONT enhance.PRESPART one.NUM.ORD of.PREP primary.QUAL+ASP aims.N.M.PL of.the.DEF.F.SG.GEN college.N.F.SG as.CONJ the.DEF.M.SG.NOM centre.N.M.SG+T national.ADJ for.PREP language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG in.it.PREP+PRON.M.3S to.PRT.INFIN be.V.INFIN+ASP -ing.PRT.CONT put.PRESPART to.PREP develop.VN economical.ADJ of.the.DEF.F.SG.GEN parish.N.F.SG as.ADV good.ADJ to.PREP be.VN+ASP -ing.PRT.CONT strengthen.PRESPART of.the.DEF.F.SG.GEN worl.N.F.SG.GD+H which.PRT.REL be.V.PRES the.DEF.F.SG.ND college.N.F.SG+ASP -ing.PRT.CONT do.PRESPART in.a.PREP+INDEF teach.VN learn.VN culture.N.M and.CONJ investigate.VN  //
+\glft The new facility further enhances Sabhal Mòr Ostaig's role as the National Centre for Gaelic Language and Culture by allowing further economic development locally and expanding its existing work in teaching, learning, culture and research. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ann an co-bhoinn ri Urras Fearainn Chlann Dòmhnaill, Urras Coimhearsnachd Shlèite agus Comhairle Coimhearsnachd Shlèite tha Sabhal Mòr Ostaig ag obair air leasachadh Baile Gàidhealach ùr na 21mh linne. 
+
+\vspace{4mm}
+\gla {Ann an} co-bhoinn ri Urras Fearainn Chlann Dòmhnaill Urras Coimhearsnachd Shlèite agus Comhairle Coimhearsnachd Shlèite tha Sabhal Mòr Ostaig ag obair air leasachadh Baile Gàidhealach ùr na 21mh linne  //
+\glb in.a.PREP+INDEF partnership.N.M.SG.GEN to.PREP trust.N.M.SG farmland.N.M.SG.GEN clan.N.F.SG+ASP Donald.NPERSON.GD trust.N.M.SG community.N.F.SG Sleat.NPLACE+ASP and.CONJ council.N.F.SG community.N.F.SG Sleat.NPLACE+ASP be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT work.N.F.SG after.PREP develop.VN town.N.M.SG Highland.ADJ new.ADJ of.the.DEF.F.SG.GEN 21st.NUM.CARD century.N.F.SG.GD  //
+\glft Sabhal Mòr Ostaig, through an innovative partnership with the Clan Donald Land's Trust, Sleat Community Trust and Sleat Community Council, is currently advancing a visionary proposal for the development of a new Highland Village for the 21st century. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an iomairt bhrosnachail is shamhlachail seo airson coimhearsnachd sheasmhach a leasachadh ann an àrainneachd fìor mhath air a piobrachadh leis na buadhan coitcheann de sheasmhachd shòisealta, eaconomach is chultarail, agus àrainn shàr oilthigh na chridhe. 
+
+\vspace{4mm}
+\gla Tha an iomairt bhrosnachail is shamhlachail seo airson coimhearsnachd sheasmhach a leasachadh {ann an} àrainneachd fìor mhath air a piobrachadh leis na buadhan coitcheann de sheasmhachd shòisealta eaconomach is chultarail agus àrainn shàr oilthigh na chridhe  //
+\glb be.V.PRES the.DEF.F.SG.ND initiative.N.F.SG inspiring.ADJ+ASP and.CONJ symbolic.ADJ+ASP this.DEM.NEAR for.PREP community.N.F.SG sustainable.ADJ+ASP to.PRT.INFIN develop.V.INFIN in.a.PREP+INDEF environment.N.F.SG true.ADJ good.ADJ+ASP on.PREP its.PRON.POSS.MF.3S drive.VN with.PREP the.DEF.PL.ND virtues.N.F.PL common.ADJ of.PREP sustainability.N.F.SG+ASP social.ADJ+ASP economical.ADJ and.CONJ cultural.ADJ+ASP and.CONJ campus.N.F.SG excellent.ADJ+ASP university.N.M.SG in.his.PREP+POSS.M.3S heart.N.M.SG+ASP  //
+\glft This exciting, iconic and groundbreaking plan offers the opportunity to create a sustainable community development, in a world class environment, driven by the common interests of social, economic, cultural and environmental sustainability and with a first class university campus at its heart. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an com-pàirteachas seo a' toirt cothrom don t-Sabhal Mhòr a chuid fearainn is toglaichean fhèin a leasachadh agus an t-àite aige ann an cridhe na coimhearsnachd ionadail a dhaingneachadh. 
+
+\vspace{4mm}
+\gla Tha an com-pàirteachas seo a' toirt cothrom don t-Sabhal Mhòr a chuid fearainn is toglaichean fhèin a leasachadh agus an t-àite aige {ann an} cridhe na coimhearsnachd ionadail a dhaingneachadh  //
+\glb be.V.PRES the.DEF.M.SG.NGD partnership.N.M.SG this.DEM.NEAR -ing.PRT.CONT give.PRESPART opportunity.N.M.SG to.the.PREP+DEF barn.N.M.SG+T big.ADJ+ASP his.PRON.POSS.M.3S portion.N.F.SG+ASP farmland.N.M.SG.GEN and.CONJ constructions.N.F.PL self.ADJ to.PRT.INFIN develop.V.INFIN and.CONJ the.DEF.M.SG.NOM place.N.M.SG+T at.him.PREP+PRON.M.3S in.a.PREP+INDEF heart.N.M.SG of.the.DEF.F.SG.GEN community.N.F.SG local.ADJ to.PRT.INFIN confirm.V.INFIN+ASP  //
+\glft This partnership proposal offers Sabhal Mòr Ostaig an exciting opportunity for strategic and integrated expansion of its own estates and a unique opportunity to further consolidate its position at the heart of the local community. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Urras Leasachaidh Sabhal Mòr Ostaig na urras charthannais air a stiùireadh gu lèir le Bòrd nan Urrasairean neo-eisimeileach aige fhèin. 
+
+\vspace{4mm}
+\gla Tha Urras Leasachaidh Sabhal Mòr Ostaig na urras charthannais air a stiùireadh {gu lèir} le Bòrd nan Urrasairean neo-eisimeileach aige fhèin  //
+\glb be.V.PRES trust.N.M.SG development.N.M.SG.GEN barn.N.M.SG big.ADJ Ostaig.NAME in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S[or]all.that.PRT.REL[or]of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND trust.N.M.SG charity.N.M.SG.GEN+ASP on.PREP its.PRON.POSS.MF.3S steer.VN completely.ADV with.PREP Board.N.M.SG[or]table.N.M.SG of.the.DEF.PL.GEN trustees.N.M.PL independent.ADJ at.him.PREP+PRON.M.3S self.ADJ  //
+\glft Sabhal Mòr Ostaig Development Trust is an independent, registered charitable trust managed wholly by its own independent Board of Trustees. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e adhbhar an Urrais maoin a thogail gus taic a chur ris a' cholaiste, mar shàr-ionad nàiseanta airson cànan is cultar na Gàidhlig, agus cuideachadh a thoirt dha is e a' feuchainn ri cànan is cultar Gàidhlig na h-Alba a neartachadh is ath-bheothachadh. 
+
+\vspace{4mm}
+\gla 'S e adhbhar an Urrais maoin a thogail gus taic a chur ris a' cholaiste mar shàr-ionad nàiseanta airson cànan is cultar na Gàidhlig agus cuideachadh a thoirt dha is e a' feuchainn ri cànan is cultar Gàidhlig na h-Alba a neartachadh is ath-bheothachadh  //
+\glb be.V.COP.PRES he.PRON.M.3S purpose.N.M.SG the.DEF.M.SG.GEN trust.N.M.SG.GEN fund.N.F.SG to.PRT.INFIN raise.V.INFIN+ASP in.order.to.CONJ support.N.F.SG to.PRT.INFIN put.V.INFIN+ASP to.him.PREP+PRON.M.3S the.DEF.F.SG.ND college.N.F.SG+ASP as.CONJ centre.of.excellence.N.M.SG+ASP national.ADJ for.PREP language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ help.VN to.PRT.INFIN give.V.INFIN+ASP to.him.PREP+PRON.M.3S and.CONJ[or]be.V.COP.PRES he.PRON.M.3S -ing.PRT.CONT try.PRESPART to.PREP language.N.F.SG and.CONJ culture.N.M Scots.Gaelic.N.F.SG of.the.DEF.F.SG.GEN Scotland.N.F.SG+H to.PRT.INFIN strengthen.V.INFIN and.CONJ[or]be.V.COP.PRES revive.VN  //
+\glft The Trust's purpose is to raise funds in support of the College, as the national centre for Gaelic language and culture, and to help achieve its mission to strengthen and regenerate the Gaelic language and culture of Scotland. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an t-Urras a' lorg dhòighean ùra agus a dhol an sàs leis a' choimhearsnachd mhòir a bheir taic don chànan is don chultar agus a bhios na inneal do dhaoine fa leth, chompanaidhean, chorporrachdan, urrasan eadar-nàiseanta agus chomainn, pàirt chudromach a ghabhail ann a bhith cur taic ris an rùn sin. 
+
+\vspace{4mm}
+\gla Tha an t-Urras a' lorg dhòighean ùra agus a dhol an sàs leis a' choimhearsnachd mhòir a bheir taic don chànan is don chultar agus a bhios na inneal do dhaoine {fa leth} chompanaidhean chorporrachdan urrasan eadar-nàiseanta agus chomainn pàirt chudromach a ghabhail ann a bhith cur taic ris an rùn sin  //
+\glb be.V.PRES the.DEF.M.SG.NOM trust.N.M.SG+T the.DEF.M.SG.GD find.V.IMPER methods.N.F.PL+ASP new.ADJ.PL and.CONJ to.PRT.INFIN go.V.INFIN+ASP the.DEF.M.SG.NGD placement.N.M.SG with.PREP the.DEF.F.SG.ND community.N.F.SG+ASP big.ADJ.F+ASP which.PRT.REL bear.V.PAST+ASP support.N.F.SG to.the.PREP+DEF language.N.F.SG+ASP and.CONJ to.the.PREP+DEF culture.N.M+ASP and.CONJ which.PRT.REL be.V.FUT.REL+ASP in.his.PREP+POSS.M.3S machine.N.M.SG to.PREP persons.N.M.PL+ASP individually.ADV company.N.F.PL+ASP corporation.N.F.PL+ASP trusts.N.M.PL international.ADJ and.CONJ society.N.M.SG.GEN+ASP part.N.F.SG important.ADJ+ASP to.PRT.INFIN take.V.INFIN+ASP in.it.PREP+PRON.M.3S to.PRT.INFIN be.V.INFIN+ASP put.VN support.N.F.SG to.him.PREP+PRON.M.3S the.DEF.M.SG.NGD intention.N.M.SG that.DEM.FAR  //
+\glft The Trust seeks innovative ways to engage with the wide community of support for the language and the culture and to be the conduit through which private individuals, companies, corporations, international trusts and foundations, both at home and abroad, will have the opportunity to play a vital part in supporting that mission. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Sabhal Mòr Ostaig a' faighinn prìomh-mhaoineachaidh bho Chomhairle Maoineachaidh Foghlam na h-Alba. 
+
+\vspace{4mm}
+\gla Tha Sabhal Mòr Ostaig a' faighinn prìomh-mhaoineachaidh bho Chomhairle Maoineachaidh Foghlam na h-Alba  //
+\glb be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT get.PRESPART core.funding.N.M.SG.GEN from.PREP council.N.F.SG+ASP fund.N.M.SG learn.VN of.the.DEF.F.SG.GEN Scotland.N.F.SG+H  //
+\glft Sabhal Mòr Ostaig receives core funding through the Scottish Funding Council. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A bharrachd air sin ge-tà, feumaidh a' Cholaiste 47\% de na cosgaisean a phàigheadh agus comas a thoirt dhuinn na pròiseactan làthaireil is ro-mheasta againn a chumail a' dol a rèir ar plana ro-innleachdail. 
+
+\vspace{4mm}
+\gla {A bharrachd} air sin ge-tà feumaidh a' Cholaiste 47\% de na cosgaisean a phàigheadh agus comas a thoirt dhuinn na pròiseactan làthaireil is ro-mheasta againn a chumail a' dol {a rèir} ar plana ro-innleachdail  //
+\glb in.addition.PREP on.PREP[or]on.him.PREP+PRON.M.3S that.DEM.FAR however.CONJ must.V.FUT the.DEF.F.SG.ND college.N.F.SG+ASP 47\%.PERCENT of.PREP the.DEF.PL.ND expenses.N.F.PL to.PRT.INFIN pay.V.INFIN+ASP and.CONJ ability.N.M.SG to.PRT.INFIN give.V.INFIN+ASP to.us.PREP+PRON.1P the.DEF.PL.ND projects.N.M.PL current.ADJ and.CONJ anticipated.ADJ at.us.PREP+PRON.1P to.PRT.INFIN hold.V.INFIN+ASP -ing.PRT.CONT go.PRESPART according.to.PREP our.PRON.POSS.1P plan.N.M.SG strategic.ADJ  //
+\glft Over and above this, the College is still required to raise 47\% of its annual costs, simply to break even and allow us to continue with our current and projected activities in line with our strategic plan. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ach ma tha sinn airson cumail oirnn a' leasachadh mar a dh'fheumas sinn gus ar n-amasan ro-innleachdail a thaobh leudachadh a' chànain a choileanadh, feumar mòran fhathast a dhèanamh. 
+
+\vspace{4mm}
+\gla Ach ma tha sinn airson cumail oirnn a' leasachadh mar a dh'fheumas sinn gus ar n-amasan ro-innleachdail {a thaobh} leudachadh a' chànain a choileanadh feumar mòran fhathast a dhèanamh  //
+\glb bu.CONJ if.CONJ be.V.PRES we.PRON.1P for.PREP hold.VN on.us.PREP+PRON.1P -ing.PRT.CONT develop.PRESPART as.CONJ which.PRT.REL must.V.FUT.REL+DH we.PRON.1P in.order.to.CONJ our.PRON.POSS.1P aims.N.M.PL+N strategic.ADJ regarding.PREP expand.VN the.DEF.F.SG.ND language.N.F.SG.GD+ASP to.PRT.INFIN enhance.V.INFIN+ASP must.V.FUT.PASS many.N.M.SG still.ADV to.PRT.INFIN do.V.INFIN+ASP  //
+\glft But if we are to maintain the areate of development whiuch is necessary to meet our strategic aims for the development of the language, a great deal more needs to be done. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma tha Sabhal Mòr Ostaig airson cumail air a' dèanamh diofar ann a bhith a' glèidheadh an ama ri tighinn do chànan is cultar na Gàidhlig, feumaidh sinn taic a tharraing, chan ann a-mhàin bho Ghàidhealtachd na h-Alba, ach bhon choimhearsnachd nàiseanta is eadar-nàiseanta. 
+
+\vspace{4mm}
+\gla Ma tha Sabhal Mòr Ostaig airson cumail air a' dèanamh diofar ann a bhith a' glèidheadh an ama ri tighinn do chànan is cultar na Gàidhlig feumaidh sinn taic a tharraing chan ann a-mhàin bho Ghàidhealtachd na h-Alba ach bhon choimhearsnachd nàiseanta is eadar-nàiseanta  //
+\glb if.CONJ be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME for.PREP hold.VN on.PREP the.DEF.M.SG.GD do.VN difference.N.M.SG in.it.PREP+PRON.M.3S to.PRT.INFIN be.V.INFIN+ASP -ing.PRT.CONT keep.PRESPART the.DEF.M.SG.GEN time.N.M.SG.GEN to.PREP come.VN to.PREP language.N.F.SG+ASP and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG must.V.FUT we.PRON.1P support.N.F.SG which.PRT.REL attract.V.PAST+ASP not.PRT.NEG in.it.PREP+PRON.M.3S once.ADV from.PREP Highlands.N.F.SG+ASP of.the.DEF.F.SG.GEN Scotland.N.F.SG+H bu.CONJ from.the.PREP+DEF community.N.F.SG+ASP national.ADJ and.CONJ international.ADJ  //
+\glft If Sabhal Mòr Ostaig is to be able to continue to make a real difference in securing the future of Gaelic language and culture, we have to engage the support not only of the Scottish Gàidhealtachd but also that of the national and international community. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha meas mòr agus spèis air a bhith agam air cultar Gàidheal na h-Alba o chionn fhada agus tha mi gu sònraichte toilichte a bhith nam chùl-taic do Shabhal Mòr Ostaig, institiùd a tha aig cridhe ath-bheothachadh cànan is traidiseanan na Gàidhlig. 
+
+\vspace{4mm}
+\gla Tha meas mòr agus spèis {air a bhith} agam air cultar Gàidheal na h-Alba {o chionn fhada} agus tha mi gu sònraichte toilichte a bhith nam chùl-taic do Shabhal Mòr Ostaig institiùd a tha aig cridhe ath-bheothachadh cànan is traidiseanan na Gàidhlig  //
+\glb be.V.PRES admiration.N.M.SG big.ADJ and.CONJ respect.N.F.SG be.V.PERF.CONT at.me.PREP+PRON.1S on.PREP culture.N.M Highlander.N.M.SG of.the.DEF.F.SG.GEN Scotland.N.F.SG+H for.a.long.time.now.ADV and.CONJ be.V.PRES I.PRON.1S that.CONJ special.ADJ pleased.PASTPART to.PRT.INFIN be.V.INFIN+ASP in.my.PREP+POSS.1S support.VN+ASP to.PREP barn.N.M.SG.DAT+ASP big.ADJ Ostaig.NAME institute.N.F.SG which.PRT.REL be.V.PRES at.PREP heart.N.M.SG revive.VN language.N.F.SG and.CONJ traditions.N.M.PL of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft I have long held an admiration and affection for the culture of the Scottish Gael and I am delighted to be patron of Sabhal Mòr Ostaig, an institution which is at the heart of the revival of the Gaelic language and traditions. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Le prògram de ghnìomhan foghlaim, cultarach agus rannsachaidh, air an lìbhrigeadh tro mheadhan na Gàidhlig, tha an t-ionad nàiseanta gun samhail seo air leth cudromach ann a bhith ag ath-stèidheachadh na ceanglaichean cultarach làidir a tha cho riatanach ann an ath-nuadhachadh coimhearsnachdan na Gàidhealtachd is nan Eilean agus a bhith gan neartachadh. 
+
+\vspace{4mm}
+\gla Le prògram de ghnìomhan foghlaim cultarach agus rannsachaidh air an lìbhrigeadh tro mheadhan na Gàidhlig tha an t-ionad nàiseanta gun samhail seo {air leth} cudromach ann a bhith ag ath-stèidheachadh na ceanglaichean cultarach làidir a tha cho riatanach {ann an} ath-nuadhachadh coimhearsnachdan na Gàidhealtachd is nan Eilean agus a bhith gan neartachadh  //
+\glb with.PREP programme.N.M.SG of.PREP actions.N.M.PL+ASP learn.V.IMPER[or]education.N.M.SG.GEN cultural.ADJ and.CONJ investigation.N.M.SG.GEN on.PREP the.DEF.M.SG.NGD deliver.VN through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG be.V.PRES the.DEF.M.SG.NOM centre.N.M.SG+T national.ADJ that.CONJ resemblance.N.M.SG this.DEM.NEAR particularly.ADV important.ADJ in.it.PREP+PRON.M.3S to.PRT.INFIN be.V.INFIN+ASP -ing.PRT.CONT restore.PRESPART the.DEF.PL.ND connections.N.M.PL cultural.ADJ strong.ADJ which.PRT.REL be.V.PRES as.ADV vital.ADJ in.a.PREP+INDEF renovate.VN communities.N.F.PL of.the.DEF.F.SG.GEN Highlands.N.F.SG and.CONJ of.the.DEF.PL.GEN island.N.M.SG and.CONJ to.PRT.INFIN be.V.INFIN+ASP at.their.PREP+POSS.3P strengthen.VN  //
+\glft With its programme of educational, cultural and reasearch activities delivered through the medium of Gaelic, this unique national centre is crucial to re-establishing and strengthening the strong cultural bonds which are a vital feature of the regeneration of Highland and Islands communities. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chan e a-mhàin gur e sàr-ionad airson cànan agus dualchas a tha ann an Sabhal Mòr Ostaig, ach gu bheil i na samhla air na ghabhas a dhèanamh tro lèirsinn, dealas agus rùn dhaoine a tha cur uallach orra fhèin gus am bruadaran a thoirt gu bith. 
+
+\vspace{4mm}
+\gla Chan e a-mhàin gur e sàr-ionad airson cànan agus dualchas a tha {ann an} Sabhal Mòr Ostaig ach gu bheil i na samhla air na ghabhas a dhèanamh tro lèirsinn dealas agus rùn dhaoine a tha cur uallach orra fhèin gus am bruadaran a thoirt gu bith  //
+\glb not.PRT.NEG he.PRON.M.3S once.ADV at.your.PREP+POSS.2P[or]that.it.is.CONJ+COP he.PRON.M.3S centre.of.excellence.N.M.SG for.PREP language.N.F.SG and.CONJ heritage.N.M.SG which.PRT.REL be.V.PRES in.a.PREP+INDEF barn.N.M.SG big.ADJ Ostaig.NAME bu.CONJ that.CONJ be.V.PRES.DEP.INT she.PRON.F.3S in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S[or]all.that.PRT.REL[or]of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND symbol.N.M.SG on.PREP all.that.PRT.REL take.V.FUT.REL+ASP to.PRT.INFIN do.V.INFIN+ASP through.PREP vision.N.F.SG enthusiasm.N.M.SG and.CONJ intention.N.M.SG persons.N.M.PL+ASP which.PRT.REL be.V.PRES put.VN responsibility.N.M.SG on.them.PREP+PRON.3P self.ADJ in.order.to.CONJ the.DEF.M.SG.NOM[or]time.N.M.SG dreams.N.M.PL to.PRT.INFIN give.V.INFIN+ASP that.CONJ be.VN  //
+\glft Sabhal Mòr Ostaig is not only a centre for excellence for the language and culture, but also a symbol of what can be achieved through the vision, commitment and absolute determination of individuals who care enough to turn dreams in to reality. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Is gann gu bheil dleastanasan sam bith a tha cho mòr ris an fheadhainn a tha ag èiridh a' glèidheadh cànain is cultar, gu sònraichte nuair a tha iad ann an aon dùthaich a-mhàin. 
+
+\vspace{4mm}
+\gla Is gann gu bheil dleastanasan {sam bith} a tha cho mòr ris an fheadhainn a tha ag èiridh a' glèidheadh cànain is cultar gu sònraichte nuair a tha iad {ann an} aon dùthaich a-mhàin  //
+\glb and.CONJ[or]be.V.COP.PRES scarce.ADJ that.CONJ be.V.PRES.DEP.INT duties.N.M.PL any.QUAL which.PRT.REL be.V.PRES as.ADV big.ADJ to.him.PREP+PRON.M.3S the.DEF.F.SG.ND some.N.F.SG+ASP which.PRT.REL be.V.PRES -ing.PRT.CONT rise.V.FUT -ing.PRT.CONT keep.PRESPART language.N.F.SG.GD and.CONJ culture.N.M that.CONJ special.ADJ when.CONJ which.PRT.REL be.V.PRES they.PRON.3P in.a.PREP+INDEF one.NUM.ORD native.land.N.F.SG once.ADV  //
+\glft There are few responsibilities more absolute than those which flow from custodianship of a langauge and culture, especially when these exist to such an extent in only one country. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma gheibh a' Ghàidhlig bàs ann an Alba, gheibh i bàs san t-saoghal. 
+
+\vspace{4mm}
+\gla Ma gheibh a' Ghàidhlig bàs {ann an} Alba gheibh i bàs san t-saoghal  //
+\glb if.CONJ get.V.FUT the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP death.N.M.SG in.a.PREP+INDEF Scotland.N.F.SG get.V.FUT she.PRON.F.3S death.N.M.SG in.the.PREP+DEF world.N.M.SG+T  //
+\glft If Gaelic dies in Scotland, it dies in the world. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ma shoirbheachas leatha ann an Alba, thèid teachdaireachd bhrosnachail is dhòchasach a sgaoileadh dhan fheadhainn eile a tha cur aghaidh air dùbhlain is duilgheadas dhen aon seòrsa. 
+
+\vspace{4mm}
+\gla Ma shoirbheachas leatha {ann an} Alba thèid teachdaireachd bhrosnachail is dhòchasach a sgaoileadh dhan fheadhainn eile a tha cur aghaidh air dùbhlain is duilgheadas dhen aon seòrsa  //
+\glb if.CONJ prosper.V.FUT.REL+ASP wide.ADJ.COMP in.a.PREP+INDEF Scotland.N.F.SG go.V.FUT.DEP+ASP message.N.F.SG inspiring.ADJ+ASP and.CONJ hopeful.ADJ+ASP to.PRT.INFIN disseminate.V.INFIN to.the.PREP+DEF some.N.F.SG+ASP other.ADJ which.PRT.REL be.V.PRES put.VN face.N.F on.PREP challenges.N.F.PL and.CONJ difficulty.N.M.SG of.the.PREP+DEF+ASP one.NUM.ORD kind.N.M.SG  //
+\glft If it flourishes in Scotland then it sends out a message of inspiration and optimism to others who face similar challenges and adversities. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S ann ann an sin a tha an dà chuid an dùbhlan is an cothrom nan laighe. 
+
+\vspace{4mm}
+\gla 'S ann {ann an} sin a tha an dà chuid an dùbhlan is an cothrom nan laighe  //
+\glb be.V.COP.PRES in.it.PREP+PRON.M.3S in.a.PREP+INDEF that.DEM.FAR which.PRT.REL be.V.PRES the.DEF.F.SG.ND two.NUM.ORD portion.N.F.SG+ASP the.DEF.M.SG.NGD challenge.N.M.SG and.CONJ the.DEF.M.SG.NGD opportunity.N.M.SG in.their.PREP+POSS.3P lie.VN  //
+\glft Therein lie both the challenge and the opportunity. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gus cuideachadh a thoirt don cholaiste a h-amasan a choileanaidh, chaidh an t-urras leasachaidh seo a chur air dòigh agus tha mi an dòchas, is e a' cur taic ris a' Cholaiste, gum brosnaich is gun dèan e comasach do choimhearsnachd an t-saoghail a bhith a' dìon cànan is cultar na Gàidhlig anns an àm ri teachd. 
+
+\vspace{4mm}
+\gla Gus cuideachadh a thoirt don cholaiste a h-amasan a choileanaidh chaidh an t-urras leasachaidh seo a chur air dòigh agus tha mi an dòchas is e a' cur taic ris a' Cholaiste gum brosnaich is gun dèan e comasach do choimhearsnachd an t-saoghail a bhith a' dìon cànan is cultar na Gàidhlig anns an àm ri teachd  //
+\glb in.order.to.CONJ help.VN to.PRT.INFIN give.V.INFIN+ASP to.the.PREP+DEF college.N.F.SG+ASP her.PRON.POSS.F.3S aims.N.M.PL+H his.PRON.POSS.M.3S enhancement.N.F.SG.GD+ASP go.V.PAST the.DEF.M.SG.NOM trust.N.M.SG+T development.N.M.SG.GEN this.DEM.NEAR to.PRT.INFIN put.V.INFIN+ASP on.PREP method.N.F.SG and.CONJ be.V.PRES I.PRON.1S the.DEF.M.SG.NGD hope.N.M.SG and.CONJ he.PRON.M.3S -ing.PRT.CONT put.PRESPART support.N.F.SG to.him.PREP+PRON.M.3S the.DEF.F.SG.ND college.N.F.SG+ASP that.CONJ inspire.V.IMPER and.CONJ[or]be.V.COP.PRES that.CONJ do.V.IMPER he.PRON.M.3S able.ADJ to.PREP community.N.F.SG+ASP the.DEF.M.SG.GD world.N.M.SG.GEN+T to.PRT.INFIN be.V.INFIN+ASP -ing.PRT.CONT protect.PRESPART language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG in.PREP the.DEF.M.SG.NGD time.N.M.SG to.PREP come.VN  //
+\glft To help the College attain its objectives, this development trust has been established and I want to offer my sincere hopes that its support for the College will help to encourage and enable our worldwide community to contribute to securing the future of the Gaelic language and culture. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e na thlachd do dh'Urras Leasachaidh Sabhal Mòr Ostaig a dhol an sàs ann an caidreachas ro-innleachdail còmhla ri dhà dhe na h-urrasan as cliùitiche is as buaine, caidreachas nan Gàidheal agus Urras a h-Aiseirigh. 
+
+\vspace{4mm}
+\gla Tha e na thlachd do dh'Urras Leasachaidh Sabhal Mòr Ostaig a dhol an sàs {ann an} caidreachas ro-innleachdail còmhla ri dhà dhe na h-urrasan as cliùitiche is as buaine caidreachas nan Gàidheal agus Urras a h-Aiseirigh  //
+\glb be.V.PRES he.PRON.M.3S in.his.PREP+POSS.M.3S delight.N.M.SG+ASP to.PREP trust.N.M.SG+DH development.N.M.SG.GEN barn.N.M.SG big.ADJ Ostaig.NAME to.PRT.INFIN go.V.INFIN+ASP the.DEF.M.SG.NGD placement.N.M.SG in.a.PREP+INDEF federation.N.M.SG strategic.ADJ together.ADV to.PREP two.NUM.ORD+ASP of.PREP+ASP the.DEF.PL.ND trusts.N.M.PL+H be.V.COP.PRES.REL renowned.ADJ.COMP be.V.COP.PRES[or]and.CONJ be.V.COP.PRES.REL long-lasting.ADJ.COMP federation.N.M.SG of.the.DEF.PL.GEN[or]in.their.PREP+POSS.3P Highlander.N.M.SG and.CONJ trust.N.M.SG her.PRON.POSS.F.3S regeneration.N.F.SG+H  //
+\glft The Trust is delighted to have entered into a strategic partnership with two of Scotland most highly regarded and long-standing charitable trusts, namely the Highland Fund and Urras na h-Aiseirigh. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha an dà Urras seo air a stèidheachadh a dh'aon ghnothach gus coimhearsnachdan na Gàidhealtachd is nan Eilean a leasachadh cho math ri cànan is cultar na Gàidhlig a chuideachadh, a' sìor-leantainn orra mar thochraidhean ainmichte am broinn Urras Leasachaidh Sabhal Mòr Ostaig. 
+
+\vspace{4mm}
+\gla Bha an dà Urras seo air a stèidheachadh a dh'aon ghnothach gus coimhearsnachdan na Gàidhealtachd is nan Eilean a leasachadh cho math ri cànan is cultar na Gàidhlig a chuideachadh a' sìor-leantainn orra mar thochraidhean ainmichte {am broinn} Urras Leasachaidh Sabhal Mòr Ostaig  //
+\glb be.V.PAST the.DEF.M.SG.NGD two.NUM.ORD trust.N.M.SG this.DEM.NEAR on.PREP its.PRON.POSS.MF.3S establish.VN to.PRT.INFIN[or]his.PRON.POSS.M.3S[or]her.PRON.POSS.F.3S[or]which.PRT.REL one.NUM.ORD+DH business.N.M.SG+ASP in.order.to.CONJ communities.N.F.PL of.the.DEF.F.SG.GEN Highlands.N.F.SG and.CONJ of.the.DEF.PL.GEN island.N.M.SG to.PRT.INFIN develop.V.INFIN as.ADV good.ADJ to.PREP language.N.F.SG and.CONJ culture.N.M of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG to.PRT.INFIN help.V.INFIN+ASP -ing.PRT.CONT persist.PRESPART on.them.PREP+PRON.3P as.CONJ endowment.N.M.PL+ASP named.PASTPART within.PREP trust.N.M.SG development.N.M.SG.GEN barn.N.M.SG big.ADJ Ostaig.NAME  //
+\glft Both of these Trust funds were set up with the express aim of assisting the development of the Highlands and Islands communities and the Gaelic language and culture. This will now continue in perpetuity as the named endowment funds within the Sabhal Mòr Ostaig Development Trust. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha e na urram mòr dhuinn a bhith dol an sàs leis an dà Urras mhairsinneach seo agus gus cothrom a bhith againn an rùn is na h-amasan aca a chur an cèill is a chomharrachadh tron tochradh aca. 
+
+\vspace{4mm}
+\gla Tha e na urram mòr dhuinn a bhith dol an sàs leis an dà Urras mhairsinneach seo agus gus cothrom a bhith againn an rùn is na h-amasan aca a chur an cèill is a chomharrachadh tron tochradh aca  //
+\glb be.V.PRES he.PRON.M.3S all.that.PRT.REL[or]in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S[or]of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND honour.N.M.SG big.ADJ to.us.PREP+PRON.1P to.PRT.INFIN be.V.INFIN+ASP go.VN the.DEF.M.SG.NGD placement.N.M.SG with.PREP the.DEF.M.SG.NGD two.NUM.ORD trust.N.M.SG long-standing.ADJ+ASP this.DEM.NEAR and.CONJ in.order.to.CONJ opportunity.N.M.SG to.PRT.INFIN be.V.INFIN+ASP at.us.PREP+PRON.1P the.DEF.M.SG.NGD intention.N.M.SG and.CONJ the.DEF.PL.ND aims.N.M.PL+H at.them.PREP+PRON.3P to.PRT.INFIN put.V.INFIN+ASP the.DEF.F.SG.ND understanding.N.F.SG.D and.CONJ to.PRT.INFIN specify.V.INFIN+ASP through.the.PREP+DEF endowment.N.M.SG at.them.PREP+PRON.3P  //
+\glft We are deeply honoured to be associated with both of these time-honoured trusts and to have the opportunity to continue to express and reflect their founding aims and mission through their endowment. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bha an Dr Fearchar Mac an Tòisich, a bha na Chathraiche air ann t-Sabhal Mhòr, na eòlaiche foghlam aig an robh fìor lèirsinn agus a bha a' strì fad a bheatha às leth Gàidhlig is a cultair. 
+
+\vspace{4mm}
+\gla Bha an Dr Fearchar Mac an Tòisich a bha na Chathraiche air ann t-Sabhal Mhòr na eòlaiche foghlam aig an robh fìor lèirsinn agus a bha a' strì fad a bheatha às leth Gàidhlig is a cultair  //
+\glb be.V.PAST the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD Dr.ABBREV Farquhar.NPERSON son.N.M.SG the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD start.V.IMPER which.PRT.REL be.V.PAST in.his.PREP+POSS.M.3S chairman.N.M.SG+ASP on.PREP[or]on.him.PREP+PRON.M.3S in.it.PREP+PRON.M.3S barn.N.M.SG+T big.ADJ+ASP in.his.PREP+POSS.M.3S[or]in.her.PREP+POSS.F.3S[or]all.that.PRT.REL[or]of.the.DEF.F.SG.GEN[or]the.DEF.PL.ND expert.N.M.SG learn.VN at.PREP the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD be.V.PAST.DEP true.ADJ vision.N.F.SG and.CONJ which.PRT.REL be.V.PAST -ing.PRT.CONT[or]the.DEF.M.SG.GD[or]the.DEF.F.SG.ND struggle.V.IMPER length.N.M.SG his.PRON.POSS.M.3S life.N.F.SG+ASP from.PREP half.N.M.SG Scots.Gaelic.N.F.SG and.CONJ her.PRON.POSS.F.3S culture.N.M.SG.GEN  //
+\glft Dr Farquhar Macintosh, a former Chairman of Sabhal Mòr Ostaig, was an educationalist of great vision and innovation and a life-long campaigner for the Gaelic language and culture. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre An dèidh a bhàis ann an 2008 stèidhich Urras Leasachaidh SMO agus teaghlach Fhearchair maoin sgoilearachd mar chuimhne bhuan air cho dealasach 's a bha e a thaobh na Gàidhlig agus foghlam. 
+
+\vspace{4mm}
+\gla An dèidh a bhàis {ann an} 2008 stèidhich Urras Leasachaidh SMO agus teaghlach Fhearchair maoin sgoilearachd mar chuimhne bhuan air cho dealasach 's a bha e {a thaobh} na Gàidhlig agus foghlam  //
+\glb the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD after.PREP his.PRON.POSS.M.3S death.N.M.SG.GEN+ASP in.a.PREP+INDEF 2008.YEAR establish.V.IMPER trust.N.M.SG development.N.M.SG.GEN SMO.UNK and.CONJ family.N.M.SG Farquhar.NPERSON.GD+ASP fund.N.F.SG scholarship.N.F.SG as.CONJ memory.N.F.SG+ASP lasting.ADJ+ASP on.PREP[or]on.him.PREP+PRON.M.3S as.ADV enthusiastic.ADJ be.V.COP.PRES which.PRT.REL be.V.PAST he.PRON.M.3S regarding.PREP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ learn.VN  //
+\glft Following his death in 2008 the Trust, along with his family, set up a scholarship fund as a lasting legacy to his commitment to both Gaelic and education. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha a' mhaoin seo na maoin thochraidh ainmichte am broinn an Urrais. 
+
+\vspace{4mm}
+\gla Tha a' mhaoin seo na maoin thochraidh ainmichte {am broinn} an Urrais  //
+\glb be.V.PRES the.DEF.F.SG.ND fund.N.F.SG+ASP this.DEM.NEAR of.the.DEF.F.SG.GEN fund.N.F.SG endowment.N.M.SG.GEN+ASP named.PASTPART within.PREP the.DEF.M.SG.GEN trust.N.M.SG.GEN  //
+\glft This exists within the Trust as a named endowment fund. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Sabhal Mòr Ostaig a' cur fàilte air taic bho dhaoine air leth, corporran, urrasan, co-chomainn agus buidhnean eile aig a bheil ùidh ann a bhith toirt taic airgid no taic phractaigeach a dh'ionnsaigh ar n-amasan. 
+
+\vspace{4mm}
+\gla Tha Sabhal Mòr Ostaig a' cur fàilte air taic bho dhaoine {air leth} corporran urrasan co-chomainn agus buidhnean eile aig a bheil ùidh ann a bhith toirt taic airgid no taic phractaigeach {a dh'ionnsaigh} ar n-amasan  //
+\glb be.V.PRES barn.N.M.SG big.ADJ Ostaig.NAME -ing.PRT.CONT put.PRESPART welcome.N.F.SG on.PREP support.N.F.SG from.PREP persons.N.M.PL+ASP particularly.ADV corporations.N.F.PL trusts.N.M.PL co-operative.N.M.SG.GEN and.CONJ groups.N.F.PL other.ADJ at.PREP which.PRT.REL be.V.PRES.DEP.INT interest.N.F.SG in.it.PREP+PRON.M.3S to.PRT.INFIN be.V.INFIN+ASP give.VN support.N.F.SG money.N.M.SG.GEN or.CONJ support.N.F.SG practical.ADJ+ASP towards.PREP.IMPER our.PRON.POSS.1P aims.N.M.PL+N  //
+\glft Sabhal Mòr Ostaig welcomes support from individuals, corporations, trusts, societies and other bodies interested in offering finacial or practical help to promote the furtherance of our aims. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e ar prìomh dhleastanas geàrr-suim eaconomach sam bith a sheachnadh a dh'fhaodadh gin de na pròiseactan tha a' dèanamh an-àirde na h-àrainneachd ionnsachaidh amalaichte shònraichte againn an fheadhainn làthaireach agus an fheadhainn ris a bheil sinn an dùil san àm ri teachd a chur ann an cunnart. 
+
+\vspace{4mm}
+\gla 'S e ar prìomh dhleastanas geàrr-suim eaconomach {sam bith} a sheachnadh a dh'fhaodadh gin de na pròiseactan tha a' dèanamh an-àirde na h-àrainneachd ionnsachaidh amalaichte shònraichte againn an fheadhainn làthaireach agus an fheadhainn ris a bheil sinn an dùil san àm ri teachd a chur {ann an} cunnart  //
+\glb be.V.COP.PRES he.PRON.M.3S our.PRON.POSS.1P primary.QUAL duty.N.M.SG+ASP shortfall.N.M.SG economical.ADJ any.QUAL to.PRT.INFIN avoid.V.INFIN+ASP which.PRT.REL may.V.23SP.SUBJ.PAST.PASS+DH anyone.N.F.SG of.PREP the.DEF.PL.ND projects.N.M.PL be.V.PRES -ing.PRT.CONT do.PRESPART highest.INT+ADJ.COMP of.the.DEF.F.SG.GEN environment.N.F.SG+H education.N.M.SG.GEN integrated.ADJ special.ADJ+ASP at.us.PREP+PRON.1P the.DEF.F.SG.ND some.N.F.SG+ASP present.ADJ and.CONJ the.DEF.F.SG.ND some.N.F.SG+ASP to.him.PREP+PRON.M.3S which.PRT.REL be.V.PRES.DEP.INT we.PRON.1P the.DEF.F.SG.ND expectation.N.F.SG in.the.PREP+DEF time.N.M.SG to.PREP come.VN to.PRT.INFIN put.V.INFIN+ASP in.a.PREP+INDEF danger.N.M.SG  //
+\glft Our key concern is to prevent any economic shortfall which could threaten the future of any projects which make up our unique integrated learning environment. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha an liosta a leanas a' tabhann mholaidhean do dhaoine a tha a' beachdachadh tiodhlac a thoirt seachad air mar a dh'fhaodadh iad taic a chur ri ar n-amasan. 
+
+\vspace{4mm}
+\gla Tha an liosta a leanas a' tabhann mholaidhean do dhaoine a tha a' beachdachadh tiodhlac a thoirt seachad air mar a dh'fhaodadh iad taic a chur ri ar n-amasan  //
+\glb be.V.PRES the.DEF.F.SG.ND list.N.F.SG which.PRT.REL follow.V.FUT.REL -ing.PRT.CONT offer.PRESPART suggestions.N.M.PL+ASP to.PREP persons.N.M.PL+ASP which.PRT.REL be.V.PRES -ing.PRT.CONT consider.PRESPART gift.N.M.SG to.PRT.INFIN give.V.INFIN+ASP past.ADV on.PREP[or]on.him.PREP+PRON.M.3S as.CONJ which.PRT.REL may.V.23SP.SUBJ.PAST.PASS+DH they.PRON.3P support.N.F.SG to.PRT.INFIN put.V.INFIN+ASP to.PREP our.PRON.POSS.1P aims.N.M.PL+N  //
+\glft The following list offers some suggestions to donors as to the kind of ways in which they may wish to support our aims. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gabhaidh tabhartasan gun chumhachan a thoirt dhan Urras Leasachaidh, an uair a-mhàin no mar phàigheadh cunbhalach airson cur ri amasan na Colaiste anns an fharsaingeachd. 
+
+\vspace{4mm}
+\gla Gabhaidh tabhartasan gun chumhachan a thoirt dhan Urras Leasachaidh an uair a-mhàin no mar phàigheadh cunbhalach airson cur ri amasan na Colaiste anns an fharsaingeachd  //
+\glb can.be.V.FUT donations.N.M.PL that.CONJ term.N.F.PL+ASP to.PRT.INFIN give.V.INFIN+ASP to.the.PREP+DEF trust.N.M.SG development.N.M.SG.GEN the.DEF.F.SG.ND hour.N.F.SG once.ADV or.CONJ as.CONJ pay.VN+ASP regular.ADJ for.PREP put.VN to.PREP aims.N.M.PL of.the.DEF.F.SG.GEN college.N.F.SG in.PREP the.DEF.F.SG.ND extent.N.F.SG+ASP  //
+\glft Unconditional donations can be made to the Development Trust, either as one off payments or as a series of regular payments for the general furtherance of the College's aims. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gabhaidh tabhartasan le cumhachan a thoirt seachad a tha, mar eisimpleir, a' comharrachadh nam pròiseactan no an seòrsa pròiseict ris am biodh maoin an tabhartaiche a' buntainn. 
+
+\vspace{4mm}
+\gla Gabhaidh tabhartasan le cumhachan a thoirt seachad a tha mar eisimpleir a' comharrachadh nam pròiseactan no an seòrsa pròiseict ris am biodh maoin an tabhartaiche a' buntainn  //
+\glb can.be.V.FUT donations.N.M.PL with.PREP term.N.F.PL to.PRT.INFIN give.V.INFIN+ASP past.ADV which.PRT.REL be.V.PRES as.CONJ example.N.M.SG -ing.PRT.CONT specify.PRESPART of.the.DEF.PL.GEN projects.N.M.PL or.CONJ the.DEF.M.SG.NGD kind.N.M.SG project.N.M.SG.GEN to.him.PREP+PRON.M.3S the.DEF.M.SG.NOM[or]time.N.M.SG be.V.COND fund.N.F.SG the.DEF.M.SG.NGD donor.N.M.SG -ing.PRT.CONT belong.PRESPART  //
+\glft Conditional donations may be made which, for example, specify the project(s) or type of project to which the donor's funds would be applied. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gabhaidh dìleaban fhàgail aig an Urras ann an tiomnaidhean. 
+
+\vspace{4mm}
+\gla Gabhaidh dìleaban fhàgail aig an Urras {ann an} tiomnaidhean  //
+\glb can.be.V.FUT legacies.N.F.PL leave.VN+ASP at.PREP the.DEF.M.SG.NGD trust.N.M.SG in.a.PREP+INDEF wills.N.M.PL  //
+\glft Legacies may be left to the Trust in wills. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Faodaidh iad a bhith gun chumhachan no airson phròiseactan sònraichte. 
+
+\vspace{4mm}
+\gla Faodaidh iad a bhith gun chumhachan no airson phròiseactan sònraichte  //
+\glb may.V.FUT they.PRON.3P to.PRT.INFIN be.V.INFIN+ASP that.CONJ term.N.F.PL+ASP or.CONJ for.PREP projects.N.M.PL+ASP special.ADJ  //
+\glft These can either be unconditional or in support of particular areas of activity. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Caidreamh an t-Sabhail cuideachd a' leigeil do luchd-taice airgead a thoirt seachad tro bhallrachd bhliadhnail. 
+
+\vspace{4mm}
+\gla Tha Caidreamh an t-Sabhail cuideachd a' leigeil do luchd-taice airgead a thoirt seachad tro bhallrachd bhliadhnail  //
+\glb be.V.PRES fellowship.N.M.SG the.DEF.M.SG.GD barn.N.M.SG.GEN+T also.ADV -ing.PRT.CONT allow.PRESPART to.PREP supporters.N.M.PL money.N.M.SG to.PRT.INFIN give.V.INFIN+ASP past.ADV through.PREP membership.N.F.SG+ASP annual.ADJ+ASP  //
+\glft Caidreamh an t-Sabhail (Friends of Sabhal Mòr Ostaig) also enables supporters to subscribe through an annual membership. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Chaidh tochradh a stèidheachadh gus sruth airgid a chur ri adhbhar sònraichte no sgoilearachd shònraichte agus, mura tèid a chaochladh iarraidh, cuirear 5\% de na tabhartasan gu lèir gu aon taobh a dh'aon ghnothaich. 
+
+\vspace{4mm}
+\gla Chaidh tochradh a stèidheachadh gus sruth airgid a chur ri adhbhar sònraichte no sgoilearachd shònraichte agus mura tèid a chaochladh iarraidh cuirear 5\% de na tabhartasan {gu lèir} gu aon taobh a dh'aon ghnothaich  //
+\glb go.V.PAST endowment.N.M.SG to.PRT.INFIN establish.V.INFIN in.order.to.CONJ stream.N.M.SG money.N.M.SG.GEN to.PRT.INFIN put.V.INFIN+ASP to.PREP purpose.N.M.SG special.ADJ or.CONJ scholarship.N.F.SG special.ADJ+ASP and.CONJ unless.CONJ go.V.FUT.DEP to.PRT.INFIN change.V.INFIN+ASP[or]a.number.of.QUAL+ASP want.VN put.V.FUT.PASS 5\%.PERCENT of.PREP the.DEF.PL.ND donations.N.M.PL completely.ADV that.CONJ one.NUM.ORD side.N.M.SG his.PRON.POSS.M.3S[or]her.PRON.POSS.F.3S[or]to.PRT.INFIN[or]which.PRT.REL one.NUM.ORD+DH business.N.M.SG.GEN+ASP  //
+\glft An endowment fund has been set up to provide a flow of income in support of a particular purpose or of a particular scholarship and, unless otherwise requested, 5\% of all donations will be set aside for this purpose. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Anns a h-uile suidheachadh, faodar cùisean a chur air dòigh gus dèanamh cinnteach gum faigh gach tabhartas airgid an làimhseachadh as goireasaiche a thaobh chìsean. 
+
+\vspace{4mm}
+\gla Anns {a h-uile} suidheachadh faodar cùisean a chur air dòigh gus dèanamh cinnteach gum faigh gach tabhartas airgid an làimhseachadh as goireasaiche {a thaobh} chìsean  //
+\glb in.PREP every.QUAL locate.VN may.V.FUT.PASS matters.N.F.PL to.PRT.INFIN put.V.INFIN+ASP on.PREP method.N.F.SG in.order.to.CONJ do.VN certain.ADJ that.CONJ get.V.IMPER every.QUAL donation.N.M.SG money.N.M.SG.GEN the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD handle.VN be.V.COP.PRES.REL convenient.ADJ.COMP regarding.PREP taxes.N.F.PL+ASP  //
+\glft In all circumstances, arrangements can be made to ensure the most beneficial taxation treatment of financial donations. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Airson thabhartasan eadar-nàiseanta tha Urras Leasachaidh Sabhal Mòr Ostaig, mar phàirt de OGE, a' tabhann dòigh clàraichte do thabhartaichean anns na Stàitean Aonaichte (US 501(c)3) gus dèanamh cinnteach gum faigh gach tabhartas an làimhseachadh as goireasaiche a thaobh chìsean. 
+
+\vspace{4mm}
+\gla Airson thabhartasan eadar-nàiseanta tha Urras Leasachaidh Sabhal Mòr Ostaig mar phàirt de OGE a' tabhann dòigh clàraichte do thabhartaichean anns na Stàitean Aonaichte US 501c3 gus dèanamh cinnteach gum faigh gach tabhartas an làimhseachadh as goireasaiche {a thaobh} chìsean  //
+\glb for.PREP donations.N.M.PL+ASP international.ADJ be.V.PRES trust.N.M.SG development.N.M.SG.GEN barn.N.M.SG big.ADJ Ostaig.NAME as.CONJ part.N.F.SG+ASP of.PREP OGE.UNK -ing.PRT.CONT offer.PRESPART method.N.F.SG registered.PASTPART to.PREP donors.N.M.PL+ASP in.PREP the.DEF.PL.ND state.N.F.PL united.PASTPART US.UNK 501c3.UNK in.order.to.CONJ do.VN certain.ADJ that.CONJ get.V.IMPER every.QUAL donation.N.M.SG the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD handle.VN be.V.COP.PRES.REL convenient.ADJ.COMP regarding.PREP taxes.N.F.PL+ASP  //
+\glft For intenational donations, the Trust, as part of UHI, offers US donors a registered US 501(c)3 conduit to ensure the most beneficial taxation treatment of donations. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Liosta de Phrìomh Phròiseactan agus Feumalachdan Leasachaidh Ro-mheasta 
+
+\vspace{4mm}
+\gla Liosta de Phrìomh Phròiseactan agus Feumalachdan Leasachaidh Ro-mheasta  //
+\glb list.N.F.SG of.PREP primary.QUAL+ASP projects.N.M.PL+ASP and.CONJ needs.N.F.PL development.N.M.SG.GEN anticipated.ADJ  //
+\glft List of Key Projects and Projected Development Needs //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh na h-oighreachd aig a' Cholaiste 
+
+\vspace{4mm}
+\gla Leasachadh na h-oighreachd aig a' Cholaiste  //
+\glb develop.VN of.the.DEF.F.SG.GEN estate.N.F.SG+H at.PREP the.DEF.F.SG.ND college.N.F.SG+ASP  //
+\glft Estate development at the College //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Pròiseact Leasachaidh Baile na Cille Bige 
+
+\vspace{4mm}
+\gla Pròiseact Leasachaidh Baile na Cille Bige  //
+\glb project.N.M.SG development.N.M.SG.GEN town.N.M.SG of.the.DEF.F.SG.GEN chapel.N.F.SG small.ADJ.GD  //
+\glft Kilbeg Village Development Project //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Seirbheisean taic do dh'oileanaich, goireasan spòrs is chur-seachadan 
+
+\vspace{4mm}
+\gla Seirbheisean taic do dh'oileanaich goireasan spòrs is chur-seachadan  //
+\glb services.N.F.PL support.N.F.SG to.PREP students.N.M.PL+DH facilities.N.M.PL sports.N.M.PL and.CONJ recreation.N.M.PL+ASP  //
+\glft Student support services and recreational support facilities //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bursaraidhean Oileanaich agus Sgoilearachdan 
+
+\vspace{4mm}
+\gla Bursaraidhean Oileanaich agus Sgoilearachdan  //
+\glb bursary.N.M.PL students.N.M.PL and.CONJ scholarship.N.F.PL  //
+\glft Student Bursaries and Scholarships Fund //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tochradh airson chathraichean acadaimigeach agus caidreamhan rannsachaidh 
+
+\vspace{4mm}
+\gla Tochradh airson chathraichean acadaimigeach agus caidreamhan rannsachaidh  //
+\glb endowment.N.M.SG for.PREP chairman.N.M.PL+ASP[or]chairs.N.F.PL+ASP academic.ADJ and.CONJ fellowships.N.M.PL investigation.N.M.SG.GEN  //
+\glft Endowment of academic chairs and research fellowships //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Maoin airson Prògram Luchd-ealain na Colaiste 
+
+\vspace{4mm}
+\gla Maoin airson Prògram Luchd-ealain na Colaiste  //
+\glb fund.N.F.SG for.PREP programme.N.M.SG artists.N.M.PL of.the.DEF.F.SG.GEN college.N.F.SG  //
+\glft Artists in residence Programme Fund //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leudachadh chothroman cultarach is cur-seachad do dh'oileanaich is don choimhearsnachd 
+
+\vspace{4mm}
+\gla Leudachadh chothroman cultarach is cur-seachad do dh'oileanaich is don choimhearsnachd  //
+\glb expand.VN opportunities.N.M.PL+ASP cultural.ADJ and.CONJ[or]be.V.COP.PRES recreation.N.M.SG to.PREP students.N.M.PL+DH and.CONJ to.the.PREP+DEF community.N.F.SG+ASP  //
+\glft Broadening the range of cultural and leisure activities open to students and the wider community //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh chùrsaichean ùra, barrachd ghnìomhachdan foghlaim agus in-ghabhail oileanaich 
+
+\vspace{4mm}
+\gla Leasachadh chùrsaichean ùra barrachd ghnìomhachdan foghlaim agus in-ghabhail oileanaich  //
+\glb develop.VN courses.N.M.PL+ASP new.ADJ.PL more.ADV activities.N.F.PL+ASP learn.V.IMPER[or]education.N.M.SG.GEN and.CONJ inclusion.N.F.SG students.N.M.PL  //
+\glft Development of new courses and increased educational activity and student uptake //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Togail cheanglaichean nas treasa leis a' choimhearsnachd 
+
+\vspace{4mm}
+\gla Togail cheanglaichean nas treasa leis a' choimhearsnachd  //
+\glb raise.VN connections.N.M.PL+ASP more.PRT.COMP strong.ADJ.COMP with.PREP the.DEF.F.SG.ND community.N.F.SG+ASP  //
+\glft Development of stronger links with the community //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Maoin thochraidh airson iomairtean san àm ri teachd 
+
+\vspace{4mm}
+\gla Maoin thochraidh airson iomairtean san àm ri teachd  //
+\glb fund.N.F.SG endowment.N.M.SG.GEN+ASP for.PREP initiatives.N.F.PL in.the.PREP+DEF time.N.M.SG to.PREP come.VN  //
+\glft An endowment fund to provide for future initiatives //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A' cur taic ri agus a' leasachadh ghnìomhachdan tionnsglach agus fàs ghnìomhachasan 
+
+\vspace{4mm}
+\gla A' cur taic ri agus a' leasachadh ghnìomhachdan tionnsglach agus fàs ghnìomhachasan  //
+\glb -ing.PRT.CONT put.PRESPART support.N.F.SG to.PREP and.CONJ -ing.PRT.CONT develop.PRESPART activities.N.F.PL+ASP inventive.ADJ and.CONJ grow.VN[or]grow.V.IMPER business.N.F.PL+ASP  //
+\glft Support and development of entepreneurial activities and business incubation //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh phrògraman com-pàirteachas agus iomairtean eadar-nàiseanta 
+
+\vspace{4mm}
+\gla Leasachadh phrògraman com-pàirteachas agus iomairtean eadar-nàiseanta  //
+\glb develop.VN programme.N.M.PL+ASP partnership.N.M.SG and.CONJ initiatives.N.F.PL international.ADJ  //
+\glft Development of international partnership programmes and initiatives //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Prògraman rannsachaidh 
+
+\vspace{4mm}
+\gla Prògraman rannsachaidh  //
+\glb programme.N.M.PL investigation.N.M.SG.GEN  //
+\glft Research programmes //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Leasachadh Ionad Chaluim Chille Ìle 
+
+\vspace{4mm}
+\gla Leasachadh Ionad Chaluim Chille Ìle  //
+\glb develop.VN centre.N.M.SG Colm.NPERSON.GD+ASP chapel.N.F.SG+ASP Islay.NPLACE  //
+\glft Development of the Ionad Chaluim Chille Ìle campus on Islay //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Togail coimhearsnachd eadar-nàiseanta de luchd-taice 
+
+\vspace{4mm}
+\gla Togail coimhearsnachd eadar-nàiseanta de luchd-taice  //
+\glb raise.VN community.N.F.SG international.ADJ of.PREP supporters.N.M.PL  //
+\glft Building an international community of supporters //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre 'S e àite sònraichte a th' ann an Sabhal Mòr Ostaig. 
+
+\vspace{4mm}
+\gla 'S e àite sònraichte a th' {ann an} Sabhal Mòr Ostaig  //
+\glb be.V.COP.PRES he.PRON.M.3S place.N.M.SG special.ADJ which.PRT.REL be.V.PRES in.a.PREP+INDEF barn.N.M.SG big.ADJ Ostaig.NAME  //
+\glft Sabhal Mòr Ostaig is an extraordinary place. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A bharrachd air colaiste Ghàidhlig 's e gnìomhachas Gàidhlig a th' ann cuideachd. 
+
+\vspace{4mm}
+\gla {A bharrachd} air colaiste Ghàidhlig 's e gnìomhachas Gàidhlig a th' ann cuideachd  //
+\glb in.addition.PREP on.PREP college.N.F.SG Scots.Gaelic.N.F.SG+ASP be.V.COP.PRES he.PRON.M.3S business.N.M.SG Scots.Gaelic.N.F.SG which.PRT.REL be.V.PRES in.it.PREP+PRON.M.3S also.ADV  //
+\glft It is not just a Gaelic college, but also a Gaelic business. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh sinn a' tabhann chùrsaichean tarraingeach, inntinneach tro mheadhan na Gàidhlig, ach a bharrachd air sin, bidh sinn a' cruthachadh àrainneachd gu tur Gàidhlig an seo aig a' Cholaiste, far an tèid a' Ghàidhlig a bhruidhinn leis a h-uile duine fad an latha mar chànan làidir beòthail. 
+
+\vspace{4mm}
+\gla Bidh sinn a' tabhann chùrsaichean tarraingeach inntinneach tro mheadhan na Gàidhlig ach {a bharrachd} air sin bidh sinn a' cruthachadh àrainneachd gu tur Gàidhlig {an seo} aig a' Cholaiste far an tèid a' Ghàidhlig a bhruidhinn leis {a h-uile} duine fad an latha mar chànan làidir beòthail  //
+\glb be.V.FUT we.PRON.1P -ing.PRT.CONT offer.PRESPART courses.N.M.PL+ASP attractive.ADJ interesting.ADJ through.PREP medium.N.M.SG+ASP of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG bu.CONJ in.addition.PREP on.PREP[or]on.him.PREP+PRON.M.3S that.DEM.FAR be.V.FUT we.PRON.1P -ing.PRT.CONT create.PRESPART environment.N.F.SG that.CONJ absolute.ADJ Scots.Gaelic.N.F.SG here.ADV at.PREP the.DEF.F.SG.ND college.N.F.SG+ASP where.REL the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD go.V.FUT.DEP the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP which.PRT.REL speak.V.PAST+ASP with.PREP every.QUAL person.N.M.SG length.N.M.SG the.DEF.M.SG.NGD day.N.M.SG as.CONJ language.N.F.SG+ASP strong.ADJ lively.ADJ  //
+\glft We not only offer a range of exciting courses through the medium of Gaelic, we are also working to create a completely Gaelic environment at the College, promoting Gaelic as a strong and vibrant spoken language in the 21st century. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha Poileasaidh Cànain aig Sabhal Mòr Ostaig a tha airson dearbhadh gun cleachd a h-uile duine a' Ghàidhlig cho math 's as urrainn dhaibh fad na h-ùine. 
+
+\vspace{4mm}
+\gla Tha Poileasaidh Cànain aig Sabhal Mòr Ostaig a tha airson dearbhadh gun cleachd {a h-uile} duine a' Ghàidhlig cho math 's as urrainn dhaibh fad na h-ùine  //
+\glb be.V.PRES policy.N.M.SG language.N.F.SG.GD at.PREP barn.N.M.SG big.ADJ Ostaig.NAME which.PRT.REL be.V.PRES for.PREP ensure.VN that.CONJ use.V.IMPER every.QUAL person.N.M.SG the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP as.ADV good.ADJ be.V.COP.PRES be.V.COP.PRES.REL ability.N.F.SG to.them.PREP+PRON.3P length.N.M.SG of.the.DEF.F.SG.GEN duration.N.F.SG+H  //
+\glft Sabhal Mòr Ostaig has a Language Policy in place to ensure that everyone uses Gaelic at all times to the best of their ability. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha sinn an seo airson math na Gàidhlig gus an cànan againn a neartachadh mar chànanan làidir beòthail an latha an-diugh. 
+
+\vspace{4mm}
+\gla Tha sinn {an seo} airson math na Gàidhlig gus an cànan againn a neartachadh mar chànanan làidir beòthail an latha an-diugh  //
+\glb be.V.PRES we.PRON.1P here.ADV for.PREP good.ADJ of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG in.order.to.CONJ the.DEF.F.SG.ND language.N.F.SG at.us.PREP+PRON.1P to.PRT.INFIN strengthen.V.INFIN as.CONJ languages.N.F.PL+ASP strong.ADJ lively.ADJ the.DEF.M.SG.NGD day.N.M.SG today.ADV  //
+\glft We are here in the interest of Gaelic in order to strengthen our language to the level of other strong and vibrant modern languages. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cleachdaidh tu a' Ghàidhlig anns na clasaichean, ach cuideachd fad an latha air feadh na Colaiste: bho cheannachd stampaichean, cleachdadh an leabharlainn gu spòrs agus bruidhinn ri caraidean. 
+
+\vspace{4mm}
+\gla Cleachdaidh tu a' Ghàidhlig anns na clasaichean ach cuideachd fad an latha {air feadh} na Colaiste bho cheannachd stampaichean cleachdadh an leabharlainn gu spòrs agus bruidhinn ri caraidean  //
+\glb use.N.M.SG.GEN you.PRON.2S the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP in.PREP the.DEF.PL.ND classes.N.M.PL bu.CONJ also.ADV length.N.M.SG the.DEF.M.SG.NGD day.N.M.SG throughout.PREP of.the.DEF.F.SG.GEN college.N.F.SG from.PREP purchase.N.M.SG+ASP stamp.N.F.PL use.VN the.DEF.F.SG.ND[or]the.DEF.M.SG.NGD libraries.N.F.PL that.CONJ sports.N.M.PL and.CONJ speak.VN[or]speak.V.IMPER to.PREP friend.N.M.PL  //
+\glft At Sabhal Mòr Ostaig, you will not only use Gaelic in class, but your whole life at the College will be in Gaelic, from buying stamps and using the library to playing sports and hanging out with friends. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Cha bhi a h-uile duine làn fhileanta nuair a ruigeas iad, agus bidh feadhainn cleachdte ri bhith a' bruidhinn na Beurla ri chèile, agus bidh aca ri tionndadh gu Gàidhlig. 
+
+\vspace{4mm}
+\gla Cha bhi {a h-uile} duine làn fhileanta nuair a ruigeas iad agus bidh feadhainn cleachdte ri bhith a' bruidhinn na Beurla {ri chèile} agus bidh aca ri tionndadh gu Gàidhlig  //
+\glb not.PRT.NEG be.V.IMPER+ASP[or]be.V.FUT.INT+ASP every.QUAL person.N.M.SG full.ADJ fluent.ADJ+ASP when.CONJ which.PRT.REL reach.V.FUT.REL they.PRON.3P and.CONJ be.V.FUT some.N.F.SG used.to.PASTPART to.PREP be.VN+ASP -ing.PRT.CONT speak.PRESPART of.the.DEF.F.SG.GEN English.N.F.SG together.ADV and.CONJ be.V.FUT at.them.PREP+PRON.3P to.PREP turn.VN that.CONJ Scots.Gaelic.N.F.SG  //
+\glft Not everyone is fully fluent when they arrive at the College, and some students may already know each other and are used to speaking English to each other and will have to switch to Gaelic. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Ach gach bliadhna, thig oileanaich dhan Cholaiste, luchd-ionnsachaidh agus fileantaich bruidhnidh iad Gàidhlig ri chèile agus thig an cuid Gàidhlig air adhart gu mòr. 
+
+\vspace{4mm}
+\gla Ach gach bliadhna thig oileanaich dhan Cholaiste luchd-ionnsachaidh agus fileantaich bruidhnidh iad Gàidhlig {ri chèile} agus thig an cuid Gàidhlig air adhart gu mòr  //
+\glb bu.CONJ every.QUAL year.N.F.SG come.V.IMPER students.N.M.PL to.the.PREP+DEF college.N.F.SG+ASP learners.N.M.PL and.CONJ fluent.speaker.N.M.PL speak.VN they.PRON.3P Scots.Gaelic.N.F.SG together.ADV and.CONJ come.V.IMPER the.DEF.F.SG.ND portion.N.F.SG Scots.Gaelic.N.F.SG on.PREP front.N.M.SG that.CONJ big.ADJ  //
+\glft However, every year students come to Sabhal Mòr Ostaig and successfully use Gaelic throughout the day, making new friends in the language and greatly improving their fluency at the same time. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh an t-Oifigear Leasachaidh Cànain againn ag obair gu dlùth leis na h-oileanaich gus taic a thoirt dhaibh am Poileasaidh Cànain a chur an gnìomh. 
+
+\vspace{4mm}
+\gla Bidh an t-Oifigear Leasachaidh Cànain againn ag obair gu dlùth leis na h-oileanaich gus taic a thoirt dhaibh am Poileasaidh Cànain a chur an gnìomh  //
+\glb be.V.FUT the.DEF.M.SG.NOM officer.N.M.SG+T development.N.M.SG.GEN language.N.F.SG.GD at.us.PREP+PRON.1P -ing.PRT.CONT work.N.F.SG that.CONJ close.ADJ with.PREP the.DEF.PL.ND students.N.M.PL+H in.order.to.CONJ support.N.F.SG to.PRT.INFIN give.V.INFIN+ASP to.them.PREP+PRON.3P the.DEF.M.SG.NOM policy.N.M.SG language.N.F.SG.GD to.PRT.INFIN put.V.INFIN+ASP the.DEF.M.SG.NGD action.N.M.SG  //
+\glft Our Gaelic Development Officer works closely with the students to help achieve the goals of our Language Policy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A-nis tha Plana Cànain againn cuideachd a bhios gar cuideachadh gus am poileasaidh a chur an gnìomh. 
+
+\vspace{4mm}
+\gla A-nis tha Plana Cànain againn cuideachd a bhios gar cuideachadh gus am poileasaidh a chur an gnìomh  //
+\glb now.ADV be.V.PRES plan.N.M.SG language.N.F.SG.GD at.us.PREP+PRON.1P also.ADV which.PRT.REL be.V.FUT.REL+ASP at.our.PREP+POSS.1P help.VN in.order.to.CONJ the.DEF.M.SG.NOM policy.N.M.SG to.PRT.INFIN put.V.INFIN+ASP the.DEF.M.SG.NGD action.N.M.SG  //
+\glft Now we also have a Language Plan which helps us implement our policy. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Tha sinn moiteil gu bheil Plana Cànain cho làidir agus cho adhartach againn agus gu bheil sinn le sin a' cruthachadh àite a tha a' dìon na Gàidhlig agus àite anns am bi daoine cofhurtail agus misneachail gus Gàidhlig a bhruidhinn gu làitheil san obair agus ann am beatha nan oileanach. 
+
+\vspace{4mm}
+\gla Tha sinn moiteil gu bheil Plana Cànain cho làidir agus cho adhartach againn agus gu bheil sinn le sin a' cruthachadh àite a tha a' dìon na Gàidhlig agus àite anns am bi daoine cofhurtail agus misneachail gus Gàidhlig a bhruidhinn gu làitheil san obair agus {ann am} beatha nan oileanach  //
+\glb be.V.PRES we.PRON.1P proud.ADJ that.CONJ be.V.PRES.DEP.INT plan.N.M.SG language.N.F.SG.GD as.ADV strong.ADJ and.CONJ as.ADV advanced.ADJ at.us.PREP+PRON.1P and.CONJ that.CONJ be.V.PRES.DEP.INT we.PRON.1P with.PREP that.DEM.FAR -ing.PRT.CONT create.PRESPART place.N.M.SG which.PRT.REL be.V.PRES -ing.PRT.CONT protect.PRESPART of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG and.CONJ place.N.M.SG in.PREP the.DEF.M.SG.NOM[or]time.N.M.SG be.V.IMPER[or]be.V.FUT.INT persons.N.M.PL comfortable.ADJ and.CONJ confident.ADJ in.order.to.CONJ Scots.Gaelic.N.F.SG which.PRT.REL speak.V.PAST+ASP that.CONJ daily.ADJ in.the.PREP+DEF work.N.F.SG and.CONJ in.a.PREP+INDEF life.N.F.SG in.their.PREP+POSS.3P[or]of.the.DEF.PL.GEN student.N.M.SG  //
+\glft We are proud to have such a strong and progressive Language Plan which aims to create a place that protects our language and a place in which people feel comfortable and confident to speak Gaelic all the time, at work and in their student lives. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre A bharrachd air sin bidh gach oileanach ag aontachadh ri Cùmhnant Gàidhlig na Colaiste agus a' gealltainn gum bruidhinn iad a' Ghàidhlig bho mhoch gu dubh. 
+
+\vspace{4mm}
+\gla {A bharrachd} air sin bidh gach oileanach ag aontachadh ri Cùmhnant Gàidhlig na Colaiste agus a' gealltainn gum bruidhinn iad a' Ghàidhlig bho mhoch gu dubh  //
+\glb in.addition.PREP on.PREP[or]on.him.PREP+PRON.M.3S that.DEM.FAR be.V.FUT every.QUAL student.N.M.SG -ing.PRT.CONT agree.PRESPART to.PREP covenant.N.M.SG Scots.Gaelic.N.F.SG of.the.DEF.F.SG.GEN college.N.F.SG and.CONJ -ing.PRT.CONT promise.PRESPART that.CONJ speak.VN[or]speak.V.IMPER they.PRON.3P the.DEF.F.SG.ND Scots.Gaelic.N.F.SG+ASP from.PREP dawn.N.M.SG+ASP that.CONJ black.ADJ  //
+\glft Students are also asked to sign a contract in which they promise to use Gaelic all the time, so we can all expect a fully Gaelic environment. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Bidh sinn uile ag obair còmhla agus a' cruthachadh na coimhearsnachd Gàidhlig againn mar sgioba, ag ionnsachadh na Gàidhlig còmhla ri chèile agus a' cleachdadh Gàidhlig mar bu chòir, mar chànan ar colaiste Ghàidhlig, ar cultair agus ar dùthcha. 
+
+\vspace{4mm}
+\gla Bidh sinn uile ag obair còmhla agus a' cruthachadh na coimhearsnachd Gàidhlig againn mar sgioba ag ionnsachadh na Gàidhlig còmhla {ri chèile} agus a' cleachdadh Gàidhlig mar bu chòir mar chànan ar colaiste Ghàidhlig ar cultair agus ar dùthcha  //
+\glb be.V.FUT we.PRON.1P all.QUAL -ing.PRT.CONT work.N.F.SG together.ADV and.CONJ -ing.PRT.CONT create.PRESPART of.the.DEF.F.SG.GEN community.N.F.SG Scots.Gaelic.N.F.SG at.us.PREP+PRON.1P as.CONJ team.N.M.SG -ing.PRT.CONT learn.PRESPART of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG together.ADV together.ADV and.CONJ -ing.PRT.CONT use.PRESPART Scots.Gaelic.N.F.SG as.CONJ be.V.COP.PAST right.N.F.SG+ASP as.CONJ language.N.F.SG+ASP our.PRON.POSS.1P college.N.F.SG Scots.Gaelic.N.F.SG+ASP our.PRON.POSS.1P culture.N.M.SG.GEN and.CONJ our.PRON.POSS.1P native.land.N.F.SG.GD  //
+\glft This is something we all create together as a team, giving all students the best possible learning environment and giving Gaelic its rightful place as the language of our Gaelic college, our culture and our country. //
+\endgl
+\xe
+
+\ex
+\begingl
+\glpre Gabh pàirt ann am beatha bheòthail Ghàidhlig aig Ionad Nàiseanta na Gàidhlig! 
+
+\vspace{4mm}
+\gla Gabh pàirt {ann am} beatha bheòthail Ghàidhlig aig Ionad Nàiseanta na Gàidhlig  //
+\glb take.V.IMPER part.N.F.SG in.a.PREP+INDEF life.N.F.SG lively.ADJ+ASP Scots.Gaelic.N.F.SG+ASP at.PREP centre.N.M.SG national.ADJ of.the.DEF.F.SG.GEN Scots.Gaelic.N.F.SG  //
+\glft Join us and take part in our lively and optimistic Gaelic community here at Ionad Nàiseanta na Gàidhlig! //
+\endgl
+\xe
+
+
+\vfill
+
+\begin{flushright}
+Typeset using \LaTeX\ (\textit{latex-project.org}), running on Ubuntu, on \longdate\today
+\end{flushright}
+
+\end{document}

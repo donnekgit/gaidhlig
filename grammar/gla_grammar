@@ -1,0 +1,134 @@
+#/* 
+#*********************************************************************
+#Copyright Kevin Donnelly 2013.
+#kevindonnelly.org.uk
+#This file is part of the demo using the Bangor Autoglosser to tag
+#Gàidhlig.
+#
+#This program is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License and the GNU
+#Affero General Public License as published by the Free Software
+#Foundation, either version 3 of the License, or (at your option)
+#any later version.
+#
+#This program is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#and the GNU Affero General Public License along with this program.
+#If not, see <http://www.gnu.org/licenses/>.
+#*********************************************************************
+#*/ 
+
+DELIMITERS = "<.>" "<!>" "<?>";
+
+LIST initV = ("a.*"ri) ("à.*"ri) ("e.*"ri) ("è*"ri) ("i.*"ri) ("ì.*"ri) ("o.*"ri) ("ò.*"ri) ("u.*"ri) ("ù.*"ri);
+LIST initS = ("s.*"ri);
+LIST initF = ("f*"ri);
+
+select ("agus" conj) if (-1 (n)) (*1 (n));
+#select ("agus" conj) if (-1 (n)) (1 (def)) (2 (n));
+select ("agus" conj) if (-1 (adj)) (1 (adj));
+select ("agus" conj) if (*-1 ("eadar" prep) barrier (v));
+
+select (def f sg) if (1 (n f sg));
+select (def m sg) if (1 (n m sg));
+
+select (def f sg) if (1 (num.ord)) (2 (n f sg));
+select (def m sg) if (1 (num.ord)) (2 (n m sg));
+
+select (def f) if (1 (num.card)) (2 (n f));
+select (def m) if (1 (num.card)) (2 (n m));
+
+select (def m sg) if (-1 (prep)) (1 (vn));  # check
+select (def pl) if (1 (n pl));
+
+select (def) if (-1 (prep)) (1 (n) or (dec));
+select (def) if (-1 ("<is>" conj));
+
+substitute (ngd) (gd) (ngd) if (0 (def)) (1 (t)) (1 initS);
+substitute (ngd) (gd) (ngd) if (0 (def)) (1 (asp)) (1 initF);
+substitute (ngd) (nom) (ngd) if (0 (def)) (1 (t)) (1 initV);
+
+substitute (ngd) (gen) (ngd) if (0 (def)) (1 (n gen));
+
+substitute (nd) (dat) (nd) if (0 (def)) (-1 ("do" prep));
+substitute (gd) (dat) (gd) if (0 (def)) (-1 ("<airson>" prep));
+
+select ("air" prep) if (1 (n) or (adj) or (def) or (vn) or (adj.poss));
+substitute (:on:) (:after:) ("air" prep) if (1 (vn));
+select ("air" prep) if (1 (prt.int.neg));
+
+select ("le" prep) if (1 (def) or (qual));
+select ("le" prep+pron) if (not 1 (def));
+
+select ("gu" prep+pron) if (-1 (vn));
+
+select ("<ga>" f) if (*-1 (n f));
+select ("<ga>" m) if (*-1 (n m));
+
+select ("ann") if (1 (vn) or (infin));
+select ("ann") if (-2 ("an" def)) (-1 (n));
+select ("ann" prep+poss m) if (1 (n asp));
+select ("ann" prep+poss 1s) if (1 (vn asp));
+#select ("ann" f) if (*-1 (n f));
+#select ("ann" m) if (*-1 (n m));
+select ("ann" m 3s) if (1 (n m asp));
+select ("ann" f) if (-2 ("rach" v)) (-1 (pron f 3s));
+select ("ann" m) if (-2 ("rach" v)) (-1 (pron m 3s));
+select ("ann" m) if (-1 ("bi" v));
+
+select ("a" adj.poss m) if (1 (n asp) or (num.card asp));
+select ("a" adj.poss m) if (-1 ("air" prep)) (1 (vn asp));
+
+select ("a" adj.poss f) if (1 (n h));
+select ("a" adj.poss f) if (1 (n)) (not 1 (asp));
+select ("a" adj.poss f) if (-1 ("air" prep)) (1 (vn)) (not 1 (asp));
+substitute (f 3s :her:) (mf 3s :its:) ("a" adj.poss f) if (-1 ("air" prep)) (1 (vn)) (not 1 (asp));
+
+select ("a" prt.rel) if (1 (v) or ("is" v.cop));
+substitute (v imper) (v past) (v imper) if (-1 (prt.rel) or (conj+past));
+select (v) if (-1 (prt.rel));
+
+select ("an" prt.interr) if (1 (v));
+
+select ("oir" conj) if (1 (v));
+select ("gun" conj) if (1 (v));
+select ("nan" conj) if (1 (v));
+
+select ("chan" prt.neg) if (1 (v));
+select ("mun" prep) if (1 (v));
+
+select ("<gun>" prep+def) if (1 (n asp));
+
+select ("ag" prt.cont) if (1 (vn));
+select (vn) if (-1 ("ag" prt.cont));
+substitute (vn) (prespart) (vn) if (-1 ("ag" prt.cont));
+
+select ("a" prt.infin) if (not -1 ("air" prep)) (1 (vn));
+substitute (vn) (v infin) (vn) if (-1 ("a" prt.infin));
+
+select (qual) if (1 (n));
+
+select (gd) if (-1 (n));
+select (pl) if (-1 (def pl));
+
+substitute (gd) (gen) (gd) if (0 (n)) (-1 (def)) (-2 (n));
+substitute (gd) (gen) (gd) if (0 (n)) (-1 (def)) (-2 ("<air feadh>"));
+
+substitute (n m sg) (n m sg dat) (n m sg asp) if (-1 ("do" prep));
+substitute (n m sg) (n m sg dat) (n m sg) if (-1 (def dat));
+
+select (v.cop) if (1 (pron) or (pron+emph));
+
+select ("càil" n) if (1 ("ach" conj));
+
+select (vn) if (-1 ("iarraidh"));
+remove (v imper) if (-1 (prep+prt.rel));
+remove (v imper) if (-1 (prt.int.neg));
+remove (v imper) if (-1 (prt.interr));
+
+
+
