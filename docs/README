@@ -1,0 +1,104 @@
+/* 
+*********************************************************************
+Copyright Kevin Donnelly 2013.
+kevindonnelly.org.uk
+This file is part of the Bangor Autoglosser for Gàidhlig.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License or the GNU
+Affero General Public License as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+and the GNU Affero General Public License along with this program.
+If not, see <http://www.gnu.org/licenses/>.
+*********************************************************************
+*/ 
+
+This is a basic howto for running the autoglosser for Gàidhlig.
+Contact me on kevin@dotmon.com if you have problems.
+
+The autoglosser has been developed and tested on Ubuntu GNU/Linux.
+
+PHP5, Apache2 and PostgreSQL should be installed.
+The visl-cg3 constraint grammar implementation should be installed from the following PPA:
+https://launchpad.net/~tinodidriksen/+archive/cg3
+To get a typeset final output, LaTeX (TeXLive2012) should be installed, along with John
+Frampton's expex package:
+http://www.ctan.org/pkg/expex
+
+Import the Gàidhlig dictionary (dbs/glalist.sql) into a PostgreSQL table.
+
+Move the gaidhlig directory into /opt, and adjust the connection details in config.php to 
+match your PostgreSQL setup.
+
+The software is a pipeline, so individual pieces can be run as necessary.
+The easiest way is to run the whole pipeline via do_everything.php.
+
+The following assumes you have a bilingual corpus text you want to autogloss broken into
+aligned sentences and set out in the following format:
+Gàidhlig sentence
+English sentence
+blank line
+If you have only Gàidhlig in the text, enter something like xxx for the English line.
+(Alternatively, you could change the import routine to handle a monolingual text.)
+
+Place your corpus text in the inputs folder in the autoglosser dir.
+
+Configuration:
+In do_everything.php, set the names for the tables containing the sentences of the corpus,
+the words of that corpus, the combined constraint grammar output, and the name of the corpus.
+In store_sentences.php set the same names for the sentences and words tables, and give the filename 
+of the input text.
+In store_words.php, set the same names for the sentences and words tables.
+
+From the autoglosser dir, run the pipeline:
+php do_everything.php.
+
+In sequence, the following scripts are run:
+
+gather_multiwords.php
+Collects multiwords from the dictionary and places them in a new table in order of the number of
+spaces they contain.
+
+mark_multiwords.php
+Goes through the text and writes a new file in the outputs folder replacing the spaces in any 
+multiwords it finds with an underscore.
+
+store_sentences.php
+Imports each pair of lines from the text and stores them as parallel entries in the sentences table.
+
+store_words.php
+Imports the Gàidhlig words of each sentence into a words table, removing the underscores added
+by mark_multiwords.php.
+
+write_cohorts.php
+Takes each word and looks it up in the dictionary, writing out the results in the outputs folder 
+in a format that visl-cg3 can consume.
+
+apply_cg.php
+Applies constraint grammar disambiguation to the cohort file, writing out the disambiguated
+words in the outputs folder
+
+write_cgfinished.php
+Parses the CG output file and stores the results in a cgfinished table.
+
+join_tags.php
+Gets the data for each Gàidhlig word and writes it into the words table.  If the disambiguation
+has worked well, there will only be one gloss, but in cases where there is more than one (which
+signals that more CG rules need to be added to the grammar in grammar/gla_grammar) the 
+glosses will be combined into one string separated by [or].
+
+generate_expex.php
+Reads the sentences from the sentences table and the words+gloss from the words table, and 
+writes out a tex file arranging them in parallel, with the words and glosses aligned.  Then runs 
+LaTeX to create a pdf file in the outputs folder.
+
+If you get UNK as the gloss for a particular word, this means that the word needs to be added to
+the dictionary.
