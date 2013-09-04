@@ -27,7 +27,7 @@ Contact me on kevin@dotmon.com if you have problems.
 The autoglosser has been developed and tested on Ubuntu GNU/Linux.
 
 PHP5, Apache2 and PostgreSQL should be installed.
-The visl-cg3 constraint grammar implementation should be installed from the following PPA:
+The visl-cg3 constraint grammar implementation should be installed from Tino Didriksen's PPA:
 https://launchpad.net/~tinodidriksen/+archive/cg3
 To get a typeset final output, LaTeX (TeXLive2012) should be installed, along with John
 Frampton's expex package:
@@ -51,7 +51,6 @@ If you have only Gàidhlig in the text, enter something like xxx for the English
 
 Place your corpus text in the inputs folder in the autoglosser dir.
 
-Configuration:
 In do_everything.php, set the names for the tables containing the sentences of the corpus,
 the words of that corpus, the combined constraint grammar output, and the name of the corpus.
 In store_sentences.php set the same names for the sentences and words tables, and give the filename 
@@ -100,5 +99,5 @@ Reads the sentences from the sentences table and the words+gloss from the words 
 writes out a tex file arranging them in parallel, with the words and glosses aligned.  Then runs 
 LaTeX to create a pdf file in the outputs folder.
 
-If you get UNK as the gloss for a particular word, this means that the word needs to be added to
-the dictionary.
+If you get UNK (unkonwn) as the gloss for a particular word, this means that the word needs to 
+be added to the dictionary.
