@@ -54,8 +54,10 @@ Place your corpus text in the inputs folder in the autoglosser dir.
 In do_everything.php, set the names for the tables containing the sentences of the corpus,
 the words of that corpus, the combined constraint grammar output, and the name of the corpus.
 In store_sentences.php set the same names for the sentences and words tables, and give the filename 
-of the input text.
+of your input text.
 In store_words.php, set the same names for the sentences and words tables.
+In mark_multiwords.php, give the filename of your input text.
+(The above is work-in-progress, but it will be streamlined in the future.)
 
 From the autoglosser dir, run the pipeline:
 php do_everything.php.
@@ -99,5 +101,5 @@ Reads the sentences from the sentences table and the words+gloss from the words 
 writes out a tex file arranging them in parallel, with the words and glosses aligned.  Then runs 
 LaTeX to create a pdf file in the outputs folder.
 
-If you get UNK (unkonwn) as the gloss for a particular word, this means that the word needs to 
+If you get UNK (unknown) as the gloss for a particular word, this means that the word needs to 
 be added to the dictionary.
