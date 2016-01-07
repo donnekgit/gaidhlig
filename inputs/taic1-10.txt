@@ -1,0 +1,998 @@
+Tha mi sgìth.
+I am tired.
+
+Tha iad trang.
+They are busy.
+
+Tha i fuar.
+She/it is cold.
+
+Tha iad blàth.
+They are warm.
+
+Tha sinn leisg.
+We are lazy.
+
+Tha sibh tioram.
+You are dry.
+
+Tha e fuar.
+It is cold.
+
+Chan eil e fuar.
+It is not cold.
+
+A bheil e fuar?
+Is it cold?
+
+Nach eil e fuar?
+Is it not cold?
+
+A bheil thu sgìth?
+Are you tired?
+
+Nach eil i fliuch?
+Isn't she wet?
+
+Chan eil iad trang.
+They aren't busy.
+
+Chan eil sinn fuar.
+We aren't cold.
+
+Nach eil iad leisg?
+Aren't they lazy?
+
+A bheil sibh fuar?
+Are you cold?
+
+Chan eil mi fuar.
+I am not cold.
+
+A bheil thu blàth?
+Are you warm?
+
+Nach eil thu blàth?
+Are you not warm?
+
+A bheil i sgìth?
+Is she tired?
+
+A bheil iad toilichte?
+Are they pleased?
+
+Nach eil i snog?
+Isn't she nice?
+
+Chan eil e tioram.
+He isn't dry.
+
+Chan eil sinn leisg.
+We aren't lazy.
+
+Tha sinn fuar.
+We are cold.
+
+Tha thu beag.
+You are small.
+
+Tha iad mòr.
+They are big.
+
+Tha mi leisg.
+I am lazy.
+
+Tha e trang.
+He is busy.
+
+Tha i sgìth.
+She is tired.
+
+Tha e uabhasach mòr.
+He is awfully big.
+
+Tha e uabhasach fliuch.
+It is terribly wet.
+
+Tha iad glè mhòr.
+They are very big.
+
+Tha e ro fhuar.
+It is too cold.
+
+Tha thu cho snog.
+You are so nice.
+
+Tha am fear glè thrang.
+The man is very busy.
+
+Tha an là glè fhliuch.
+The day is very wet.
+
+Nach eil am fear àrd?
+Isn't the man tall?
+
+A bheil i ro fhuar?
+Is it/she too cold?
+
+A bheil thu uabhasach sgìth?
+Are you terribly tired?
+
+Tha e ro bheag.
+It/he is too small.
+
+Tha sin uabhasach.
+That's awful.
+
+Tha mi fuar agus fliuch.
+I am cold and wet.
+
+Tha mi cho fuar.
+I am so cold.
+
+Tha am fear glè leisg.
+The man is very lazy.
+
+Nach eil i uabhasach?
+Isn't she awful?
+
+Tha sinn ro sgìth.
+We are too tired.
+
+Chan eil iad glè fhliuch.
+They're not very wet.
+
+Chan eil e cho toilichte.
+He isn't too pleased.
+
+Chan eil i fliuch, ach tha i fuar.
+She isn't wet but she is cold.
+
+Chan eil iad cho snog.
+They're not so nice.
+
+Bha e fuar.
+It was cold.
+
+Cha robh e fuar.
+It was not cold.
+
+An robh e fuar?
+Was it cold?
+
+Nach robh e fuar?
+Wasn't it cold?
+
+A bheil thu fliuch?
+Are you wet?
+
+Nach eil iad àrd?
+Aren't they tall?
+
+An robh sibh trang?
+Were you busy?
+
+Nach robh i leisg?
+Wasn't she lazy?
+
+Bha iad glè thoilichte.
+They were very pleased.
+
+Cha robh i ro shnog.
+She wasn't too nice.
+
+An robh iad sgìth? Cha robh.
+Were they tired? No.
+
+A bheil i tioram? Tha.
+Is it/she dry? Yes.
+
+Nach robh am fear leisg?
+Wasn't the man lazy?
+
+Bha iad trang agus toilichte.
+They were busy and content.
+
+Bha an là fliuch ach blàth.
+The day was wet but warm.
+
+An robh thu blàth? Bha.
+Were you warm? Yes.
+
+Nach eil iad snog? Chan eil.
+Aren't they nice? No.
+
+Cha robh am fear sgìth.
+The man wasn't tired.
+
+Nach eil thu blàth? Chan eil.
+Aren't you warm? No.
+
+Nach robh i glè fhliuch? Bha.
+Wasn't she very wet? Yes.
+
+Nach eil mi snog? Tha.
+Am I not nice? Yes.
+
+Cha robh i trang, tha i leisg.
+She wasn't busy, she is lazy.
+
+Bha e ro àrd.
+He was too tall.
+
+Bha sinn glè thoilichte.
+We were very pleased.
+
+Cha robh an là cho blàth.
+The day wasn't so warm.
+
+Cha robh iad uabhasach toilichte, an robh? Cha robh.
+They weren't terribly pleased, were they? No.
+
+Chan eil an sgoil glè ghlan.
+The school isn't very clean.
+
+Tha an eaglais fuar.
+The church is cold.
+
+An robh an sgian geur? Cha robh.
+Was the knife sharp? No.
+
+A bheil an litir mòr? Chan eil.
+Is the letter big? No.
+
+Tha am peann tioram.
+The pen is dry.
+
+Nach eil an loch ìosal? Tha.
+Isn't the loch low? Yes.
+
+Tha an t-snàthad glè gheur.
+The needle is very sharp.
+
+Bha an nead falamh.
+The nest was empty.
+
+A bheil an seòmar blàth? Chan eil.
+Is the room warm? No.
+
+Cha robh an t-òran snog.
+The song wasn't nice.
+
+An robh an leabhar beag? Cha robh.
+Was the book small? No.
+
+Tha an gille uabhasach sgìth.
+The lad is terribly tired.
+
+A bheil an doras tioram?
+Is the door dry?
+
+Cha robh an làr fliuch.
+The floor wasn't wet.
+
+Chan eil an sgàthan glan.
+The mirror isn't clean.
+
+Bha an t-sìth math.
+The peace was nice (good)
+
+Nach robh an taigh falamh? Bha.
+Wasn't the house empty? Yes.
+
+Bha an teine teth.
+The fire was hot.
+
+Bha an làmh fliuch.
+The hand was wet.
+
+Nach eil an oidhche fuar? Tha.
+Isn't the night cold? Yes.
+
+Cha robh an leabaidh glan.
+The bed wasn't clean.
+
+Cha robh a' chaileag ro thoilichte.
+The girl wasn't too happy.
+
+Bha an fhearg mòr.
+The anger was great.
+
+Tha am balach beag.
+The boy is small.
+
+Tha a' chaileag beag.
+The girl is small.
+
+Tha na balaich beag.
+The boys are small.
+
+Tha na caileagan beag.
+The girls are small.
+
+Tha an seòmar fuar.
+The room is cold.
+
+Tha an eaglais fuar.
+The church is cold.
+
+Chan eil an sgoil mhòr cho glan.
+The big school isn't so clean.
+
+Tha an eaglais bheag làn.
+The small church is full.
+
+An robh an sgian ùr geur? Cha robh.
+Was the new knife sharp? No.
+
+Bha am peann gorm tioram.
+The blue pen was dry.
+
+Tha an litir seo inntinneach.
+This letter is interesting.
+
+Bha an taigh sin falamh.
+That house was empty.
+
+Tha an snàthad gheur salach.
+The sharp needle is dirty.
+
+Tha an gille dona sin leisg.
+That bad lad is lazy.
+
+An robh an seòmar beag blàth? Cha robh.
+Was the small room warm? No.
+
+Cha robh a' chaileag bheag tinn.
+The little girl wasn't ill.
+
+An robh an leabhar beag fliuch? Cha robh.
+Was the small book wet? No.
+
+Bha an abhainn fhada glè shalach.
+The long river was very dirty.
+
+An robh an doras ùr tioram?
+Was the new door dry?
+
+Bha an làr goirid fliuch.
+The short floor was wet.
+
+Chan eil an sgàthan salach sin ùr.
+That dirty mirror isn't new.
+
+Bha an t-sìth fhada math.
+The long peace was good.
+
+Nach robh an taigh falamh? Bha.
+Was the house not empty? Yes.
+
+Bha an teine teth glè mhath.
+The hot fire was very good.
+
+Tha an làmh dhearg sin fliuch.
+That red hand is wet.
+
+Bha an oidhche fhada fuar.
+The long night was cold.
+
+Chan eil am bàta gorm làn.
+The blue boat isn't full.
+
+Cha robh a' chaileag dhona toilichte.
+The bad girl wasn't pleased.
+
+Tha am fear sin tioram agus blàth.
+That man is dry and warm.
+
+Bha an loch fada sin àrd.
+That long loch was high.
+
+Tha Calum ann.
+Calum is present/Calum is here.
+
+Bha mi ann.
+I was present/I was there.
+
+Tha cèilidh ann a-nochd.
+There is a ceilidh on tonight.
+
+An robh thu anns an eaglais?
+Were you in (the) church?
+
+Tha an gille anns an rùm.
+The boy is in the room.
+
+Cha robh duine aig an doras.
+There was no-one at the door.
+
+A bheil thu aig an sgoil? Tha.
+Are you at (the) school? Yes.
+
+Bha i tinn agus cha robh i aig an sgoil.
+She was ill and wasn't at school.
+
+Tha mi glè bhlàth faisg air an teine.
+I am very warm near the fire.
+
+Bha iad ris an doras.
+They were at (against) the door.
+
+Bha sinn ri sgeilp.
+We were at(against) a shelf.
+
+Nach robh sibh air an leabaidh?
+Were you not on the bed?
+
+Tha e à Inbhir Nis.
+He is from Inverness.
+
+Bha iad bhon taigh tron oidhche.
+They were (away) from home through the night.
+
+Nach eil an cù fon leabaidh?
+Is the dog not under the bed?
+
+Bha i còmhla ris an duine.
+She was (along) with the man.
+
+Tha a' chaileag air an làr cuide ri cù
+The girl is on the floor (together) with a dog.
+
+Bha leabhar ann.
+There was a book there.
+
+Tha am fear trang air an rathad.
+The man is busy on the road.
+
+Tha caileag ann am bàta air an abhainn.
+There is a girl in a boat on the river.
+
+Tha e à Steòrnabhagh.
+He is from Stornoway.
+
+Bha i anns an sgoil ach cha robh e.
+She was in school however he was not.
+
+Nach eil iad à Dùn Èideann? Chan eil.
+Are they not from Edinburgh?, No.
+
+Tha i à Glaschu agus tha e à Dùn Èideann.
+She is from Glasgow and he is from Edinburgh.
+
+Bha iad anns an taigh-òsta, ach bha mi aig an taigh.
+They were in the hotel, however I was at home.
+
+Cha robh sinn glè theth aig an teine.
+We weren't very hot at the fire.
+
+Tha litir ann bhon nighean sin.
+There is a letter from that girl (nighean)
+
+Bha e anns an dealbh den sgeul sin.
+He was in the picture of that story.
+
+Bha an seòmar salach leis an toit.
+The room was dirty with the smoke.
+
+Bha am balach anns an taigh.
+The boy was in the house.
+
+Chan eil rùm falamh anns an taigh seo.
+There isn't an empty room in this house.
+
+Tha caileag bhòidheach anns a' phàipear ann.
+There is a beautiful girl in the paper.
+
+Tha an cù donn beag ann fon bhòrd sin.
+The small brown dog is under that table.
+
+An robh sibh air a' mhonadh? Bha.
+Were you on the moor? Yes.
+
+Tha an t-ìm air an aran glè mhath.
+The butter on the bread is very good.
+
+Bha ròn ann air a' chladach.
+There was a seal on the shore.
+
+Tha an gleann sin brèagha air là ciùin.
+That glen is lovely on a calm day.
+
+Bha e uabhasach stoirmeil anns an fheasgar.
+It was really stormy in the evening.
+
+Chan eil uisge ann anns an t-sruth.
+There is no water in the stream.
+
+Tha teine math teth ann bhon ghual seo.
+There is a good hot fire from this coal.
+
+An robh e luath leis an t-seòl?
+Was he quick with the sail?
+
+Bha sìth ann tron t-saoghal.
+There was peace through(out) the world.
+
+Tha am bainne bhon fhiadh sin uabhasach math?
+The milk from that deer is very good?
+
+Nach eil aran ùr anns a' bhocsa ann? Tha.
+Isn't there fresh bread in the box? Yes.
+
+Bha an duine, leis a' chù, cho mall air a' chnoc.
+The man, with the dog, was so slow on the hill.
+
+Tha taigh ann thairis air an t-sruth.
+There is a house there over the stream.
+
+Tha an cù anns a' bhogsa fon bhòrd.
+The dog is in the box under the table.
+
+Tha gual ann anns an t-sruth.
+There is (some) coal in the stream.
+
+Tha falt donn glè bhòidheach.
+Brown hair is very beautiful.
+
+Bha mi air an rathad dhan bhaile.
+I was on the road to the town.
+
+Tha là air a' mhonadh math dhut.
+A day on the moor is good for you.
+
+Bha an làr fliuch le uisge.
+The floor was wet with water.
+
+Tha feur gorm ann anns an achadh.
+There is green grass in the field.
+
+Tha an taigh ùr faisg air an allt luath.
+The new house is near the fast burn.
+
+Tha an cladach seachad air a' mhonadh.
+The shore is past the moor.
+
+Nach eil iad a' dol dhan chèilidh anns a' bhaile? Chan eil.
+Are they not going to the ceilidh in the town? No.
+
+Chan eil iasg anns an allt ann.
+There are no fish in the burn.
+
+Tha am bòrd anns an t-seòmar sin glè shnog.
+The table in that room is very nice.
+
+Bha uisge ann fon bhòrd.
+There was water under the table.
+
+Bha am bàta fo sheòl.
+The boat was under sail.
+
+Bha ròn ann anns an uisge, agus air a' chladach.
+There was a seal in the water, and on the shore.
+
+Tha an litir seo dhan chaillich.
+This letter is for the old woman.
+
+Bha a' ghrian blàth anns a' mhadainn.
+The sun was warm in the morning.
+
+Nach robh iad aig a' mhuir tron oidhche? Bha.
+Were they not at sea through the night? Yes.
+
+Bha i anns an leabaidh tron mhadainn.
+She was in bed during the morning.
+
+Bha sgeul mun chaileig sin anns an naidheachd.
+There was a story about that girl in the news.
+
+Tha a' Ghàidhlig glè inntinneach, nach eil?
+Gàidhlig is very interesting, isn't it?
+
+Bha sgeulachd inntinneach anns an litir.
+There was an interesting story in the letter.
+
+Tha an nighean ris an uinneig oir tha a' ghrian blàth.
+The girl is at the window because the sun is warm.
+
+Bha slat fhada ùr ann anns a' bhùth.
+There was new long (fishing) rod in the shop.
+
+Tha bùth ùr ann air an t-sràid sin.
+There is a new shop on that street.
+
+Nach robh iad ùine fhada anns a' bhaile.
+Weren't they a long time in town?
+
+Tha an sgeulachd ghoirid seo anns a' Ghàidhlig.
+This short story is in Gàidhlig.
+
+Bha an cù donn air an fheur ris a' ghrèin.
+The brown dog on the grass was (exposed) to the sun.
+
+Bha sgiath dhonn air a' chirc.
+The hen had a brown wing.
+
+Bha a' chailleach anns a' bhùth anns a' mhadainn.
+The old woman was in the shop in the morning.
+
+Bha i aig a' bhùth còmhla ris a' chaileig.
+She was at the shop along with the girl.
+
+Bha a' chaileag sàbhailte fon sgèith.
+The girl was safe under the shield.
+
+Bha an làmh olc air an t-slait.
+The evil hand was on the wand.
+
+Cha robh mi aig an uinneig anns a' mhadainn.
+I wasn't at the window in the morning.
+
+Bha e anns an leabaidh tron oidhche.
+He was in bed through the night.
+
+Bha e dearg le feirg.
+He was red with anger.
+
+Tha a' chearc anns a' phoit.
+The chicken is in the pot.
+
+Tha a' chaora dhubh glè theth fon ghrèin 
+The black sheep is very hot under the sun.
+
+Nach robh thu ann aig a' chèilidh? Bha, bha mi ann ùine ghoirid.
+Weren't you at the ceilidh? Yes, I was there a short spell.
+
+Bha an cù faisg air a' chaileig.
+The dog was near the girl.
+
+Tha feannagan dubh, ach tha sgiath gheal air an fheannaig sin.
+Crows are black, but there is a white wing on that crow.
+
+Tha an nighean fliuch oir bha i anns a' mhuir.
+The girl is wet because she was in the sea.
+
+Bha an sgeulachd uabhasach aig a' chrìch.
+The story was terrible at the end.
+
+Tha mi ag obair.
+I am working.
+
+A bheil sibh a' cluich?
+Are you playing?
+
+Chan eil e a' sgrìobhadh.
+He isn't writing.
+
+Bha iad a' fuireach.
+The were staying.
+
+An robh iad a' seinn.
+Were they singing?
+
+Cha robh mi ag ithe.
+I wasn't eating.
+
+Bha mi a' seinn.
+I was singing.
+
+An robh e ag òl?
+Was he drinking?
+
+Cha robh iad a' dol.
+They were not going.
+
+Tha mi ag iarraidh airgead.
+I want some money.
+
+Bha mi ag iarraidh airgead.
+I wanted some money.
+
+Tha mi ag obair ann am banca.
+I work/am working in a bank.
+
+Bha mi ag obair ann am banca.
+I worked/was working in a bank.
+
+Tha mi a' dol.
+I am going.
+
+Tha mi a' dol a sheinn aig a' chèilidh.
+I am going to sing at the ceilidh.
+
+Tha mi a' dol a cheannach leabhar.
+I am going to buy a book.
+
+Tha mi a' dol a dh'fhaicinn an duine.
+I am going to see the man.
+
+Tha mi ag iarraidh coiseachd air an fheur.
+I want to walk on the grass.
+
+Tha i ag iarraidh a dhol dhan phàirc.
+She wants to go to the park.
+
+Tha e ag iarraidh a thighinn dhachaigh.
+He wants to come home.
+
+Tha iad ag iarraidh a bhith trang.
+They want to be busy.
+
+An robh sibh ag iarraidh seinn aig a' chèilidh? Bha.
+Were you wanting to sing at the ceilidh? Yes.
+
+Bha a' chaileag a' cluich leis a' chù
+The girl was playing with the dog.
+
+Chan eil iad a' fuireach ann an Struighle.
+They don't live in Stirling.
+
+Tha mi a' leughadh pàipear aig an uinneig.
+I am reading a paper at the window.
+
+Chan eil iad a' tilleadh gus a' mhadainn.
+They aren't returning until morning.
+
+A bheil sinn a' dol dhan talla? Tha.
+Are we going to the hall? Yes.
+
+Bha an gille ag iasgach aig a' mhuir.
+The boy was fishing at (the) sea.
+
+Nach robh thu a' ruith air an rathad? Cha robh.
+Were you not running on the road? No.
+
+Nach eil i ag obair aig an taigh?
+Is she not working at home (the house)?
+
+Tha i ag iarraidh sgrìobhadh gun fhear sin.
+She wants to write to that man.
+
+Tha mi ag iarraidh a dhol gu Dun Deagh.
+I want to go to Dundee.
+
+Tha iad a' cur iasg ann an uisge.
+They are putting a fish in water.
+
+Bha iad ag ithe mun bhòrd.
+They were eating around (about) the table.
+
+Tha Màiri a' dol a dh'ithe anns an taigh-òsta.
+Màiri is going to eat in the hotel.
+
+Bha e a' bruidhinn ri Calum.
+He was speaking to Calum.
+
+Chan eil an càr a' Tòiseachadh.
+The car is not starting.
+
+Bha e ag ionnsachadh Gàidhlig.
+He was learning Gàidhlig.
+
+Tha mi ag iarraidh a dhol dhan phàirc leis a' chù
+I want to go to the park with the dog.
+
+A bheil sibh ag iarraidh tilleadh dhan tòiseachadh.
+Do you want to return to the beginning.
+
+Bha am balach dona a' ruith air an t-sràid.
+The bad boy was running in (air) the street.
+
+An robh e fliuch no tioram air a' mhonadh? Bha e fliuch agus fuar.
+Was it wet or dry on the moor? It was wet and cold.
+
+Tha iad a' fuireach ann am Peairt, ach tha iad à Portrìgh.
+They stay in Perth, but they are from Portree.
+
+Tha mi a' dol a cheannach leabhar ùr leis an airgead.
+I am going to buy a new book with the money.
+
+Bha e a' bualadh leis an òrd.
+He was striking with the hammer.
+
+Tha mi a' dol a dh'fhàgail Tairbeart oir tha mi a' dol gu Obar Dheathain.
+I am going to leave Tarbert because I am going to Aberdeen.
+
+Bha na h-èisg a’ leum a-mach às an uisge.
+The fish were leaping out of the water.
+
+Bidh e fuar.
+It will be cold.
+
+Bidh tu fuar.
+You will be cold.
+
+Cha bhi e fuar.
+It will not be cold.
+
+Am bi e fuar?
+Will it be cold?
+
+Nach bi e fuar?
+Will it not be cold?
+
+Bidh mi ag èisteachd ris an rèidio feasgar.
+I will be listening to the radio in the evening.
+
+Bidh mi ag èisteachd ris an rèidio feasgar.
+I (usually) listen to the radio in the evening.
+
+Bidh mi ag èirigh aig seachd uairean.
+I will be getting up at seven o'clock.
+
+Bidh mi ag èirigh aig seachd uairean.
+I (habitually) get up at seven o'clock.
+
+Bidh mi a' dol dhan chèilidh. Am bi thusa?
+I'll be going to the ceilidh. Will you?
+
+Cha bhi an cù a' fuireach anns an taigh.
+The dog won't be staying in the house.
+
+Nach bi iad a' seinn anns a' bhaile? Bidh.
+Won't they be singing in (the) town? Yes.
+
+Am bi thu ag obair anns a' bhùth? Cha bhi.
+Will you be working in the shop? No.
+
+Bidh sinn a' dol a dh'iasgach air an loch.
+We'll be going fishing on the loch.
+
+Cha bhi an gille a' dol dhan eaglais Là na Sàbaid.
+The boy won't be going to church on Sunday.
+
+Bidh mi a' dol dhan leabaidh aig meadhan-oidhche.
+I go to bed at midnight.
+
+Bidh mi a' fuireach aig an taigh Là na Sàbaid.
+I shall be staying at home on Sunday.
+
+Bidh sinn a' ceannach an taigh sin.
+We shall be buying that house.
+
+Am bi sibh a' dol dhan phàirc gach feasgar? Bidh.
+Do you go to the park every evening? Yes.
+
+Cha bhi e a' cluich aig a' chèilidh.
+He will not be playing at the ceilidh.
+
+Nach bi iad a' fuireach gus a' mhadainn?
+Will they not be staying until the morning?
+
+Bha e a' ruith gu luath.
+He was running quickly.
+
+A bheil thu gu math?
+Are you well?
+
+Bha iad a' coiseachd gu slaodach.
+They were walking slowly.
+
+Bidh mi aig an sgoil a-màireach.
+I will be at school tomorrow.
+
+Bha e a' dol dhachaigh.
+He was going home.
+
+Bidh e ag obair mar seo.
+It works like this.
+
+Bha iad a' coiseachd gu slaodach.
+They were walking slowly.
+
+Tha i a' fuireach an siud.
+She lives over there.
+
+Tha i a' dol dhan bhùth an-dràsta.
+She is going to the shop just now.
+
+Tha e ag obair fìor mhath.
+He is working extremely well.
+
+Chan eil e a' dèanamh cho math.
+He is not doing so well.
+
+Tha mi glè mhath.
+I am very well.
+
+Bha i ag obair ro chruaidh.
+She was working too hard.
+
+Bha iad a' ruith cho slaodach.
+They were running so slowly.
+
+Tha e daonnan aig an sgoil, ach chan eil e ag obair gu math.
+He is always at school, but he is not working well.
+
+Cha robh mi a-riamh toilichte ag obair aig muir.
+I was never happy working at sea.
+
+Bha e shuas anns an leabaidh.
+He was up in bed.
+
+Gàidhlig gu bràth.
+Gàidhlig for ever.
+
+Anns a' mhadainn an-diugh bha iad anns a' phàirc.
+This morning they were in the park.
+
+Bha mi anns a' bhaile an-dè.
+I was in town yesterday.
+
+A-màireach bidh mi a' dol dhan eaglais.
+Tomorrow I will be going to church.
+
+Tha mi a' dol dhachaigh a-nis.
+I am going home now.
+
+Bidh sinn aig an taigh a-nochd.
+We will be home tonight.
+
+A bheil sibh fhathast sgìth? Tha gu dearbh.
+Are you still tired? Yes indeed.
+
+Nach eil iad daonnan trang?
+Are they not always busy?
+
+An-uiridh bha sinn ann an Inbhir Nis, am-bliadhna bidh sinn ann am Portrìgh.
+Last year we were in Inverness, this year we will be in Portree.
+
+Nach eil Màiri agus Calum a' bruidhinn ri chèile?
+Are Màiri and Calum not speaking to one another?
+
+A bheil i a' fuireach còmhla ri Seumas?
+Does she stay with Seumas?
+
+Chan eil idir, tha iad a' fuireach air leth.
+Not at all, they stay apart.
+
+Am bi thu a' dol sìos an t-sràid? Bidh an dràsta  
+Will you be going down the street? Yes just now.
+
+An robh thu a-riamh ann an Glaschu? Bha.
+Were you ever in Glasgow? Yes.
+
+Cha bhi thu ag obair a chaoidh anns a' bhaile seo.
+You will never work in this town.
+
+Tha iad ag obair còmhla math gu leòr.
+They are working together well enough.
+
+Tha mi a' fuireach an seo, tha Mòrag a' fuireach an sin, agus tha Niall a' fuireach an siud thall.
+I stay here, Mòrag stays there, and Niall stays over yonder.
+
+Tha mi a' dol gu cèilidh. A bheil thusa? 
+I am going out to a ceilidh. Are you?
+
+Tha mi a' fuireach a-staigh.
+I'm staying in.
+
+Bha sinn ag obair an sin roimhe.
+We were working there before.
+
+Bha fear ag obair thall an sin an-dè
+There was a man working over there yesterday.
+
+Bidh e a' ruith thairis air a' mhonadh a-màireach.
+He will be running over the moor tomorrow.
+
+Bha iad uile còmhla an seo an-dè
+They were all together here yesterday.
+
+A bheil thu a' dol a dh'iasgach ma-tà?
+Are you going fishing (to fish) then?
+
+Bha mi ag iasgach madainn an-diugh cheana.
+I was fishing this morning already.
+
+Bha an nighean a' cluich a-muigh air an t-sràid.
+The girl was playing outside on the street.
+
+An robh thu a-muigh a' ruith a-raoir. Bha.
+Were you out running last night? Yes.
+
+Bha e a' coiseachd dhachaigh bhon chèilidh.
+He was walking home from the ceilidh.
+
+Bha i a-riamh ag ithe.
+She was forever eating.
