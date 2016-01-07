@@ -1,23 +1,25 @@
 
-#Proof-of-concept Gàidhlig NLP tools.#
+##Proof-of-concept Gàidhlig NLP tools.##
+
+###Introduction###
 
 These tools were developed as a test of whether the autoglosser could be adapted for another Celtic language, and also created some baby resources for testing.  The test worked pretty well, but I ran into the bugbear of all minority language work -- hardly any resources are available under a free license! -- and life's too short to keep reinventing the wheel ...
 
-Anyway, this is a basic howto for running the autoglosser for Gàidhlig.
-Contact me on kevin@dotmon.com if you have problems.
+Anyway, this is a basic howto for running the autoglosser for Gàidhlig. Contact me if you have problems.
 
-The autoglosser has been developed and tested on Ubuntu GNU/Linux.
+###Required software###
+
+The autoglosser was developed and tested on Ubuntu GNU/Linux.
 
 PHP5, Apache2 and PostgreSQL should be installed.
 The visl-cg3 constraint grammar implementation should be installed from [Tino Didriksen's PPA](https://launchpad.net/~tinodidriksen/+archive/cg3).
-To get a typeset final output, LaTeX (TeXLive2012) should be installed, along with [John Frampton's expex package](http://www.ctan.org/pkg/expex)
+To get a typeset final output, LaTeX (TeXLive2012) should be installed, along with [John Frampton's expex package](http://www.ctan.org/pkg/expex).
+
+###Setup and usage###
 
 Import the Gàidhlig dictionary (`dbs/glalist.sql`) into a PostgreSQL table.
 
 Move the gaidhlig directory into `/opt`, and adjust the connection details in `gaidhlig/config.php` to match your PostgreSQL setup.
-
-The software is a pipeline, so individual pieces can be run as necessary.
-The easiest way is to run the whole pipeline via `do_everything.php`.
 
 The following assumes you have a bilingual corpus text you want to autogloss broken into aligned sentences and set out in the following format:
 
@@ -40,11 +42,9 @@ In `mark_multiwords.php`, give the filename of your input text.
 
 (The above is laborious, but it could obviously be streamlined in the future if more work is done on these tools.)
 
-From the autoglosser dir, run the pipeline:
+Then run the autoglosser pipeline: `php do_everything.php`.
 
-```
-    php do_everything.php.
-```
+###Parts of the pipeline###
 
 In sequence, the following scripts are run:
 

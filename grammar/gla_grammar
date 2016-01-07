@@ -87,11 +87,11 @@ select ("a" adj.poss f) if (1 (n)) (not 1 (asp));
 select ("a" adj.poss f) if (-1 ("air" prep)) (1 (vn)) (not 1 (asp));
 substitute (f 3s :her:) (mf 3s :its:) ("a" adj.poss f) if (-1 ("air" prep)) (1 (vn)) (not 1 (asp));
 
-select ("a" prt.rel) if (1 (v) or ("is" v.cop));
+#select ("a" prt.rel) if (1 (v) or ("is" v.cop));  # catches a.prt.int and a.prt.infin!
 substitute (v imper) (v past) (v imper) if (-1 (prt.rel) or (conj+past));
 select (v) if (-1 (prt.rel));
 
-select ("an" prt.interr) if (1 (v));
+select ("an" prt.int) if (1 (v));
 
 select ("oir" conj) if (1 (v));
 select ("gun" conj) if (1 (v));
@@ -111,6 +111,9 @@ substitute (vn) (v infin) (vn) if (-1 ("a" prt.infin));
 
 select (qual) if (1 (n));
 
+select ("uabhasach" qual) if (1 (adj));
+select ("ro" qual) if (1 (adj));
+
 select (gd) if (-1 (n));
 select (pl) if (-1 (def pl));
 
@@ -127,7 +130,7 @@ select ("càil" n) if (1 ("ach" conj));
 select (vn) if (-1 ("iarraidh"));
 remove (v imper) if (-1 (prep+prt.rel));
 remove (v imper) if (-1 (prt.int.neg));
-remove (v imper) if (-1 (prt.interr));
+remove (v imper) if (-1 (prt.int));
 
 
 

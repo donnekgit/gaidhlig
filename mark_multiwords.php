@@ -35,7 +35,7 @@ $multiwords="multiwords";
 
 //$files=scandir($dir);
 //$infiles=array("smo.txt");
-$infiles=array("inputs/taic21-20.txt");
+$infiles=array("inputs/taic1-10.txt");
 
 foreach ($infiles as $infile)
 {
@@ -52,13 +52,13 @@ foreach ($infiles as $infile)
 		$surface=$row->surface;
 		$replace=preg_replace("/ /", "_", $row->surface);
 		echo $replace."\n";
-		$output=preg_replace("/(\b)$surface(\b)/", "$1$replace$2", $output);
+		$output=preg_replace("/$surface/", "$replace", $output);
 		
 		// Capitalised forms.
 		$surface=ucfirst($surface);
 		$replace=ucfirst($replace);
 		//echo $replace."\n";
-		$output=preg_replace("/(\b)$surface(\b)/", "$1$replace$2", $output);
+		$output=preg_replace("/$surface/", "$replace", $output);
 	}
 	
 	file_put_contents($outfile, $output);

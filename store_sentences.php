@@ -44,7 +44,7 @@ $dir="./inputs";
 //$sentences="sentences_mw";
 $sentences="taic_mw";
 //$files=array("inputs/smo.out");
-$files=array("taic21-20.out");
+$files=array("taic1-10.out");
 $end=".out";
 
 drop_existing_table($sentences);

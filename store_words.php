@@ -29,12 +29,12 @@ if (!isset($chain))
 {
 	include("includes/fns.php");
 	include("/opt/gaidhlig/config.php");
+	
+	//$sentences="sentences";
+	//$sentences="sentences_mw";
+	$sentences="taic_mw";
+	$words="taic_words";
 }
-
-//$sentences="sentences";
-//$sentences="sentences_mw";
-$sentences="taic_mw";
-$words="taic_words";
 
 $thesewords=array();
 

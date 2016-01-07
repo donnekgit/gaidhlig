@@ -26,10 +26,10 @@ If not, see <http://www.gnu.org/licenses/>.
 include("includes/fns.php");
 include("/opt/gaidhlig/config.php");
 //$utterances="taic_mw";
-$sentences="taic_mw";
-$words="taic_words";
-$cgfinished="taic_cgfinished";
-$corpus="taic";
+$sentences="taic1_mw";
+$words="taic1_words";
+$cgfinished="taic1_cgfinished";
+$corpus="taic1";
 
 $chain=1;
 
