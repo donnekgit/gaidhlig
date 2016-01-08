@@ -1,11 +1,15 @@
 
-##Proof-of-concept Gàidhlig NLP tools.##
+##Gàidhlig autoglosser.##
 
 ###Introduction###
 
-These tools were developed as a test of whether the autoglosser could be adapted for another Celtic language, and also created some baby resources for testing.  The test worked pretty well, but I ran into the bugbear of all minority language work -- hardly any resources are available under a free license! -- and life's too short to keep reinventing the wheel ...
+The autoglosser was originally developed for [Welsh](http://bangortalk.org.uk), so that bilingual conversational running text could be POS-tagged.  These tools were developed as a test of whether the autoglosser could be adapted for another Celtic language, and also created some baby resources for testing.
+
+The test worked pretty well, but I ran into the bugbear of all minority language work -- hardly any resources are available under a free license! -- and life's too short to keep reinventing the wheel ...
 
 Anyway, this is a basic howto for running the autoglosser for Gàidhlig. Contact me if you have problems.
+
+The web interface and more information on the other resources is at [http://kevindonnelly.org.uk/gaidhlig](the main site).
 
 ###Required software###
 
