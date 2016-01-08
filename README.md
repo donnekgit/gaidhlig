@@ -1,5 +1,5 @@
 
-##Gàidhlig autoglosser.##
+##Gàidhlig autoglosser##
 
 ###Introduction###
 
@@ -9,7 +9,7 @@ The test worked pretty well, but I ran into the bugbear of all minority language
 
 Anyway, this is a basic howto for running the autoglosser for Gàidhlig. Contact me if you have problems.
 
-The web interface and more information on the other resources is at [http://kevindonnelly.org.uk/gaidhlig](the main site).
+The web interface and more information on the other resources is at [the main site](http://kevindonnelly.org.uk/gaidhlig).
 
 ###Required software###
 
